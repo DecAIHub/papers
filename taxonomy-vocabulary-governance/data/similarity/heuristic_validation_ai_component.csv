@@ -1,0 +1,76 @@
+label_a,label_b,sim,heuristic_class,op,field
+NL assistant/agents for DeFi operations,AI assistant/agents for DeFi operations,0.9301,likely_synonym,A,ai_component
+AI assistant for communities,AI chat assistant for communities,0.828,likely_synonym,A,ai_component
+compute marketplace for AI/ML workloads,GPU marketplace for AI/ML workloads,0.8169,likely_synonym,A,ai_component
+voice-enabled AI agents,voice-enabled AI agents + voice models,0.7816,likely_related,A,ai_component
+cloud infrastructure for AI workloads,compute infrastructure for AI workloads,0.7803,likely_synonym,A,ai_component
+GPU/edge infrastructure for AI workloads,compute infrastructure for AI workloads,0.7679,likely_synonym,A,ai_component
+compute marketplace + AI agents + AI marketplace,compute marketplace + AI model hub,0.7313,likely_related,A,ai_component
+autonomous AI agent,autonomous AI agent framework,0.7301,likely_synonym,A,ai_component
+decentralized AI agents marketplace,AI agents marketplace,0.7229,likely_synonym,A,ai_component
+GPU/edge infrastructure for AI workloads,cloud infrastructure for AI workloads,0.718,likely_synonym,A,ai_component
+platform for autonomous AI agents,autonomous AI agent,0.7037,likely_related,A,ai_component
+AI agent launch platform,AI agent creation + launch platform,0.6983,likely_synonym,A,ai_component
+AI agents for Web3 workflows (agentic wallet),AI agents for Web3 workflows,0.6955,likely_synonym,A,ai_component
+AI agent creation/training/deployment platform,AI agent creation + deployment platform,0.6941,likely_related,A,ai_component
+decentralized AI compute + marketplace,decentralized AI agents marketplace,0.6859,likely_related,A,ai_component
+GPU rentals for AI workloads; AI API endpoints,GPU rentals for AI workloads,0.6856,likely_related,A,ai_component
+autonomous AI agents + agent services,autonomous AI agent,0.6818,likely_related,A,ai_component
+ML models for market analysis,predictive ML models for market analytics,0.6777,likely_related,A,ai_component
+GPU/compute for AI/ML workloads,compute marketplace for AI/ML workloads,0.6691,likely_related,A,ai_component
+positioning only,"positioning only (""AI agents"")",0.6636,likely_synonym,A,ai_component
+AI agents for Web3,AI agents for Web3 workflows,0.6404,likely_synonym,A,ai_component
+decentralized AI compute + marketplace,decentralized AI compute network,0.6356,likely_related,A,ai_component
+positioning only (AI tools/community),positioning only (AI toolkit),0.6306,likely_related,A,ai_component
+AI assistant for communities,AI assistant for communities (NLP/knowledge graph),0.6292,likely_synonym,A,ai_component
+ML models for sports forecasting,AI agents for sports forecasts/reports,0.6235,likely_noise,A,ai_component
+NL assistant/agents for DeFi operations,AI assistant/agents for DeFi operations,0.8045,likely_synonym,B,ai_component
+voice-enabled AI agents,voice-enabled AI agents + voice models,0.7918,likely_related,B,ai_component
+decentralized AI agents marketplace,AI agents marketplace,0.7869,likely_synonym,B,ai_component
+AI agents for Web3,AI agents for Web3 workflows,0.7619,likely_synonym,B,ai_component
+positioning only,"positioning only (""AI agents"")",0.7606,likely_synonym,B,ai_component
+"positioning only (""AI agents"")","positioning only (""AI"" analytics)",0.7533,likely_related,B,ai_component
+compute marketplace for AI/ML workloads,GPU marketplace for AI/ML workloads,0.7481,likely_synonym,B,ai_component
+autonomous AI agent,autonomous AI agent framework,0.7277,likely_synonym,B,ai_component
+AI agents for Web3 workflows (agentic wallet),AI agents for Web3 workflows,0.7194,likely_synonym,B,ai_component
+GPU rentals for AI workloads; AI API endpoints,GPU rentals for AI workloads,0.7103,likely_related,B,ai_component
+AI agent creation/training/deployment platform,AI agent creation + deployment platform,0.701,likely_related,B,ai_component
+AI assistant for communities,AI chat assistant for communities,0.6756,likely_synonym,B,ai_component
+positioning only,"positioning only (""AI"" analytics)",0.6705,likely_synonym,B,ai_component
+"positioning only (""AI agents"")",positioning only (AI toolkit),0.6596,likely_related,B,ai_component
+cloud infrastructure for AI workloads,compute infrastructure for AI workloads,0.6568,likely_synonym,B,ai_component
+decentralized AI compute + marketplace,decentralized AI compute network,0.6465,likely_related,B,ai_component
+AI assistant for communities,AI assistant for communities (NLP/knowledge graph),0.6329,likely_synonym,B,ai_component
+ML models for market analysis,predictive ML models for market analytics,0.6271,likely_related,B,ai_component
+AI agent launch platform,AI agent creation + launch platform,0.6269,likely_synonym,B,ai_component
+AI services,AI agent marketplace + AI services,0.6196,likely_related,B,ai_component
+GPU/compute for AI/ML workloads,compute marketplace for AI/ML workloads,0.6174,likely_related,B,ai_component
+AgentData (real-time data streams for AI agents),real-time data for AI agents,0.6169,likely_related,B,ai_component
+AI agents for Web3,LLM agents for Web3 tasks,0.6116,likely_related,B,ai_component
+real-time data for AI agents,data for AI + agents,0.6101,likely_synonym,B,ai_component
+GPU/compute for AI/ML workloads,GPU marketplace for AI/ML workloads,0.6084,likely_related,B,ai_component
+AI agent launch platform,AI agent creation + launch platform,0.9576,likely_synonym,C,ai_component
+AI agent marketplace + AI services,AI agents marketplace,0.94,likely_related,C,ai_component
+voice-enabled AI agents,voice-enabled AI agents + voice models,0.9386,likely_related,C,ai_component
+AI agent creation/training/deployment platform,AI agent creation + deployment platform,0.9358,likely_related,C,ai_component
+AI agents marketplace,AI agent + model marketplace,0.9197,likely_related,C,ai_component
+AI agents/bots for trading,AI assistant/bot for trading,0.9126,likely_related,C,ai_component
+GPU rentals for AI workloads; AI API endpoints,GPU rentals for AI workloads,0.9108,likely_related,C,ai_component
+AI services,AI service/tools,0.907,likely_related,C,ai_component
+GPU/compute for AI/ML workloads,GPU marketplace for AI/ML workloads,0.9059,likely_related,C,ai_component
+AI agent marketplace + AI services,AI agent + model marketplace,0.9033,likely_synonym,C,ai_component
+AI agents applicability,AI applicability for AI agents/dApps,0.8968,likely_related,C,ai_component
+AI agents for Web3,AI agents for Web3 workflows,0.8906,likely_synonym,C,ai_component
+AI agents for Web3 workflows (agentic wallet),AI agents for Web3 workflows,0.8852,likely_synonym,C,ai_component
+no-code AI agent marketplace,AI agents marketplace,0.8833,likely_related,C,ai_component
+AI-assisted DeFi strategies/agents,AI assistant/agents for DeFi operations,0.883,likely_noise,C,ai_component
+decentralized AI agents marketplace,AI agents marketplace,0.883,likely_synonym,C,ai_component
+autonomous AI agent,AI agent,0.8787,likely_synonym,C,ai_component
+compute marketplace + AI agents + AI marketplace,AI agent marketplace + AI services,0.8781,likely_related,C,ai_component
+NL assistant/agents for DeFi operations,AI assistant/agents for DeFi operations,0.8752,likely_synonym,C,ai_component
+AI agent generation + launch,AI agent creation + launch platform,0.875,likely_related,C,ai_component
+cloud infrastructure for AI workloads,compute infrastructure for AI workloads,0.875,likely_synonym,C,ai_component
+AI agents/bots for trading,AI agent for trading actions,0.8745,likely_related,C,ai_component
+GPU rentals + AI/ML tools,GPU rentals for AI workloads,0.8727,likely_noise,C,ai_component
+AI-focused compute infrastructure,compute infrastructure for AI workloads,0.872,likely_related,C,ai_component
+AI agents/bots for trading,AI bots + trading analytics,0.8718,likely_related,C,ai_component

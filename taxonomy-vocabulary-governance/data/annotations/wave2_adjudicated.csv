@@ -1,0 +1,62 @@
+pair_id,field,value_a,value_b,stratum,a1_relationship,a2_relationship,adjudicated_synonym,a1_confidence,a2_confidence
+P201,ai_component,AI agents for Web3,AI agents for Web3 workflows (agentic wallet),near_miss,near_synonym,near_synonym,yes,high,high
+P202,use_case,L1 infrastructure,data storage infrastructure,near_miss,related_but_distinct,near_synonym,no,high,medium
+P203,use_case,token on BNB Smart Chain,tools/services around BNB Smart Chain,near_miss,related_but_distinct,related_but_distinct,no,high,medium
+P204,use_case,trading + DeFi automation,trading automation,near_miss,near_synonym,near_synonym,yes,high,high
+P205,ai_component,GPU/compute for AI/ML workloads,GPU compute for AI training,near_miss,near_synonym,near_synonym,yes,high,high
+P206,ai_component,data platform + AI managed services,AI data platform / AI agents,near_miss,near_synonym,related_but_distinct,no,medium,medium
+P207,ai_component,AI agent creation + deployment platform,AI agent creation + management platform,cross_family_extended,near_synonym,exact_synonym,yes,high,medium
+P208,use_case,compute/GPU rental for containers,GPU rental for AI/ML,near_miss,related_but_distinct,related_but_distinct,no,medium,medium
+P209,ai_component,AI agents marketplace,compute marketplace + AI agents + AI marketplace,cross_family_extended,near_synonym,near_synonym,yes,medium,medium
+P210,ai_component,autonomous AI agent,autonomous AI agent for DePIN content,near_miss,near_synonym,near_synonym,yes,high,high
+P211,use_case,blockchain data indexing + queries,blockchain indexing + query answering,cross_family_extended,exact_synonym,exact_synonym,yes,high,high
+P212,ai_component,compute marketplace + AI agents + AI marketplace,AI agents marketplace,near_miss,near_synonym,near_synonym,yes,high,high
+P213,ai_component,AI meme generation (forge),AI meme generation + AI tools,cross_family_extended,near_synonym,near_synonym,yes,high,high
+P214,use_case,content generation + distribution,content generation + assistant,near_miss,related_but_distinct,near_synonym,no,medium,medium
+P215,ai_component,L2 for AI dApps (Parallel EVM + GPU network),AI L2 for AI dApps,near_miss,near_synonym,near_synonym,yes,high,high
+P216,ai_component,decentralized GPU cloud + data agent,decentralized GPU cloud for AI/ML workloads,cross_family_extended,near_synonym,near_synonym,yes,high,high
+P217,use_case,token on Solana,trading/holding a token on Solana,near_miss,near_synonym,near_synonym,yes,medium,medium
+P218,use_case,crypto analytics terminal + screeners,crypto analytics,near_miss,near_synonym,near_synonym,yes,high,high
+P219,ai_component,LLM/agents + inference nodes,LLM nodes + inference,near_miss,exact_synonym,near_synonym,yes,high,high
+P220,use_case,create + monetize AI agents,create/train/monetize AI agents + iNFTs,cross_family_extended,near_synonym,near_synonym,yes,high,high
+P221,use_case,fast creation + monetization of UGC games,AI content creation + monetization,near_miss,related_but_distinct,near_synonym,no,high,medium
+P222,use_case,distributed training,distributed edge training/inference,near_miss,near_synonym,near_synonym,yes,high,high
+P223,ai_component,AI agent for token/security analysis,AI agent for token/wallet analysis,cross_family_extended,near_synonym,exact_synonym,yes,high,high
+P224,ai_component,positioning only (AI tools/community),"positioning only (""AI agents"")",near_miss,near_synonym,near_synonym,yes,medium,high
+P225,use_case,token on Solana,trading/holding a token on Solana,cross_family_extended,near_synonym,near_synonym,yes,medium,medium
+P226,ai_component,positioning only,positioning only (AI apps infrastructure),near_miss,near_synonym,near_synonym,yes,high,high
+P227,ai_component,decentralized AI agents marketplace,decentralized AI inference/hosting marketplace,near_miss,related_but_distinct,near_synonym,no,high,medium
+P228,ai_component,"positioning only (""AI agents"")",positioning only (AI tools/community),cross_family_extended,near_synonym,near_synonym,yes,medium,medium
+P229,use_case,decentralized compute marketplace,compute marketplace + orchestration,near_miss,near_synonym,near_synonym,yes,high,high
+P230,ai_component,positioning only (AI toolkit),"positioning only (""AI"" analytics)",near_miss,near_synonym,near_synonym,yes,medium,medium
+P231,use_case,"build, deploy + monetize agents",build + deploy AI agents,near_miss,near_synonym,near_synonym,yes,high,high
+P232,use_case,AI content generation + social media agents,meme generation for social media,near_miss,related_but_distinct,near_synonym,no,medium,medium
+P233,use_case,GPU compute marketplace (training/inference),distributed AI compute (training/inference),near_miss,near_synonym,exact_synonym,yes,high,medium
+P234,use_case,DeFi automation + agents,trading + DeFi automation,near_miss,near_synonym,near_synonym,yes,high,high
+P235,use_case,chat + content agent,community chat + content,near_miss,near_synonym,exact_synonym,yes,high,medium
+P236,ai_component,GPU/compute for AI/ML workloads,decentralized GPU cloud for AI/ML workloads,near_miss,near_synonym,near_synonym,yes,high,high
+P237,use_case,"DeFi operations via ""agents""",DeFi operations via integrations + aggregation,near_miss,related_but_distinct,near_synonym,no,medium,medium
+P238,use_case,no-code game creation from prompts,content generation from prompts,near_miss,near_synonym,near_synonym,yes,medium,high
+P239,use_case,AI agent creation + deployment,AI agent creation + use,cross_family_extended,near_synonym,near_synonym,yes,medium,medium
+P240,use_case,data monetization + analytics/compute,data monetization + rewards,near_miss,related_but_distinct,near_synonym,no,medium,medium
+P241,ai_component,positioning only,positioning only (AI tools/community),near_miss,near_synonym,near_synonym,yes,high,high
+P242,ai_component,decentralized GPU cloud for AI/ML workloads,decentralized GPU cloud + data agent,near_miss,near_synonym,near_synonym,yes,high,high
+P243,use_case,Face-NFT creation + trading,AI character/NFT creation + trading,near_miss,near_synonym,near_synonym,yes,medium,medium
+P244,ai_component,"positioning only (""AI dog/companion"")","positioning only (""AI agents"")",near_miss,near_synonym,near_synonym,yes,medium,medium
+P245,ai_component,positioning only (AI tools/community),"positioning only (""AI"" analytics)",near_miss,near_synonym,near_synonym,yes,medium,high
+P246,use_case,decentralized AI inference,AI inference marketplace + decentralized compute,near_miss,near_synonym,near_synonym,yes,high,high
+P247,ai_component,LLM nodes + inference,LLM/agents + inference nodes,cross_family_extended,exact_synonym,exact_synonym,yes,high,high
+P248,ai_component,autonomous AI artist / chat agent,autonomous AI agent,near_miss,near_synonym,near_synonym,yes,high,high
+P249,ai_component,confidential computing for AI (TEE),"FHE inference, confidential computing",near_miss,near_synonym,near_synonym,yes,medium,medium
+P250,ai_component,positioning only,positioning only (on-chain data),near_miss,near_synonym,near_synonym,yes,high,high
+P251,use_case,AI agent creation + use,AI agent creation + deployment,near_miss,near_synonym,near_synonym,yes,medium,medium
+P252,ai_component,AI applicability for AI agents/dApps,AI applicability for storage/DA,near_miss,related_but_distinct,near_synonym,no,high,medium
+P253,ai_component,serverless runtime for AI agents,TypeScript runtime for AI agents,near_miss,related_but_distinct,related_but_distinct,no,medium,low
+P254,use_case,verifiable credentials + digital ID,AI training + verifiable credentials,near_miss,related_but_distinct,related_but_distinct,no,high,medium
+P255,ai_component,"positioning only (""AI agents"")",positioning only (AI apps infrastructure),near_miss,near_synonym,near_synonym,yes,medium,medium
+P256,use_case,crypto task automation,development task automation,near_miss,related_but_distinct,near_synonym,no,high,medium
+P257,ai_component,AI features/AI products in ecosystem,AI features/products,near_miss,near_synonym,exact_synonym,yes,high,high
+P258,ai_component,AI co-pilot for DeFi + on-chain actions,AI co-pilot for Web3 tasks,near_miss,near_synonym,near_synonym,yes,high,high
+P259,use_case,AI agents for Web3 interactions,chat/agents for Web3,near_miss,near_synonym,near_synonym,yes,high,high
+P260,ai_component,no-code AI agent marketplace,no-code AI agent clusters for verification,near_miss,related_but_distinct,near_synonym,no,high,medium
+P261,use_case,token on Solana,RWA/AI narrative + token on Solana,near_miss,near_synonym,near_synonym,yes,medium,medium
