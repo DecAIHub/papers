@@ -8,6 +8,7 @@ Replication packages and supplementary materials for the DecAIHub research progr
 |-----------|-------|----------------|
 | [adversarial-verification](adversarial-verification) | Manipulation-Resistant Verification under Heterogeneous Evidence | Blockchain: Research and Applications |
 | [project-card-schema](project-card-schema) | A Project-Card Schema and Completeness Diagnostics for AI–Blockchain Registries | Scientific Data |
+| [taxonomy-vocabulary-governance](taxonomy-vocabulary-governance/) | Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies | Artificial Intelligence Review |
 
 ## About
 
@@ -15,5 +16,6 @@ Each directory contains scripts, figures, and (where applicable) data needed to 
 
 ## License
 Individual papers may carry their own licenses — see each directory.
+
 
 
