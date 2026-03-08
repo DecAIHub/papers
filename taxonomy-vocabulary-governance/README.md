@@ -1,4 +1,4 @@
-# Replication Package — Article A
+# Replication Package
 
 **Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach**
 
@@ -153,3 +153,4 @@ If you use this replication package, please cite the manuscript:
 ## License
 
 This replication package is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), except for MovieLens data (`data/movielens/tags.csv`) which is redistributed under its original GroupLens license (research use only; see `data/movielens/LICENSE-MOVIELENS.txt`). Required citation for MovieLens data: Harper FM, Konstan JA (2015) The MovieLens Datasets: History and Context. ACM TiiS 5(4):19. https://doi.org/10.1145/2827872
+
