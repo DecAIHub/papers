@@ -1,4 +1,4 @@
-# Paper C: Manipulation-Resistant Verification under Heterogeneous Evidence
+# Manipulation-Resistant Verification under Heterogeneous Evidence
 
 Replication package for:
 
@@ -28,3 +28,4 @@ python compute_review_fixes.py
 ## Data Availability
 
 Annotation matrices (k=3 × n=60 × 4 flags, baseline + intervention) and the algorithmic re-classification rule set will be deposited on Zenodo upon acceptance.
+
