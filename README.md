@@ -4,10 +4,10 @@ Replication packages and supplementary materials for the DecAIHub research progr
 
 ## Papers
 
-| Directory | Title | Target Journal | Status |
-|-----------|-------|----------------|--------|
-| [adversarial-verification](adversarial-verification) | Manipulation-Resistant Verification under Heterogeneous Evidence | Blockchain: Research and Applications | Submitted |
-| [project-card-schema](project-card-schema) | A Project-Card Schema and Completeness Diagnostics for AI–Blockchain Registries | Scientific Data | In preparation |
+| Directory | Title | Target Journal |
+|-----------|-------|----------------|
+| [adversarial-verification](adversarial-verification) | Manipulation-Resistant Verification under Heterogeneous Evidence | Blockchain: Research and Applications |
+| [project-card-schema](project-card-schema) | A Project-Card Schema and Completeness Diagnostics for AI–Blockchain Registries | Scientific Data |
 
 ## About
 
@@ -15,4 +15,5 @@ Each directory contains scripts, figures, and (where applicable) data needed to 
 
 ## License
 Individual papers may carry their own licenses — see each directory.
+
 
