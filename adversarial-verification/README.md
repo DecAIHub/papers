@@ -2,7 +2,7 @@
 
 Replication package for:
 
-> Kadochnikov, N.N. (2026). *Manipulation-Resistant Verification under Heterogeneous Evidence: Adversarial Framework with Protocol Validation and Boundary Diagnostics.* Computers & Security (submitted).
+> Kadochnikov, N.N. (2026). *Manipulation-Resistant Verification under Heterogeneous Evidence: Adversarial Framework with Protocol Validation and Boundary Diagnostics.* Decision Support Systems (submitted).
 
 ## Contents
 
@@ -28,6 +28,7 @@ python compute_review_fixes.py
 ## Data Availability
 
 The analyses in this paper use an earlier snapshot of the underlying registry. A later public release of the related AI-Blockchain Project-Card Dataset is available on Zenodo (DOI: 10.5281/zenodo.18900950). Annotation matrices (k=3 × n=60 × 4 flags, baseline + intervention) and the algorithmic re-classification rule set can be shared for review or upon reasonable request, subject to applicable platform terms.
+
 
 
 
