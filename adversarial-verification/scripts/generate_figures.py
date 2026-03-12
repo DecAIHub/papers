@@ -344,12 +344,12 @@ def run_crosseffect_simulation():
     np.random.seed(42)
 
     segments = {
-        "Meme":         {"N": 103, "mu": 0.718, "lam": 0.730},
+        "Meme":         {"N": 104, "mu": 0.718, "lam": 0.730},
         "Metaverse":    {"N":  13, "mu": 0.462, "lam": 0.600},
         "Consumer":     {"N":  52, "mu": 0.462, "lam": 0.596},
         "DeFi":         {"N": 112, "mu": 0.455, "lam": 0.590},
         "AI/Other":     {"N": 247, "mu": 0.587, "lam": 0.560},
-        "AI/Agents":    {"N": 220, "mu": 0.450, "lam": 0.557},
+        "AI/Agents":    {"N": 221, "mu": 0.450, "lam": 0.557},
         "Gaming":       {"N":  35, "mu": 0.514, "lam": 0.552},
         "AI/Analytics": {"N":  22, "mu": 0.318, "lam": 0.545},
         "Infra":        {"N": 384, "mu": 0.438, "lam": 0.532},
@@ -452,12 +452,12 @@ def run_a3_simulation():
     np.random.seed(123)
 
     segments = {
-        "Meme":         {"N": 103, "mu": 0.718, "lam": 0.730},
+        "Meme":         {"N": 104, "mu": 0.718, "lam": 0.730},
         "Metaverse":    {"N":  13, "mu": 0.462, "lam": 0.600},
         "Consumer":     {"N":  52, "mu": 0.462, "lam": 0.596},
         "DeFi":         {"N": 112, "mu": 0.455, "lam": 0.590},
         "AI/Other":     {"N": 247, "mu": 0.587, "lam": 0.560},
-        "AI/Agents":    {"N": 220, "mu": 0.450, "lam": 0.557},
+        "AI/Agents":    {"N": 221, "mu": 0.450, "lam": 0.557},
         "Gaming":       {"N":  35, "mu": 0.514, "lam": 0.552},
         "AI/Analytics": {"N":  22, "mu": 0.318, "lam": 0.545},
         "Infra":        {"N": 384, "mu": 0.438, "lam": 0.532},

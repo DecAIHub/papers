@@ -151,12 +151,12 @@ def run_a4_simulation():
     np.random.seed(321)
 
     segments = {
-        "Meme":         {"N": 103, "mu": 0.718, "lam": 0.730},
+        "Meme":         {"N": 104, "mu": 0.718, "lam": 0.730},
         "Metaverse":    {"N":  13, "mu": 0.462, "lam": 0.600},
         "Consumer":     {"N":  52, "mu": 0.462, "lam": 0.596},
         "DeFi":         {"N": 112, "mu": 0.455, "lam": 0.590},
         "AI/Other":     {"N": 247, "mu": 0.587, "lam": 0.560},
-        "AI/Agents":    {"N": 220, "mu": 0.450, "lam": 0.557},
+        "AI/Agents":    {"N": 221, "mu": 0.450, "lam": 0.557},
         "Gaming":       {"N":  35, "mu": 0.514, "lam": 0.552},
         "AI/Analytics": {"N":  22, "mu": 0.318, "lam": 0.545},
         "Infra":        {"N": 384, "mu": 0.438, "lam": 0.532},
@@ -335,7 +335,7 @@ def fig_s3_taxonomy():
         "FP4: Template anchoring\n(pre-fill biases assessment)",
     ]
     fn_items = [
-        "FN1: Critical-field missingness\n(token_type 43.5%, AI 22.4%)",
+        "FN1: Critical-field missingness\n(token_type 43.4%, AI 22.4%)",
         "FN2: Platform availability bias\n(non-EVM fewer standard sources)",
         "FN3: Documentation heterogeneity\n(sector norms vs. corpus thresholds)",
         "FN4: Emerging-project penalty\n(young projects few artifacts)",
