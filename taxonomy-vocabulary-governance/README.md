@@ -3,7 +3,7 @@
 **Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach**
 
 Nikita N. Kadochnikov  
-Target journal: *Artificial Intelligence Review* (Springer)
+Target journal: *PeerJ Computer Science*
 
 ---
 
