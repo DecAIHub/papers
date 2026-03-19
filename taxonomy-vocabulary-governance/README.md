@@ -61,7 +61,7 @@ The package provides six artifact groups as described in the manuscript's Data A
 |---|----------|-----------|-------------|
 | 1 | Aggregated tables | `data/tables/` | All tables reported in the manuscript and supplementary materials in machine-readable CSV/JSON format |
 | 2 | Normalized value vocabularies | `data/similarity/clusters_*.csv` | Deduplicated value lists for `ai_component` and `use_case` with frequency counts and frequency-class assignments (head/mid/tail) |
-| 3 | Pairwise similarity outputs | `data/similarity/pairs_*.csv` | Top-50 neighbor pairs per operationalization (Ops A–D) for both fields, including cosine similarity scores and surface-consistency classifications |
+| 3 | Pairwise similarity outputs | `data/similarity/pairs_*.csv` | Top-50 neighbor pairs per operationalization (Ops A–C) and top-100 for Op D, for both fields, including cosine similarity scores and surface-consistency classifications |
 | 4 | Annotation dataset | `data/annotations/` | Full annotation data for 196 pairs across two waves: pair identifiers, annotator labels (four-level scale), confidence ratings, adjudicated decisions, and stratum assignments |
 | 5 | Cross-domain replication | `data/movielens/` | MovieLens tag vocabulary, pairwise similarity outputs, and within-family vs. cross-family overlap diagnostics. Source: MovieLens Latest Small (GroupLens, CC BY 4.0) |
 | 6 | Reproducibility code | `scripts/` | Python script reproducing all figures from raw data or shared artifacts, with fixed random seeds (`seed = 42`) |
@@ -85,7 +85,7 @@ The package provides six artifact groups as described in the manuscript's Data A
 
 | File | Description |
 |------|-------------|
-| `pairs_{field}_{op}.csv` | Top-50 most similar pairs for field × operationalization. Columns: `field`, `op`, `similarity`, `label_a`, `label_b`, `freq_a`, `freq_b`, `freq_class_a`, `freq_class_b`, `surface_consistent` |
+| `pairs_{field}_{op}.csv` | Top-50 most similar pairs for field × operationalization (top-100 for Op D). Columns: `field`, `op`, `similarity`, `label_a`, `label_b`, `freq_a`, `freq_b`, `freq_class_a`, `freq_class_b`, `surface_consistent` |
 | `heuristic_validation_{field}.csv` | Surface-form heuristic validation: `label_a`, `label_b`, `sim`, `heuristic_class`, `op`, `field` |
 
 ### `data/annotations/`
