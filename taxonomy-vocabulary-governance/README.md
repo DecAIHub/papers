@@ -148,7 +148,7 @@ All stochastic computations use `seed = 42` for reproducibility:
 
 If you use this replication package, please cite the manuscript:
 
-> Kadochnikov NN (2026) Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach. *Artificial Intelligence Review*.
+> Kadochnikov NN (2026) Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach. *PeerJ Computer Science*.
 
 ## License
 
