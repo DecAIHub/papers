@@ -1,0 +1,101 @@
+field,op,similarity,label_a,label_b,freq_a,freq_b
+ai_component,E,0.981615,AI agents for Web3,AI agents for Web3 workflows,2,1
+ai_component,E,0.979687,cloud infrastructure for AI workloads,compute infrastructure for AI workloads,1,1
+ai_component,E,0.979549,AI agent creation + deployment platform,AI agent creation/training/deployment platform,1,1
+ai_component,E,0.973521,AI agents for Web3 workflows,AI agents for Web3 workflows (agentic wallet),1,1
+ai_component,E,0.973153,voice-enabled AI agents,voice-enabled AI agents + voice models,1,1
+ai_component,E,0.970836,AI assistant for communities,AI chat assistant for communities,1,1
+ai_component,E,0.970672,AI agent creation + launch platform,AI agent launch platform,1,1
+ai_component,E,0.968965,AI agent marketplace + AI services,AI agents marketplace,1,1
+ai_component,E,0.968717,AI meme generation + AI tools,AI meme/image generation,1,1
+ai_component,E,0.968466,AI agent for token/security analysis,AI agent for token/wallet analysis,1,1
+ai_component,E,0.967322,GPU marketplace for AI/ML workloads,compute marketplace for AI/ML workloads,1,2
+ai_component,E,0.966873,AI agent + model marketplace,AI agents marketplace,1,1
+ai_component,E,0.964669,GPU rentals for AI workloads,GPU rentals for AI workloads; AI API endpoints,1,1
+ai_component,E,0.964386,AI agents/bots for trading,AI assistant/bot for trading,1,1
+ai_component,E,0.964072,AI agent creation + deployment platform,AI agent creation + management platform,1,1
+ai_component,E,0.958720,AI agents marketplace,decentralized AI agents marketplace,1,1
+ai_component,E,0.957550,LLM nodes + inference,LLM/agents + inference nodes,1,1
+ai_component,E,0.957267,AI agents/assistants in-app,AI assistants + AI tools in-app,1,1
+ai_component,E,0.957038,AI agent creation + management platform,AI agent creation/training/deployment platform,1,1
+ai_component,E,0.956855,AI agent creation + deployment platform,AI agent creation + launch platform,1,1
+ai_component,E,0.956559,data collection/labeling/preprocessing for AI,dataset collection + labeling for AI,1,1
+ai_component,E,0.956551,"positioning only (""AI agents"")","positioning only (""AI"" analytics)",1,1
+ai_component,E,0.956208,AI agents for Web3,AI agents for Web3 workflows (agentic wallet),2,1
+ai_component,E,0.955674,autonomous AI agent,autonomous AI agent framework,1,1
+ai_component,E,0.955200,AI agent for Web3 questions + actions,AI agents for Web3,1,2
+ai_component,E,0.954188,AI agent for trading actions,AI agents/bots for trading,1,1
+ai_component,E,0.953848,GPU/edge infrastructure for AI workloads,compute infrastructure for AI workloads,1,1
+ai_component,E,0.952833,AI agent + model marketplace,AI agent marketplace + AI services,1,1
+ai_component,E,0.952665,AI agent creation + launch platform,AI agent creation + management platform,1,1
+ai_component,E,0.950846,AI-focused compute infrastructure,compute infrastructure for AI workloads,1,1
+ai_component,E,0.950605,AI agent for trading actions,AI assistant/bot for trading,1,1
+ai_component,E,0.950111,decentralized AI agents marketplace,decentralized AI compute + marketplace,1,1
+ai_component,E,0.949640,AI service/tools,AI services,3,3
+ai_component,E,0.949493,AI agent creation + launch platform,AI agent generation + launch,1,1
+ai_component,E,0.948880,AI agents marketplace,compute marketplace + AI agents + AI marketplace,1,1
+ai_component,E,0.948351,AI agent for Web3 questions + actions,AI agents for Web3 workflows,1,1
+ai_component,E,0.948001,positioning only (AI toolkit),positioning only (AI tools/community),1,1
+ai_component,E,0.947582,AI agents applicability,AI applicability for AI agents/dApps,1,1
+ai_component,E,0.947367,AI NFT creator (image generation),AI collectible NFT generation,1,1
+ai_component,E,0.946798,GPU compute for rendering + AI tasks,GPU/compute for AI/ML workloads,1,3
+ai_component,E,0.946738,AI analytics + automated trade execution,AI bots + trading analytics,1,1
+ai_component,E,0.946729,EdgeCloud/edge compute for AI workloads,GPU/edge infrastructure for AI workloads,1,1
+ai_component,E,0.946516,autonomous AI agent framework,platform for autonomous AI agents,1,2
+ai_component,E,0.945783,autonomous AI agent,platform for autonomous AI agents,1,2
+ai_component,E,0.945546,GPU/edge infrastructure for AI workloads,cloud infrastructure for AI workloads,1,1
+ai_component,E,0.945286,AI assistant for communities,AI assistant for communities (NLP/knowledge graph),1,1
+ai_component,E,0.945262,AI agents for crypto/finance,AI agents for on-chain DeFi,1,1
+ai_component,E,0.945202,AI assistant for trading/translation teams,AI assistant/bot for trading,1,1
+ai_component,E,0.945174,data for AI + agents,real-time data for AI agents,1,1
+ai_component,E,0.945105,GPU rentals + AI/ML tools,GPU rentals for AI workloads,1,1
+ai_component,E,0.945092,AI features/AI products in ecosystem,AI features/products,1,1
+ai_component,E,0.944721,AI agents for on-chain DeFi,AI assistant/agents for DeFi operations,1,1
+ai_component,E,0.944624,AI agents for crypto/finance,crypto AI manager / AI agents (trading/portfolio/signals),1,1
+ai_component,E,0.944307,AgentData (real-time data streams for AI agents),real-time data for AI agents,1,1
+ai_component,E,0.944253,"positioning only (""AI"" analytics)",positioning only (AI apps infrastructure),1,1
+ai_component,E,0.944199,AI platform/tools,AI service/tools,1,3
+ai_component,E,0.944024,GPU rental/lending + AI endpoints + AI nodes,GPU rentals for AI workloads; AI API endpoints,1,1
+ai_component,E,0.943284,AI agent + model marketplace,AI model/assistant marketplace/platform,1,1
+ai_component,E,0.942861,autonomous AI agent,autonomous AI agents + agent services,1,1
+ai_component,E,0.942810,decentralized AI compute + marketplace,decentralized AI inference/hosting marketplace,1,1
+ai_component,E,0.942482,AI agent marketplace + AI services,autonomous AI agents + agent services,1,1
+ai_component,E,0.942451,AI agent creation + launch platform,AI agent creation/training/deployment platform,1,1
+ai_component,E,0.942142,AI meme generation (forge),AI meme/image generation,1,1
+ai_component,E,0.942031,distributed computing for AI/ML,distributed deep learning / compute,2,1
+ai_component,E,0.941851,AI assistant for communities (NLP/knowledge graph),AI chat assistant for communities,1,1
+ai_component,E,0.941543,AI agent marketplace + AI services,compute marketplace + AI agents + AI marketplace,1,1
+ai_component,E,0.941343,"positioning only (""AI"" analytics)",positioning only (AI toolkit),1,1
+ai_component,E,0.940956,voice AI agents for phone calls,voice-enabled AI agents,1,1
+ai_component,E,0.940744,positioning only (AI apps infrastructure),positioning only (AI toolkit),1,1
+ai_component,E,0.940217,AI agent generation + launch,AI agent launch platform,1,1
+ai_component,E,0.939647,AI data platform / AI agents,data for AI + agents,1,1
+ai_component,E,0.939481,decentralized GPU cloud + data agent,decentralized GPU cloud for AI/ML workloads,1,2
+ai_component,E,0.939394,"positioning only (""AI"" analytics)",positioning only (AI tools/community),1,1
+ai_component,E,0.939371,AI assistant/agents for DeFi operations,NL assistant/agents for DeFi operations,1,1
+ai_component,E,0.939186,positioning only (AI apps infrastructure),positioning only (AI tools/community),1,1
+ai_component,E,0.938964,AI agents for on-chain DeFi,AI-assisted DeFi strategies/agents,1,1
+ai_component,E,0.938940,LLM agent + tool calling,LLM agents + tool-based actions,1,1
+ai_component,E,0.938905,AI agents marketplace,no-code AI agent marketplace,1,1
+ai_component,E,0.938477,AI agent + model marketplace,compute marketplace + AI agents + AI marketplace,1,1
+ai_component,E,0.938365,AI agent for token/wallet analysis,AI agents for crypto/finance,1,1
+ai_component,E,0.938201,infrastructure for running autonomous AI agents,platform for autonomous AI agents,1,2
+ai_component,E,0.938181,AI agent,autonomous AI agent,1,1
+ai_component,E,0.937836,AI agents for on-chain DeFi,AI co-pilot for DeFi + on-chain actions,1,1
+ai_component,E,0.937453,AI agent + model marketplace,decentralized AI agents marketplace,1,1
+ai_component,E,0.937326,AI agents for analysis/automation,AI workflow agents for automation,1,2
+ai_component,E,0.937120,dataset collection + improvement for AI training,dataset collection + labeling for AI,1,1
+ai_component,E,0.937064,AI agents for Web3,AI agents for crypto/finance,2,1
+ai_component,E,0.937056,"positioning only (""AI agents"")",positioning only (AI toolkit),1,1
+ai_component,E,0.936938,AI agents for Web3,AI agents for on-chain DeFi,2,1
+ai_component,E,0.936859,"positioning only (""AI agents"")",positioning only (AI tools/community),1,1
+ai_component,E,0.936638,GPU marketplace for AI/ML workloads,GPU/compute for AI/ML workloads,1,3
+ai_component,E,0.936487,AI agent platform (workflows/tools/KB),AI platform/tools,4,1
+ai_component,E,0.936473,AI L2 for AI dApps,L2 for AI dApps (Parallel EVM + GPU network),1,1
+ai_component,E,0.936341,AI agent creation + training (content/posting),AI agent creation/training/deployment platform,1,1
+ai_component,E,0.936241,AI agent for Web3 questions + actions,AI agents for Web3 workflows (agentic wallet),1,1
+ai_component,E,0.936192,AI direction in ecosystem,AI ecosystem,1,1
+ai_component,E,0.936101,AI bots/tools,AI platform/tools,1,1
+ai_component,E,0.935885,decentralized AI compute + marketplace,decentralized AI compute network,1,1
+ai_component,E,0.935759,AI search + AI analytic summaries,AI search/analytics,1,1
+ai_component,E,0.935740,AI agent marketplace + AI services,decentralized AI agents marketplace,1,1

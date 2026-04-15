@@ -1,0 +1,101 @@
+field,op,similarity,label_a,label_b
+use_case,D,0.9413025379180908,decentralized AI inference,decentralized AI inference/agents
+use_case,D,0.9320454597473145,trading automation,trading operations automation
+use_case,D,0.9263303875923157,build/share/monetize AI agents,create + monetize AI agents
+use_case,D,0.9118252396583557,AI assistant for crypto trading,AI assistant for crypto trading + portfolios
+use_case,D,0.9081360101699829,L1 for dApps (including AI apps),L1 for dApps + AI agents/AI apps
+use_case,D,0.8980965614318848,blockchain data indexing + queries,blockchain indexing + query answering
+use_case,D,0.8974198698997498,AI agent creation + deployment,build + deploy AI agents
+use_case,D,0.8952491879463196,build + deploy AI agents,deploy + run AI agents
+use_case,D,0.8905586004257202,trading algorithm automation,trading automation
+use_case,D,0.8896784782409668,memecoin / community token,memecoin / token
+use_case,D,0.8875006437301636,AI bot/tools for communities,bots/tools for communities
+use_case,D,0.8831409215927124,"chat, agents, API, launching AI solutions",create/launch AI agents + chats
+use_case,D,0.8807363510131836,AI agent creation + launch,no-code AI agent creation + launch
+use_case,D,0.8805970549583435,build + deploy AI agents,build + run autonomous AI agents
+use_case,D,0.8772749900817871,trading algorithm automation,trading operations automation
+use_case,D,0.8769696354866028,AI agent creation + deployment,deploy + run AI agents
+use_case,D,0.8741025328636169,build + deploy + monitor AI agents,build + deploy AI agents
+use_case,D,0.8734705448150635,meme community token,meme token
+use_case,D,0.8650424480438232,create + monetize AI agents,create/train/monetize AI agents + iNFTs
+use_case,D,0.8632879257202148,AI agents for Web3 interactions,Web3 task automation via AI agents
+use_case,D,0.8622320294380188,build + deploy AI agents,build + orchestrate AI agents
+use_case,D,0.8614310622215271,AI content creation,AI persona/content creation
+use_case,D,0.8609345555305481,"create, launch + interact with AI agents",create/launch AI agents + chats
+use_case,D,0.858600914478302,AI community meme token,meme community token
+use_case,D,0.8584209680557251,build + orchestrate AI agents,build + run autonomous AI agents
+use_case,D,0.8578742742538452,AI agent token,token + AI tools
+use_case,D,0.8546862006187439,create/deploy tokenized AI agents,token generation + deployment via AI
+use_case,D,0.8541234731674194,AI agent creation + launch,"create, launch + interact with AI agents"
+use_case,D,0.8533909320831299,market analysis + trading automation,market analytics + automation
+use_case,D,0.8496533632278442,AI game + tokenized economy,tokenized game economy
+use_case,D,0.8466184139251709,DeFi automation + agents,"DeFi operations via ""agents"""
+use_case,D,0.845770537853241,build + run autonomous AI agents,develop + launch autonomous agents
+use_case,D,0.844581127166748,AI assistant for token community,token + AI tools
+use_case,D,0.8443729877471924,build/share/monetize AI agents,create/train/monetize AI agents + iNFTs
+use_case,D,0.8402822017669678,"create, launch + interact with AI agents",launch + manage AI agents
+use_case,D,0.8371551036834717,build + deploy + monitor AI agents,deploy + run AI agents
+use_case,D,0.8354771137237549,AI content creation,AI content creation (mobile app)
+use_case,D,0.835099458694458,AI agent creation + launch,AI agent creation + use
+use_case,D,0.8330467343330383,AI agent creation + use,AI agent/bot creation + management
+use_case,D,0.8320931196212769,create/deploy tokenized AI agents,deploy + trade tokenized AI agents
+use_case,D,0.8318505883216858,meme community token,memecoin / community token
+use_case,D,0.8308600783348083,AI agent creation + launch,launch + manage AI agents
+use_case,D,0.8291678428649902,AI agent token,create/deploy tokenized AI agents
+use_case,D,0.8291137218475342,create/deploy/orchestrate on-chain agents,deployment + orchestration of agent workflows
+use_case,D,0.8270916938781738,DeFi automation + agents,autonomous agents for DeFi
+use_case,D,0.8270182609558105,GPU rental for AI/ML,GPU rental for model training/inference
+use_case,D,0.8265419602394104,AI agent creation + deployment,AI agent creation + use
+use_case,D,0.8257349729537964,GPU compute marketplace (training/inference),"compute for AI, GPU marketplace"
+use_case,D,0.8251921534538269,AI community meme token,community token about AI
+use_case,D,0.8250976800918579,"DeFi operations via ""agents""",autonomous agents for DeFi
+use_case,D,0.8225958347320557,create/deploy tokenized AI agents,token + AI tools
+use_case,D,0.822475016117096,AI bot/tools for communities,AI bots/agents for crypto + communities
+use_case,D,0.8224747180938721,launch + tokenize AI agents,launch AI personas + agent tokens
+use_case,D,0.8207124471664429,launch + tokenize AI agents,tokenization + launching AI apps
+use_case,D,0.8201890587806702,memecoin,memecoin / token
+use_case,D,0.8174084424972534,chatbots + content generation,content generation via bot/interface
+use_case,D,0.8173245191574097,create/deploy tokenized AI agents,launch + tokenize AI agents
+use_case,D,0.816901683807373,token on Solana,trading/holding a token on Solana
+use_case,D,0.8162168264389038,decentralized data storage,decentralized storage + delivery of data/content
+use_case,D,0.8142895698547363,decentralized GPU marketplace (inference),decentralized cloud + GPU marketplace
+use_case,D,0.8131338953971863,meme community token,meme community token (Solana)
+use_case,D,0.8130374550819397,"create, launch + interact with AI agents",develop + launch autonomous agents
+use_case,D,0.8129156827926636,SPL token on Solana,token on Solana
+use_case,D,0.8127959966659546,build + deploy AI agents,develop + launch autonomous agents
+use_case,D,0.8123548030853271,GPU compute rental/sales,GPU rental + running nodes/devices
+use_case,D,0.8113060593605042,decentralized GPU compute,decentralized cloud + GPU marketplace
+use_case,D,0.8111849427223206,GPU rental marketplace (Docker workloads),compute/GPU rental for containers
+use_case,D,0.8082631826400757,access to AI modules + compute,access to compute + AI tools
+use_case,D,0.806588351726532,AI agent creation + launch,develop + launch autonomous agents
+use_case,D,0.80620276927948,AI services for Web3 users,AI services/APIs
+use_case,D,0.8051403760910034,AI avatars + virtual assistant,personal AI avatars + interactions
+use_case,D,0.8041276335716248,market analysis + trading automation,trading automation
+use_case,D,0.8028832674026489,memecoin + community products,memecoin / community token
+use_case,D,0.8024392127990723,trading automation,trading terminal + bots/automation
+use_case,D,0.8022545576095581,meme community token,meme/social token
+use_case,D,0.8019179701805115,AI community meme token,meme token
+use_case,D,0.80113285779953,GPU compute + AI tools,"compute for AI, GPU marketplace"
+use_case,D,0.8007779717445374,AI agent token,AI assistant for token community
+use_case,D,0.8003333806991577,AI services/APIs,access to AI services + integrations
+use_case,D,0.8000985383987427,decentralized GPU compute,decentralized GPU marketplace (inference)
+use_case,D,0.7990127801895142,decentralized cloud + GPU marketplace,decentralized compute marketplace
+use_case,D,0.7960814833641052,AI agent creation + deployment,AI agent creation + launch
+use_case,D,0.7947678565979004,create/launch AI agents + chats,development/testing of AI agents + demo chat
+use_case,D,0.7935562133789062,AI agent creation + launch,private AI agent launch
+use_case,D,0.7934331893920898,"create, launch + interact with AI agents",no-code AI agent creation + launch
+use_case,D,0.7932650446891785,game with on-chain NFTs + token economy,game-based learning + NFT/token economy
+use_case,D,0.7927780151367188,AI services for Web3 users,assistants for Web3
+use_case,D,0.7901483774185181,build + orchestrate AI agents,develop + launch autonomous agents
+use_case,D,0.7900339365005493,Telegram trading + alerts + monitoring,signal analytics + Telegram trading
+use_case,D,0.7900106310844421,trading + DeFi automation,trading automation
+use_case,D,0.7882527112960815,trustless audit layer for AI agents,trustless verification of AI outputs/actions
+use_case,D,0.7878174781799316,smart contracts with verifiable AI inference,trustless AI-API results for smart contracts
+use_case,D,0.7870219349861145,AI agent creation + deployment,build + deploy + monitor AI agents
+use_case,D,0.7868815660476685,AI bots + agent economy,create + monetize AI agents
+use_case,D,0.7866330146789551,build + run autonomous AI agents,"create, launch + interact with AI agents"
+use_case,D,0.7865421772003174,AI agents marketplace,build/share/monetize AI agents
+use_case,D,0.7862444519996643,AI services/APIs,AI tools as a service
+use_case,D,0.785812497138977,content generation from prompts,text/content generation
+use_case,D,0.7856942415237427,develop + launch autonomous agents,launch + manage AI agents
+use_case,D,0.7854872941970825,AI agent creation + use,"create, launch + interact with AI agents"

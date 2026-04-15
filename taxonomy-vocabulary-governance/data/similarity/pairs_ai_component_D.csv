@@ -1,0 +1,101 @@
+field,op,similarity,label_a,label_b
+ai_component,D,0.9519911408424377,AI agent creation + deployment platform,AI agent creation/training/deployment platform
+ai_component,D,0.9360262155532837,AI agent creation + launch platform,AI agent launch platform
+ai_component,D,0.9255887866020203,GPU rentals for AI workloads,GPU rentals for AI workloads; AI API endpoints
+ai_component,D,0.909422755241394,cloud infrastructure for AI workloads,compute infrastructure for AI workloads
+ai_component,D,0.9069664478302002,AI agents/bots for trading,AI assistant/bot for trading
+ai_component,D,0.9063433408737183,AI agent + model marketplace,AI agents marketplace
+ai_component,D,0.9016289114952087,AI agent marketplace + AI services,AI agents marketplace
+ai_component,D,0.9008238315582275,AI agent creation + launch platform,AI agent generation + launch
+ai_component,D,0.8918855786323547,AI agents/assistants in-app,AI assistants + AI tools in-app
+ai_component,D,0.8906360268592834,"AI ""intelligence layer"" for DeFi strategies",AI-assisted DeFi strategies/agents
+ai_component,D,0.8886297345161438,AI agent creation + management platform,AI agent creation/training/deployment platform
+ai_component,D,0.8830979466438293,AI agents for Web3 workflows,AI agents for Web3 workflows (agentic wallet)
+ai_component,D,0.8777830600738525,AI agent creation + deployment platform,AI agent creation + management platform
+ai_component,D,0.8769840598106384,voice-enabled AI agents,voice-enabled AI agents + voice models
+ai_component,D,0.8759049773216248,AI agent,autonomous AI agent
+ai_component,D,0.8739478588104248,AI service/tools,AI services
+ai_component,D,0.8722912669181824,AI agent + model marketplace,AI agent marketplace + AI services
+ai_component,D,0.8665242195129395,AI agent for token/security analysis,AI agent for token/wallet analysis
+ai_component,D,0.8604620695114136,GPU rentals + AI/ML tools,GPU rentals for AI workloads
+ai_component,D,0.8603399991989136,AI meme generation (forge),AI meme generation + AI tools
+ai_component,D,0.859083890914917,AI agents for Web3,AI agents for Web3 workflows
+ai_component,D,0.8583964109420776,AI agent marketplace + AI services,compute marketplace + AI agents + AI marketplace
+ai_component,D,0.8581587672233582,decentralized AI agents marketplace,decentralized AI compute + marketplace
+ai_component,D,0.8572137951850891,AI direction in ecosystem,AI initiatives/agents in ecosystem
+ai_component,D,0.8564708828926086,AI agents for on-chain DeFi,AI-assisted DeFi strategies/agents
+ai_component,D,0.8540599346160889,AI agents applicability,AI applicability for AI agents/dApps
+ai_component,D,0.8537556529045105,AI integration platform,AI platform/tools
+ai_component,D,0.8537552952766418,GPU rental/lending + AI endpoints + AI nodes,GPU rentals for AI workloads; AI API endpoints
+ai_component,D,0.8528662323951721,AI analytics + automated trade execution,AI bots + trading analytics
+ai_component,D,0.8522725701332092,AI assistant/agents for DeFi operations,AI-assisted DeFi strategies/agents
+ai_component,D,0.8512923717498779,AI assistant for communities,AI assistant for communities (NLP/knowledge graph)
+ai_component,D,0.8511427640914917,AI platform/tools,AI service/tools
+ai_component,D,0.8480820655822754,AI agent launch platform,launchpad for AI agents
+ai_component,D,0.8480817675590515,EdgeCloud/edge compute for AI workloads,GPU/edge infrastructure for AI workloads
+ai_component,D,0.847998857498169,AI agents marketplace,decentralized AI agents marketplace
+ai_component,D,0.8478491306304932,AI-focused compute infrastructure,compute infrastructure for AI workloads
+ai_component,D,0.8472737669944763,AI meme generation + AI tools,AI meme/image generation
+ai_component,D,0.8471278548240662,data collection/labeling/preprocessing for AI,dataset collection + labeling for AI
+ai_component,D,0.8454974293708801,LLM nodes + inference,LLM/agents + inference nodes
+ai_component,D,0.8440598845481873,AI agents for Web3 workflows,AI workflow agents for automation
+ai_component,D,0.843030571937561,AI assistants in ecosystem,AI initiatives/agents in ecosystem
+ai_component,D,0.8382624387741089,AI assistant/agents for DeFi operations,NL assistant/agents for DeFi operations
+ai_component,D,0.8367745876312256,AI meme generation (forge),AI meme/image generation
+ai_component,D,0.834623396396637,positioning only (AI toolkit),positioning only (AI tools/community)
+ai_component,D,0.8343654870986938,AI agent generation + launch,AI agent launch platform
+ai_component,D,0.8342006206512451,AI agents marketplace,no-code AI agent marketplace
+ai_component,D,0.8330233097076416,AI agent for Web3 questions + actions,AI agents for Web3
+ai_component,D,0.8326278924942017,AI agent + model marketplace,compute marketplace + AI agents + AI marketplace
+ai_component,D,0.8324145078659058,GPU/edge infrastructure for AI workloads,compute infrastructure for AI workloads
+ai_component,D,0.8322061896324158,AI agents for on-chain DeFi,AI assistant/agents for DeFi operations
+ai_component,D,0.830862283706665,AI service catalog/platform,AI services
+ai_component,D,0.8298198580741882,ML models for market analysis,predictive ML models for market analytics
+ai_component,D,0.8297463655471802,EdgeCloud/edge compute for AI workloads,cloud infrastructure for AI workloads
+ai_component,D,0.8289930820465088,AI agent creation + tokenization,tokenized AI agents + ADK agent framework
+ai_component,D,0.8289425373077393,"positioning only (""AI agents"")",positioning only (AI toolkit)
+ai_component,D,0.8281408548355103,AI agent Traicy for ESG + trading,AI agents/bots for trading
+ai_component,D,0.8273354768753052,AI agents marketplace,compute marketplace + AI agents + AI marketplace
+ai_component,D,0.8270231485366821,"positioning only (""AI agents"")",positioning only (AI tools/community)
+ai_component,D,0.8261741399765015,compute marketplace + AI agents + AI marketplace,compute marketplace + AI model hub
+ai_component,D,0.825934112071991,infrastructure for running autonomous AI agents,platform for autonomous AI agents
+ai_component,D,0.8251623511314392,AI assistants in ecosystem,AI direction in ecosystem
+ai_component,D,0.8240077495574951,GPU/compute for AI/ML workloads,running AI inference workloads on GPU
+ai_component,D,0.8237194418907166,AI agents for Web3,AI co-pilot for Web3 tasks
+ai_component,D,0.8235791921615601,AI direction in ecosystem,AI ecosystem
+ai_component,D,0.8235665559768677,AI agent for trading actions,AI agents/bots for trading
+ai_component,D,0.8228300213813782,GPU compute for rendering + AI tasks,GPU/compute for AI/ML workloads
+ai_component,D,0.8228188157081604,AI agent creation + launch platform,launchpad for AI agents
+ai_component,D,0.8226763606071472,decentralized AI inference + training (compute),decentralized inference layer + private AI tools
+ai_component,D,0.8203999996185303,autonomous AI agent,autonomous AI agent framework
+ai_component,D,0.8200443983078003,GPU compute + AI agents / inference,GPU compute for rendering + AI tasks
+ai_component,D,0.8197746276855469,decentralized GPU cloud + data agent,decentralized GPU cloud for AI/ML workloads
+ai_component,D,0.8194003701210022,AI ecosystem,AI initiatives/agents in ecosystem
+ai_component,D,0.8176287412643433,AI agent marketplace + AI services,autonomous AI agents + agent services
+ai_component,D,0.8175041079521179,LLM agent + tool calling,LLM agents + tool-based actions
+ai_component,D,0.8173706531524658,AI analysis + trading agent orchestration,AI analytics + automated trade execution
+ai_component,D,0.8168997764587402,positioning only (AI apps infrastructure),positioning only (AI tools/community)
+ai_component,D,0.815765917301178,AI agent Traicy for ESG + trading,AI agent for trading actions
+ai_component,D,0.8154595494270325,AgentData (real-time data streams for AI agents),real-time data for AI agents
+ai_component,D,0.8149937391281128,AI assistants in ecosystem,AI ecosystem
+ai_component,D,0.8144289255142212,AI assistant/agents for DeFi operations,personal AI agents for DeFi (DISE LLM)
+ai_component,D,0.8140168786048889,AI service catalog/platform,AI/MLOps services + platform
+ai_component,D,0.8124200701713562,GPU compute + AI agents / inference,running AI inference workloads on GPU
+ai_component,D,0.812355101108551,AI agent creation + deployment platform,AI agent platform (workflows/tools/KB)
+ai_component,D,0.809289813041687,AI assistant for communities,AI chat assistant for communities
+ai_component,D,0.808391273021698,EdgeCloud/edge compute for AI workloads,compute infrastructure for AI workloads
+ai_component,D,0.8083385229110718,GPU rentals + AI/ML tools,GPU rentals for AI workloads; AI API endpoints
+ai_component,D,0.8076339960098267,AI agent creation + deployment platform,AI agent creation + launch platform
+ai_component,D,0.8065754771232605,GPU/edge infrastructure for AI workloads,"edge AI compute (GPU orchestration, unified API)"
+ai_component,D,0.8065036535263062,GPU marketplace for AI/ML workloads,GPU/compute for AI/ML workloads
+ai_component,D,0.8057577610015869,AI agent + model marketplace,AI model/assistant marketplace/platform
+ai_component,D,0.8043412566184998,AI bots/tools,AI service/tools
+ai_component,D,0.8035770058631897,GPU rental/lending + AI endpoints + AI nodes,GPU rentals for AI workloads
+ai_component,D,0.803062915802002,AI agent creation/training/deployment platform,AI agent platform (workflows/tools/KB)
+ai_component,D,0.8030031323432922,GPU marketplace for AI/ML workloads,GPU rentals for AI workloads
+ai_component,D,0.8029681444168091,data for AI + agents,real-time data for AI agents
+ai_component,D,0.8029146194458008,AI assistant/bot for trading,AI bots + trading analytics
+ai_component,D,0.8013601899147034,AI data platform / AI agents,platform for autonomous AI agents
+ai_component,D,0.8005729913711548,"AI agents (""AI Epals"")",EVA / AI agents
+ai_component,D,0.8000495433807373,AI service catalog/platform,AI service/tools
+ai_component,D,0.7995823621749878,EdgeCloud/edge compute for AI workloads,"edge AI compute (GPU orchestration, unified API)"

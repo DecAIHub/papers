@@ -1,0 +1,429 @@
+{
+  "n_projects": 845,
+  "fields": {
+    "ai_component": {
+      "missing": {
+        "count": 189,
+        "share": 0.223669
+      },
+      "non_missing": 656,
+      "n_unique": 605,
+      "freq_class_shares": {
+        "head": 0.028963,
+        "mid": 0.044207,
+        "tail": 0.926829
+      },
+      "robustness": [
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 5,
+          "overlap": 0.4,
+          "jaccard": 0.25,
+          "intersection": 2
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 10,
+          "overlap": 0.5,
+          "jaccard": 0.333333,
+          "intersection": 5
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 15,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 9
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 25,
+          "overlap": 0.68,
+          "jaccard": 0.515152,
+          "intersection": 17
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 35,
+          "overlap": 0.628571,
+          "jaccard": 0.458333,
+          "intersection": 22
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 50,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 30
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 75,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 30
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_B",
+          "k": 100,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 30
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 5,
+          "overlap": 0.2,
+          "jaccard": 0.111111,
+          "intersection": 1
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 10,
+          "overlap": 0.1,
+          "jaccard": 0.052632,
+          "intersection": 1
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 15,
+          "overlap": 0.266667,
+          "jaccard": 0.153846,
+          "intersection": 4
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 25,
+          "overlap": 0.36,
+          "jaccard": 0.219512,
+          "intersection": 9
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 35,
+          "overlap": 0.428571,
+          "jaccard": 0.272727,
+          "intersection": 15
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 50,
+          "overlap": 0.44,
+          "jaccard": 0.282051,
+          "intersection": 22
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 75,
+          "overlap": 0.44,
+          "jaccard": 0.282051,
+          "intersection": 22
+        },
+        {
+          "field": "ai_component",
+          "pair": "A_vs_C",
+          "k": 100,
+          "overlap": 0.44,
+          "jaccard": 0.282051,
+          "intersection": 22
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 5,
+          "overlap": 0.2,
+          "jaccard": 0.111111,
+          "intersection": 1
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 10,
+          "overlap": 0.2,
+          "jaccard": 0.111111,
+          "intersection": 2
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 15,
+          "overlap": 0.333333,
+          "jaccard": 0.2,
+          "intersection": 5
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 25,
+          "overlap": 0.4,
+          "jaccard": 0.25,
+          "intersection": 10
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 35,
+          "overlap": 0.4,
+          "jaccard": 0.25,
+          "intersection": 14
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 50,
+          "overlap": 0.34,
+          "jaccard": 0.204819,
+          "intersection": 17
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 75,
+          "overlap": 0.34,
+          "jaccard": 0.204819,
+          "intersection": 17
+        },
+        {
+          "field": "ai_component",
+          "pair": "B_vs_C",
+          "k": 100,
+          "overlap": 0.34,
+          "jaccard": 0.204819,
+          "intersection": 17
+        }
+      ],
+      "hdbscan": {
+        "n_clusters": 4,
+        "noise_share": 0.395,
+        "silhouette": 0.2091
+      }
+    },
+    "use_case": {
+      "missing": {
+        "count": 76,
+        "share": 0.089941
+      },
+      "non_missing": 769,
+      "n_unique": 706,
+      "freq_class_shares": {
+        "head": 0.037711,
+        "mid": 0.035111,
+        "tail": 0.927178
+      },
+      "robustness": [
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 5,
+          "overlap": 0.4,
+          "jaccard": 0.25,
+          "intersection": 2
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 10,
+          "overlap": 0.7,
+          "jaccard": 0.538462,
+          "intersection": 7
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 15,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 9
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 25,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 15
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 35,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 21
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 50,
+          "overlap": 0.56,
+          "jaccard": 0.388889,
+          "intersection": 28
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 75,
+          "overlap": 0.56,
+          "jaccard": 0.388889,
+          "intersection": 28
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_B",
+          "k": 100,
+          "overlap": 0.56,
+          "jaccard": 0.388889,
+          "intersection": 28
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 5,
+          "overlap": 0.6,
+          "jaccard": 0.428571,
+          "intersection": 3
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 10,
+          "overlap": 0.3,
+          "jaccard": 0.176471,
+          "intersection": 3
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 15,
+          "overlap": 0.266667,
+          "jaccard": 0.153846,
+          "intersection": 4
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 25,
+          "overlap": 0.2,
+          "jaccard": 0.111111,
+          "intersection": 5
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 35,
+          "overlap": 0.257143,
+          "jaccard": 0.147541,
+          "intersection": 9
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 50,
+          "overlap": 0.28,
+          "jaccard": 0.162791,
+          "intersection": 14
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 75,
+          "overlap": 0.28,
+          "jaccard": 0.162791,
+          "intersection": 14
+        },
+        {
+          "field": "use_case",
+          "pair": "A_vs_C",
+          "k": 100,
+          "overlap": 0.28,
+          "jaccard": 0.162791,
+          "intersection": 14
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 5,
+          "overlap": 0.4,
+          "jaccard": 0.25,
+          "intersection": 2
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 10,
+          "overlap": 0.3,
+          "jaccard": 0.176471,
+          "intersection": 3
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 15,
+          "overlap": 0.266667,
+          "jaccard": 0.153846,
+          "intersection": 4
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 25,
+          "overlap": 0.2,
+          "jaccard": 0.111111,
+          "intersection": 5
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 35,
+          "overlap": 0.228571,
+          "jaccard": 0.129032,
+          "intersection": 8
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 50,
+          "overlap": 0.22,
+          "jaccard": 0.123596,
+          "intersection": 11
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 75,
+          "overlap": 0.22,
+          "jaccard": 0.123596,
+          "intersection": 11
+        },
+        {
+          "field": "use_case",
+          "pair": "B_vs_C",
+          "k": 100,
+          "overlap": 0.22,
+          "jaccard": 0.123596,
+          "intersection": 11
+        }
+      ],
+      "hdbscan": {
+        "n_clusters": 5,
+        "noise_share": 0.8229,
+        "silhouette": 0.4124
+      }
+    }
+  }
+}

@@ -1,0 +1,606 @@
+label,cluster,freq_class
+unknown,2,head
+positioning only,3,mid
+none,2,mid
+AI agent platform (workflows/tools/KB),-1,mid
+GPU/compute for AI/ML workloads,-1,mid
+positioning only (plans/roadmap),3,mid
+AI data labeling + model evaluation (human experts),2,mid
+AI services,-1,mid
+AI service/tools,-1,mid
+platform for autonomous AI agents,-1,tail
+distributed computing for AI/ML,-1,tail
+AI workflow agents for automation,-1,tail
+launchpad for AI agents,2,tail
+compute marketplace for AI/ML workloads,-1,tail
+semantic LLM + analytics for crypto intelligence,-1,tail
+decentralized GPU cloud for AI/ML workloads,-1,tail
+AI-driven health monitoring,2,tail
+confidential computing for AI (TEE),-1,tail
+AI agents for Web3,-1,tail
+no-code tools for AI agents,-1,tail
+AI elements,2,tail
+trusted on-chain agents (identity/continuity/consensus),2,tail
+agent swarm + NL prompt-to-DeFi,2,tail
+context/reputation for AI agents (no proven ML core),2,tail
+sovereign agent + digital twins + TEE,2,tail
+GPU/edge infrastructure for AI workloads,-1,tail
+decentralized inference + forecast-based synthesis,-1,tail
+compute marketplace + AI agents + AI marketplace,-1,tail
+AI agents + threshold AI oracles,2,tail
+AI agents for image generation/evolution,2,tail
+AI/ML signals + models for trading,-1,tail
+autonomous AI agents + agent services,-1,tail
+"API for LLMs, embeddings, image generation",2,tail
+conversational AI for DeFi tasks + research,2,tail
+AI interpretations/patterns for crypto markets,2,tail
+marketplace + agentic framework (LLM widgets),-1,tail
+LLM news analysis + summaries,2,tail
+"AI/ML ""liquidity shield""",2,tail
+autonomous AI artist / chat agent,1,tail
+ML performance optimization for DePIN assets (PinAI),2,tail
+AI scam check / AI-driven threat tools,2,tail
+AI agents for Web3 workflows (agentic wallet),-1,tail
+multi-agent orchestration (LLM + tools),-1,tail
+AIGC content generation + prompt reuse,2,tail
+LLM on-chain activity analysis → recommendations,-1,tail
+AI interpretation of clusters/cases (summaries),2,tail
+agent-based code generation/verification,2,tail
+autonomous AI agent,-1,tail
+ML anomaly analysis in detection bots,2,tail
+running AI inference workloads on GPU,-1,tail
+data collection/labeling/preprocessing for AI,2,tail
+on-device ML for ad selection,2,tail
+AI agents applicability,0,tail
+EVA / AI agents,2,tail
+3D mesh generation from text/images,2,tail
+positioning only (AI-enhanced education),3,tail
+CV detection + AI anonymization on edge,2,tail
+multi-agent LLM (game generation + testing),2,tail
+AgentData (real-time data streams for AI agents),2,tail
+swarm/federated-style model training across hospitals,2,tail
+AI optimization of coin selection/mining settings,2,tail
+autonomous AI agents + agent VM + skills/knowledge,-1,tail
+Measurable AI (analytics/insights on anonymized data),2,tail
+LLM+RL NPC Engine (RAG + vector DB),2,tail
+AI + knowledge graphs for Sybil score/PoH,2,tail
+ML smart contract vulnerability analysis,-1,tail
+AI oracle requests (test cases + providers),2,tail
+AI data (lineage + metering + royalties),2,tail
+DeFi agents + analysis/risk,2,tail
+data labeling + dataset market,-1,tail
+knowledge graph + embeddings profiling,2,tail
+none (narrative only),2,tail
+"AI agents (""AI Epals"")",2,tail
+AI services as a revenue source,2,tail
+GPU marketplace for AI/ML workloads,-1,tail
+AI agents as future loop participants,2,tail
+GPU rentals for AI workloads; AI API endpoints,-1,tail
+AI view scoring + anti-fraud detection (PoV/VeraViews),2,tail
+DKG + dRAG for verifiable AI,-1,tail
+AI summary in ZkSearch; Zebra AI API,2,tail
+voice-enabled AI agents,2,tail
+training RL agents in gaming context,2,tail
+on-chain AI agent (Grug Bay / Proof-of-Soul),2,tail
+none (AI automation infrastructure/SDK),-1,tail
+auto-labelling + RLHF/HITL + data sampling,2,tail
+ML sentiment/TA/on-chain data analysis,-1,tail
+provenance rail for AI agents/licensing (not an AI model),2,tail
+"AI as an ""asset class"" (GPU/robots), not AI models",2,tail
+AI agent creation + training (content/posting),-1,tail
+agentic payments + identity/guardrails,2,tail
+edge AI (sensor data summarization/insights),2,tail
+cross-platform AI assistants/bots,-1,tail
+none (data streaming infrastructure),2,tail
+multi-agent collectives + quality evaluation,-1,tail
+"positioning only (""AI dog/companion"")",3,tail
+AI agents/bots for trading,-1,tail
+none (Grok meme reference),2,tail
+AI model/assistant marketplace/platform,-1,tail
+AI contract audit / AI tools,-1,tail
+ML/AI analytics for agriculture,2,tail
+AI co-pilot for DeFi + on-chain actions,-1,tail
+AI assistants + AI tools in-app,-1,tail
+LLM/agents + inference nodes,-1,tail
+AI tool marketplace / model access,-1,tail
+image/video generation + compute network,-1,tail
+AI agents for crypto/finance,2,tail
+AI component not detected,2,tail
+video transcoding + Livepeer AI pipelines,2,tail
+AI-narratives/AI-entertainment,2,tail
+HITL data quality layer (not an AI model),2,tail
+model inference + validation marketplace,-1,tail
+Neurobots (AI features in client),2,tail
+multi-agent LLM security analyzer,-1,tail
+generative art engine + DAO feedback,2,tail
+AI coach / workout personalization (feature),2,tail
+"VoltiEco (""AI-powered"" airdrop automation)",2,tail
+AI-powered aggregator/launcher,2,tail
+agents engine for market/security insights,-1,tail
+distributed training + inference platform,-1,tail
+AI legal assistant / contract drafting + analysis,-1,tail
+GPU compute for AI training,-1,tail
+"""AI agent in TEE""",2,tail
+crypto AI manager / AI agents (trading/portfolio/signals),2,tail
+"AI/ML for NFT forensics (wash trade, forgery, valuation)",2,tail
+LLM/AI agents for crypto research,-1,tail
+"LoRA meme generator + LLM ""tentacles"" (off-chain)",2,tail
+none (NFT/gaming L1),2,tail
+CV/ML road event detection from video,2,tail
+AI assistant for graph building (OpenAI-based),2,tail
+deterministic on-chain ML inference (Synapse/CVM),2,tail
+"""AI data era"" / edge clusters / AI agents",2,tail
+"meta-agentic orchestration, demos",-1,tail
+crypto-aware AI agents + knowledge engine (Fractal) + API,2,tail
+AI agent (content + analytics) + meme maker + chatbot,2,tail
+AI-powered experiences,2,tail
+private uncensored inference API (text/image/code),2,tail
+institutional-grade crypto analytics,2,tail
+"AI content hub, chatbots, copyright tools",2,tail
+personal AI personas,-1,tail
+voice + ambient audio datasets for AI,2,tail
+real-time data for AI agents,-1,tail
+"voice-to-action, AI vision, AI programming assistant",2,tail
+"AI-powered security scanning, AI dev sandbox",2,tail
+FHE-EVM for private AI computation,2,tail
+AI interviewer + knowledge Q&A replicas,2,tail
+data/compute for AI/ML models,-1,tail
+AI tagging + whale/signal analytics,2,tail
+GPU compute + AI agents / inference,-1,tail
+spatial AI (HD maps + 3D/4D datasets),2,tail
+"AI layers/products for ""invisible assets""",2,tail
+autonomous game-streaming AI Agent,1,tail
+no-code DeFi AI agents (builder/playground),2,tail
+LLM agents for scientific paper review,2,tail
+serverless runtime for AI agents,2,tail
+modular AI agents + multi-agent architecture,2,tail
+LLM copilot for on-chain agent code,2,tail
+"""AI powered"" SaaS products (marketing/content/research)",-1,tail
+AI-driven strategies + risk engine,-1,tail
+PreGPT / AI search results,2,tail
+AI-driven data incentive layer,2,tail
+AI tools/AutoML on top of L1 network,2,tail
+AI agents for people-data analysis,2,tail
+"voice cloning, gen media, enterprise APIs",2,tail
+"GPU rentals, decentralized AI infrastructure",-1,tail
+decentralized AI compute + marketplace,-1,tail
+"FHE inference, confidential computing",-1,tail
+"AI influencer agents, Proof-of-Utility",2,tail
+"trading signals, DRL risk management",2,tail
+"natural language interface, agent workflows",2,tail
+"robotics foundation models, data foundry",2,tail
+"CV parsing, ML matching, recommendations",2,tail
+"AI-driven DeFi, AiFi tokenisation",2,tail
+"prompt/agent audit, security browser",2,tail
+AI agents for on-chain DeFi,-1,tail
+music generation (AI engine),2,tail
+AI-powered game engine (fine-tuned models),-1,tail
+AI-driven traffic routing + load balancing,2,tail
+imgnAI protocol,-1,tail
+voice NLP assistant + DtecGPT,2,tail
+AI analytics + investor assistant,2,tail
+Proof-of-Compute network for AI agents,-1,tail
+offline on-device LLM chat,2,tail
+multi-agent security intelligence,-1,tail
+AI-focused compute infrastructure,-1,tail
+AI NFT creator (image generation),2,tail
+positioning only (AI tools/community),-1,tail
+"""agentic"" product",2,tail
+crypto MCP server + 200+ tools,2,tail
+AI agents + fine-tuning,2,tail
+Matrix (privacy-first AI) + Reactor assistant,2,tail
+Web3-oriented LLM APIs,2,tail
+Telegram bot S.A.R.A.H.,2,tail
+Explore search on OpenAI CLIP,2,tail
+edge-native AI companion + plugins,2,tail
+confidential compute for verifiable AI (infra),-1,tail
+AI Studio / GPU Console (compute),2,tail
+HOME Scout AI (real estate search),2,tail
+AI agents/NPC + emotional engine,2,tail
+multimodal generative AI assistant,-1,tail
+dataset collection + labeling for AI,-1,tail
+"""AI-launchpad""",2,tail
+AI matching + real-time translation (app),-1,tail
+AI assistant for cross-chain intents,-1,tail
+on-chain AI oracle + fraud-proof verification,-1,tail
+positioning only (meme/narrative),3,tail
+decentralized GPU cloud + data agent,-1,tail
+agent-based order matching + AI-driven trading,-1,tail
+NLP command interpretation → DeFi actions,2,tail
+каталог и создание “AI agents”,2,tail
+AI training tasks (mentioned; no details),2,tail
+decentralized AI data routing / AI marketplace (positioning only),-1,tail
+RLHF training for LLMs + on-chain AI apps,2,tail
+AI Engine (text-to-game + visual no-code),2,tail
+AI agent generation + launch,-1,tail
+decentralized memory layer for AI agents,-1,tail
+TypeScript runtime for AI agents,2,tail
+AI/DeFAI integrations,2,tail
+AI features/AI products in ecosystem,-1,tail
+DeFAI companion,2,tail
+data monetization for AI models,2,tail
+AI parameters/analytics,2,tail
+NL assistant/agents for DeFi operations,-1,tail
+no-code AI agents for on-chain operations,-1,tail
+AI analysis + trading agent orchestration,-1,tail
+AI modules for game content,2,tail
+AI rebalancing + risk allocation,2,tail
+L2 for AI dApps (Parallel EVM + GPU network),2,tail
+AI motion analysis from video,2,tail
+white-label AI agents for communities,-1,tail
+multi-agent oracle for signals/analytics,-1,tail
+GPU rentals + AI/ML tools,-1,tail
+AI meme/image generation,2,tail
+AI virtual companions (personalization/chat),2,tail
+AI Q&A + Web3 knowledge graph,2,tail
+AI applicability for AI agents/dApps,0,tail
+AI co-signer + automation assistant,-1,tail
+marketplace + execution environment for AI,-1,tail
+LLM persona for X + Telegram,2,tail
+data annotation + AI model training,-1,tail
+"web tools (""AI for blockchain"")",2,tail
+AI search + AI analytic summaries,-1,tail
+AI direction in ecosystem,-1,tail
+GAN pixel-art generation + lore generation,2,tail
+Mind AI (natural-language reasoning),2,tail
+2D→3D face reconstruction,2,tail
+AI learning personalization,2,tail
+real-world data context for AI apps,2,tail
+AI bots/agents (StarryAI),2,tail
+ML forecasting (AI Forecaster),2,tail
+language modeling + bioscience dataset pipelines,2,tail
+AI integration for immersive experience,2,tail
+AI routing for cross-chain swaps,2,tail
+AI character creation + cross-platform personas,-1,tail
+sports analytics predictions,2,tail
+ML tournament + staking on predictions,2,tail
+personal AI assistants + workflows + memory,-1,tail
+"positioning only (""AI agents"")",3,tail
+no-code AI agent marketplace,-1,tail
+AI matching + influencer evaluation,-1,tail
+AI strategies (XFUND),-1,tail
+LLM agent + tool calling,2,tail
+MCP service mesh for LLM clients,2,tail
+AI assistants/search/recommendations,-1,tail
+web data → structured datasets + provenance,2,tail
+AI agent + RWA,2,tail
+AI-driven allocation system,2,tail
+LLM summaries + social analytics,2,tail
+compute marketplace + AI model hub,-1,tail
+AI meme token (positioning),2,tail
+generative AI for content creators,-1,tail
+AI-powered no/low-code studios,2,tail
+decentralized AI agents marketplace,-1,tail
+AI agents for social intelligence,-1,tail
+user-owned data + TEE compute for AI,2,tail
+AI agent launch platform,-1,tail
+autonomous AI agents (CEA); swarm intelligence,-1,tail
+AI agents (live-data + knowledge retrieval),2,tail
+positioning only (distributed LLM inference network),-1,tail
+AI-driven product content generation,-1,tail
+monitoring/threat detection (no ML metrics),2,tail
+"data for AI marketplace; ""AI Layer2 for Chrome""",2,tail
+execution/coordination infrastructure for AI agents,2,tail
+AI asset marketplace + agents (inference),-1,tail
+AI agents for quests + community,-1,tail
+"agent population, mutation + selection",2,tail
+LLM + RAG for automation,-1,tail
+LLM + AI agents + memory/profile,2,tail
+LLM-based agent assistants,2,tail
+AIOS + AI agents,2,tail
+AI agents for application evaluation/processing,-1,tail
+positioning only (market/content analysis),-1,tail
+neural networks for ad targeting,2,tail
+fraud/rugpull prediction + wallet analytics,2,tail
+human-in-the-loop tasks for AI/LLMs,2,tail
+AI co-pilot for Web3 tasks,-1,tail
+AI L2 for AI dApps,2,tail
+AI agent + DeFi terminal,2,tail
+AI scoring/signals in terminal,2,tail
+VR AI Builder + AI agents,2,tail
+AI chat / chart analysis,2,tail
+ML price estimation + human-in-the-loop quests,2,tail
+positioning only (AI toolkit),3,tail
+library of prebuilt AI agents,2,tail
+AI data relaying + network intelligence,-1,tail
+Similar NFT Detection AI model (oracle),2,tail
+AI agents for API discovery + resolution,2,tail
+AI agents for analysis/automation,-1,tail
+"positioning only (""AI"" analytics)",3,tail
+AI initiatives/agents in ecosystem,-1,tail
+causal inference + NLP analytics,2,tail
+ML analytics for oracle signals,2,tail
+AI bull/bear regime forecasting (off-chain),2,tail
+LLM agents for Web3 tasks,-1,tail
+AI portfolio optimization,2,tail
+"Archimedes (yield farming optimization, off-chain)",2,tail
+deep learning / quant trading systems (participants),2,tail
+AI model as governance advisor,2,tail
+on-chain agents + shared skills library,2,tail
+AI dev workflow + AI applicability,0,tail
+decentralized AI agent network + cell services,-1,tail
+AI-assisted DeFi strategies/agents,-1,tail
+computer vision framework (video analysis),-1,tail
+positioning only (AI apps infrastructure),-1,tail
+serverless inference engine,2,tail
+document understanding pipeline,2,tail
+software engineer agents,2,tail
+AI agent for token/security analysis,-1,tail
+AI research focus,2,tail
+secure AI inference infrastructure,-1,tail
+agentic framework (memory/actions/plugins),2,tail
+autonomous curation/ranking model,1,tail
+AI agents ideology / self-ownership thesis,2,tail
+ML/AI strategies + portfolio scoring,-1,tail
+GPU rentals for AI workloads,-1,tail
+AI agent marketplace + AI services,-1,tail
+AI governance intelligence + delegation scoring,2,tail
+distributed model training,-1,tail
+3D asset generation from text prompts,2,tail
+AI data preprocessing layer,2,tail
+AI assistant for communities,-1,tail
+autonomous market monitoring + execution,-1,tail
+protein folding compute (MD + docking),2,tail
+AI-verified content performance scoring,2,tail
+distributed LLM pretraining (IOTA),-1,tail
+Rust LLM agent framework (Rig),2,tail
+agent protocols,-1,tail
+AI synthetic media detection,2,tail
+agent network + MCP framework,-1,tail
+predictive intelligence,-1,tail
+allocation strategy competition,2,tail
+GPU compute for rendering + AI tasks,2,tail
+ML models for sports forecasting,-1,tail
+BCI neurofeedback + AI,2,tail
+data platform + AI managed services,-1,tail
+AI matchmaking + AI chat assistance (agents),2,tail
+data exchange + data access,2,tail
+AI service catalog/platform,2,tail
+text embeddings (model training/serving in subnet),2,tail
+FHE encrypted AI computation + HTTPZ,2,tail
+data collection + sentiment analysis + agentic assistant (in products),-1,tail
+P2P AI task execution (people+models+compute),2,tail
+strategy ranking via Bittensor ML network,2,tail
+AI consumer product (details unknown),2,tail
+infrastructure for running autonomous AI agents,-1,tail
+dataset collection + improvement for AI training,-1,tail
+voice/Digital DNA + AI miners for models,2,tail
+AI address/entity matching (Ultra),2,tail
+voice AI agents for phone calls,2,tail
+roleplay LLM evaluation + dataset + scoring,2,tail
+decentralized AI inference + training (compute),-1,tail
+cloud infrastructure for AI workloads,-1,tail
+GPU compute for Bittensor subnet validation,2,tail
+personal data for AI applications,-1,tail
+AI candidate/job matching,2,tail
+AI agent for story/script generation,2,tail
+deepfake clip generation (cloud),2,tail
+AI data platform / AI agents,-1,tail
+AI ghostwriter for content,2,tail
+positioning only (on-chain data),-1,tail
+AI agent for trading actions,-1,tail
+AI agents/assistants in-app,2,tail
+real-time market agents,-1,tail
+AI-influencers + FameEngine,2,tail
+AI agents + generative tools,-1,tail
+AI assistance/agents for agreements,2,tail
+AI-driven decisions on IoT big data,2,tail
+AI/MLOps services + platform,-1,tail
+AI search/analytics,-1,tail
+distributed deep learning / compute,-1,tail
+AI/ML crypto market analytics (app),-1,tail
+AI features/products,2,tail
+AI ecosystem,-1,tail
+"AI agents / ""brains"" training",2,tail
+"""AI-powered"" routing",2,tail
+IPC (scaling for AI),2,tail
+AI computing,-1,tail
+AI agents + orchestration,-1,tail
+LLM nodes + inference,2,tail
+generative AI bot,-1,tail
+decentralized GPU compute + one-click AI,-1,tail
+semantic search + AI data validation,2,tail
+prompting interface for Bittensor subnets (text/image),2,tail
+AI token deployer pipeline (GPT/DALL·E + Hardhat),2,tail
+AI assistant for trading/translation teams,-1,tail
+"AI chatbot/""Web3GPT""",2,tail
+AI-native IP infrastructure,2,tail
+AI oracle for LLM/agents,-1,tail
+decentralized AI inference/hosting marketplace,-1,tail
+generative AI art engine + Telegram bot,-1,tail
+AI agents marketplace,-1,tail
+AI models + social agents for content workflows,-1,tail
+decentralized inference + RAG chunking subnet,-1,tail
+LLM assistant + KOL/token analytics,2,tail
+AI companion chatbot (Bittensor-backed),2,tail
+LLM training from labeled security/vulnerability data,2,tail
+tokenized AI agents + ADK agent framework,-1,tail
+GPU rental/lending + AI endpoints + AI nodes,-1,tail
+AI analysis for signals/alerts,2,tail
+AI music,2,tail
+AI agent orchestration + workflows (BBPA),-1,tail
+3D AI agents (RAG/memory/LLM catalog),2,tail
+AI meme generation + AI tools,-1,tail
+extended MCP + aggregated on-chain data,2,tail
+digital twins (AI agents),2,tail
+AI agent,-1,tail
+builder/platform for AI agents (Weave/Scout),2,tail
+AI meme generation (forge),2,tail
+AI agent creation + tokenization,-1,tail
+FloweyQuant agent + RAG,2,tail
+AI extensions (inference/vector DB/memory),2,tail
+AI friend / virtual persona,2,tail
+AI agent creation/training/deployment platform,-1,tail
+AI wealth manager agent + investment committee simulation room,2,tail
+verifiable SQL queries for AI apps,-1,tail
+friendly AI agent,2,tail
+no-code AI agent builder (traits/sliders),2,tail
+voice-enabled AI agents + voice models,2,tail
+conversational agent for longevity (RAG/knowledge base),2,tail
+AI analytics + automated trade execution,-1,tail
+Proof of Attribution for AI data rewards,2,tail
+AI agent Traicy for ESG + trading,2,tail
+AI agents for mental health support,2,tail
+AI agent for chart + contract analysis,-1,tail
+AI assistant/bot for trading,-1,tail
+autonomous AI agent for DePIN content,1,tail
+running ML models via web interface,2,tail
+"agent society + zTerminal ""Ask zAI""",2,tail
+AI assistant for Solana Web3 analysis,-1,tail
+AI agents for sports forecasts/reports,-1,tail
+LLM task orchestration + minion modules,-1,tail
+LLM-as-a-judge agent answer evaluation,2,tail
+chat agent on X,2,tail
+AI agent creation + launch platform,-1,tail
+AI agent creation + management platform,-1,tail
+AI agents for analytics/training (app),-1,tail
+token compression for LLM prompts,2,tail
+verifiable inference + AI agents hub,-1,tail
+verified training data + Proof of Quality,2,tail
+AI sentiment + market insights,2,tail
+open-source AI reasoning + agent frameworks,-1,tail
+"AI ""intelligence layer"" for DeFi strategies",-1,tail
+AI economy + L2 infrastructure,2,tail
+Physical AI,2,tail
+hybrid intelligence (crowd + ML models),2,tail
+reinforcement-learning trading agents + MCP marketplace,-1,tail
+AI doctor for health insights,2,tail
+decentralized AI compute network,-1,tail
+AI recommendation system (personalized ads),-1,tail
+AI triage + symptom Q&A,2,tail
+personal AI avatars (PAI),2,tail
+DeepTech open innovation (AI/robotics),2,tail
+ML tools + WOTC mechanics,2,tail
+AI applicability for storage/DA,0,tail
+ML forecasts/indicators on crypto data,2,tail
+AI assistant for communities (NLP/knowledge graph),-1,tail
+AI game agents (Neurochimp framework),2,tail
+Federated learning / AI applicability,0,tail
+VHA assistants + SDK,2,tail
+"AI market analytics + tracking (whale wallets + ""VIP calls"" + DCA tracking)",2,tail
+data for AI + agents,2,tail
+ML-powered trusted recommendations / trust + reputation signals,2,tail
+verifiable compute for AI models (TEE),-1,tail
+AI tools/bots for crypto analytics,-1,tail
+platform for LLM/RAG/chatbots,2,tail
+"""user-owned data"" + AI-driven insights",2,tail
+AI swap optimization + AI safety audit,2,tail
+AI + privacy-enhancing analytics,2,tail
+AI/ML analytics + recommendations for brands,-1,tail
+AI module for automated decisions,-1,tail
+AI collectible NFT generation,2,tail
+AI agent creation + agentic video production,-1,tail
+AI assistant Cody for trading/strategies,-1,tail
+AI agent XOAI for market intelligence,2,tail
+AI tech for metaverse,2,tail
+AI social media analysis + token scoring,2,tail
+AI agents / AI-driven learning,2,tail
+AI chat assistant for communities,-1,tail
+AI image/video generation (web-app),2,tail
+dataset marketplace for AI training,-1,tail
+agentic OS (Lucy) + AI agent network,2,tail
+chat assistant + natural-language commands,2,tail
+AI bots/tools,2,tail
+AI platform/tools,2,tail
+prompts/text AI,2,tail
+positioning only (decentralized AGI/ASI),-1,tail
+autonomous AI agents + ACP escrow,1,tail
+Web3 AI tools (chatbot + smart-contract generation/audit),-1,tail
+logic-based human-machine communication (concept),2,tail
+ML models for market analysis,-1,tail
+not applicable,0,tail
+creative GenAI studio,2,tail
+decentralized skill markets for AI (competitions + rankings),-1,tail
+AI integration platform,2,tail
+AI assistant for blockchain operations,2,tail
+AI assistant + monitoring analytics,-1,tail
+AI-based analytics on social/on-chain data,2,tail
+text-to-image generation,2,tail
+open-source AI funding,2,tail
+smart contract template generation,-1,tail
+AI output verification via decentralized consensus,-1,tail
+AI platform aggregator in Telegram,2,tail
+decentralized inference layer + private AI tools,-1,tail
+graph-oriented language + chat-to-program,2,tail
+AI Mix + Bridge bot,2,tail
+AI bot customization + image generation,2,tail
+AI assistant + contract scanning,-1,tail
+AI avatars in Parallel Colony (agents),2,tail
+AI buyback/burn triggers,2,tail
+incentive coordination for AI Modules (incl. inference) via subnets,2,tail
+ChatMultiAI (market analysis/signals/security),-1,tail
+"AI website builder (content/image generation, templates)",2,tail
+"AI infra (GPU/Cloud) + ""AI App Chain""",2,tail
+AI firewall + autonomous engine,1,tail
+multi-agent DeFi copilot (Velvet Unicorn),2,tail
+chatbot + meme/GIF generation,2,tail
+AI analysis + ranking of crypto projects,2,tail
+neural network for matching,-1,tail
+AI 3D asset/avatar generation,2,tail
+AI compliance monitoring,2,tail
+private AI assistant (Athena),2,tail
+AI bots + trading analytics,-1,tail
+omnichain NL agents + wayfinding paths/graph,2,tail
+AI bots/agents for Telegram/X,-1,tail
+AI smart contract deployment (QRemix),-1,tail
+no-code AI agent clusters for verification,-1,tail
+NLP queries on on-chain data,2,tail
+AI agent infrastructure + knowledge/gaming agents,-1,tail
+AI agent for token/wallet analysis,-1,tail
+AI-assisted analysis/community moderation,-1,tail
+AI agents for Web3 workflows,-1,tail
+AI assistants in ecosystem,-1,tail
+AI personalization for beauty recommendations,2,tail
+AI agent marketplace + SONA framework,-1,tail
+AI agent for infra/service automation,-1,tail
+API + interaction environment for AI agents,2,tail
+platform for agentic systems (agents + memory/tools),2,tail
+no-code platform for AI agent/chatbot creation (Godfather AI),-1,tail
+AI agent (sentiment analysis + token launches),-1,tail
+AI-native dev toolkits (AIGNE/IDD),2,tail
+"mention of ""CROW AI systems""",2,tail
+autonomous AI agent framework,-1,tail
+AI categorization of crypto transactions,2,tail
+AI agent + model marketplace,-1,tail
+AI matching + demand forecasting,-1,tail
+tokenized AI agents + iNFT protocol,-1,tail
+LLM inference via a compute node network,-1,tail
+AI assistant/agents for DeFi operations,-1,tail
+AI agent creation + deployment platform,-1,tail
+AI education/community,-1,tail
+3D generation + auto-rigging,2,tail
+on-device AI (answers + translation),2,tail
+NLP/LLM for knowledge structuring,2,tail
+AI-ready structured data + AVS verification,2,tail
+EdgeCloud/edge compute for AI workloads,-1,tail
+AI tools/models for analytics,-1,tail
+AI agent for Web3 questions + actions,-1,tail
+AI agents (chat) + agent workflow builder,-1,tail
+"edge AI compute (GPU orchestration, unified API)",-1,tail
+RL algorithms for reward/token economy + AI agents,2,tail
+AI audit + smart contract scam detection,-1,tail
+personal AI agents for DeFi (DISE LLM),-1,tail
+decentralized training + federated learning,-1,tail
+AI agent + analytics layer (market/sentiment/on-chain insights),-1,tail
+AI-native social layer,2,tail
+chatbot for on/off-ramp + swapping,2,tail
+predictive ML models for market analytics,-1,tail
+autonomous agents (identity/memory/skills),1,tail
+AI payment support,2,tail
+LLM agents + tool-based actions,2,tail
+AI summaries + crypto intelligence terminal,-1,tail
+compute infrastructure for AI workloads,-1,tail
+multi-agent orchestration (intent → action),-1,tail
+security agents / Immunefi AI for on-chain security,-1,tail
+emotionally intelligent agents,2,tail
+agent economy tooling,2,tail
+LLM chat + tool-use (intent classification + on-chain ops execution),2,tail
+policy protocol for AI agents,-1,tail
+private LLM inference in TEE (nilAI),2,tail
+AI appraisal + Art AI agent for tokenization,2,tail
+AI pets + AIoT environmental data,2,tail
+AI agent platform + BRAID reasoning,2,tail
+open-source video foundation model + video agents,2,tail
+AI content creation + AI file manipulation,-1,tail
+AI companion games (HIM/HER),2,tail
+incentivized ML/AI subnets with quality evaluation,2,tail
