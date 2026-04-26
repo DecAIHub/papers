@@ -3,7 +3,7 @@
 **Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach**
 
 Nikita N. Kadochnikov  
-Target journal: *Information Processing & Management*
+Target journal: *Applied Soft Computing*
 
 ---
 
@@ -150,7 +150,7 @@ All stochastic computations use `seed = 42` for reproducibility:
 
 If you use this replication package, please cite the manuscript:
 
-> Kadochnikov NN (2026) Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach. *Information Processing & Management*.
+> Kadochnikov NN (2026) Evaluating Sparse and Dense AI Similarity Methods for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach. *Applied Soft Computing*.
 
 ## License
 
