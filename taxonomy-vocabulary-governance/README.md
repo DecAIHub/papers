@@ -36,7 +36,7 @@ replication_package/
 │   │   ├── wave2_annotator_1.csv
 │   │   ├── wave2_annotator_2.csv
 │   │   └── wave2_adjudicated.csv
-│   └── movielens/                 Cross-domain replication (artifact 5)
+│   ├── movielens/                 Cross-domain replication (artifact 5)
 │   │   ├── tags.csv               MovieLens Latest Small (CC BY 4.0)
 │   │   └── movielens_robustness.csv
 │   └── llm_validation_results.csv LLM zero-shot baseline (artifact 7)
@@ -112,6 +112,22 @@ Two-wave human annotation study (n = 196 pairs total, Cohen's κ = 0.844).
 | `tags.csv` | MovieLens Latest Small tag assignments (GroupLens Research; see `LICENSE-MOVIELENS.txt`) |
 | `movielens_robustness.csv` | Within- vs. cross-family overlap diagnostics for MovieLens tags (Ops A–E, N = 699 multi-word tags) |
 | `LICENSE-MOVIELENS.txt` | Original GroupLens license (research use; redistribution under same terms; citation required) |
+
+### `data/llm_validation_results.csv`
+
+Stratified-sample LLM zero-shot baseline (n = 67 pairs sampled from the human-annotated set across two strata: `cross_family_stable` and `negative_control`). Used as an independent comparison anchor for the dense/sparse similarity methods reported in the manuscript.
+
+| Column | Description |
+|--------|-------------|
+| `pair_id` | Pair identifier (consistent with `data/annotations/`) |
+| `field` | `ai_component` or `use_case` |
+| `value_a`, `value_b` | Vocabulary entries being compared |
+| `stratum` | Sampling stratum (`cross_family_stable`, `negative_control`) |
+| `human_is_synonym` | Adjudicated human label (binary) |
+| `llm_answer` | Raw LLM response (`yes`/`no`) |
+| `llm_is_synonym` | Binary mapping (`yes`→1, `no`→0) |
+
+**LLM details:** Claude Opus 4.6 via Cursor IDE (Anthropic). Prompt: zero-shot binary synonym judgment on `value_a` vs. `value_b` within `field`. The LLM here is used as an experimental subject (independent baseline) and is methodologically distinct from the writing-assistance role described in the manuscript's "Declaration of generative AI" statement.
 
 ## Reproducing figures
 
