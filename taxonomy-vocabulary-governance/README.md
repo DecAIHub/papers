@@ -37,8 +37,9 @@ replication_package/
 │   │   ├── wave2_annotator_2.csv
 │   │   └── wave2_adjudicated.csv
 │   └── movielens/                 Cross-domain replication (artifact 5)
-│       ├── tags.csv               MovieLens Latest Small (CC BY 4.0)
-│       └── movielens_robustness.csv
+│   │   ├── tags.csv               MovieLens Latest Small (CC BY 4.0)
+│   │   └── movielens_robustness.csv
+│   └── llm_validation_results.csv LLM zero-shot baseline (artifact 7)
 ├── scripts/                       Reproducibility code (artifact 6)
 │   └── generate_figures.py
 └── figures/                       Pre-generated figures (300 dpi)
@@ -56,7 +57,7 @@ replication_package/
 
 ## Artifacts
 
-The package provides six artifact groups as described in the manuscript's Data Availability section:
+The package provides seven artifact groups as described in the manuscript's Data Availability section:
 
 | # | Artifact | Directory | Description |
 |---|----------|-----------|-------------|
@@ -66,6 +67,7 @@ The package provides six artifact groups as described in the manuscript's Data A
 | 4 | Annotation dataset | `data/annotations/` | Full annotation data for 196 pairs across two waves: pair identifiers, annotator labels (four-level scale), confidence ratings, adjudicated decisions, and stratum assignments |
 | 5 | Cross-domain replication | `data/movielens/` | MovieLens tag vocabulary, pairwise similarity outputs, and within-family vs. cross-family overlap diagnostics. Source: MovieLens Latest Small (GroupLens, CC BY 4.0) |
 | 6 | Reproducibility code | `scripts/` | Python script reproducing all figures from raw data or shared artifacts, with fixed random seeds (`seed = 42`) |
+| 7 | LLM validation baseline | `data/llm_validation_results.csv` | Claude Opus 4.6 zero-shot synonym judgments on a stratified sample (n = 67 pairs across `cross_family_stable` and `negative_control` strata); used as an independent comparison anchor for the dense/sparse similarity methods |
 
 ## Data files
 
