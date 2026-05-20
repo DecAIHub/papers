@@ -1,0 +1,31 @@
+MovieLens Latest Small Dataset — Usage License
+===============================================
+
+Source: https://grouplens.org/datasets/movielens/latest/
+Full README: https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html
+
+Neither the University of Minnesota nor any of the researchers involved can
+guarantee the correctness of the data, its suitability for any particular
+purpose, or the validity of results based on the use of the data set.
+The data set may be used for any research purposes under the following
+conditions:
+
+- The user may not use this information for any commercial or
+  revenue-bearing purposes without first obtaining permission from a faculty
+  member of the GroupLens Research Project at the University of Minnesota.
+
+- The user may redistribute the data set, including transformations, so
+  long as it is distributed under these same license conditions.
+
+- The user must acknowledge the use of the data set in publications
+  resulting from the use of the data set (see citation below).
+
+- The user may not state or imply any endorsement from the University of
+  Minnesota or the GroupLens Research Group.
+
+Citation
+--------
+
+F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets:
+History and Context. ACM Transactions on Interactive Intelligent Systems
+(TiiS) 5, 4: 19:1-19:19. https://doi.org/10.1145/2827872

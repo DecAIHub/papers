@@ -1,0 +1,51 @@
+field,op,similarity,label_a,label_b,freq_a,freq_b
+use_case,A,0.838511,decentralized AI inference/agents,decentralized AI inference,1,1
+use_case,A,0.818536,token on Solana,SPL token on Solana,7,2
+use_case,A,0.796706,AI agent creation + launch,no-code AI agent creation + launch,4,1
+use_case,A,0.779241,ERC-20 token on Ethereum,token on Ethereum,3,2
+use_case,A,0.773152,AI assistant for crypto trading + portfolios,AI assistant for crypto trading,1,1
+use_case,A,0.764478,access to compute + AI tools,access to compute,1,1
+use_case,A,0.753525,DeFi strategy automation,DeFi strategy automation + copy trading,1,1
+use_case,A,0.730369,meme community token,meme community token (Solana),2,1
+use_case,A,0.725795,DeFi automation + analytics,DeFi automation + agents,1,1
+use_case,A,0.711989,crypto analytics + data API,crypto analytics,1,1
+use_case,A,0.711012,decentralized compute marketplace,AI inference marketplace + decentralized compute,2,1
+use_case,A,0.704624,sports analytics + forecasting,ML analytics + forecasting tools,1,1
+use_case,A,0.698954,AI bot/tools for communities,bots/tools for communities,1,1
+use_case,A,0.693516,AI content creation + monetization,AI content creation,1,1
+use_case,A,0.675296,token ecosystem,agent ecosystem + token economy,2,1
+use_case,A,0.668308,build + deploy AI agents,build + deploy + monitor AI agents,1,1
+use_case,A,0.666444,market analytics + forecasting signals,ML analytics + forecasting tools,1,1
+use_case,A,0.655597,no-code AI agent creation + launch,no-code AI agents,1,1
+use_case,A,0.654785,market analytics + forecasting signals,sports analytics + forecasting,1,1
+use_case,A,0.654136,multichain AMM + launchpad + staking,multichain AMM DEX + launchpad,1,1
+use_case,A,0.651392,access to compute + AI tools,GPU compute + AI tools,1,1
+use_case,A,0.639391,L1 infrastructure,blockchain infrastructure,1,1
+use_case,A,0.638637,inference marketplace,AI inference marketplace + decentralized compute,1,1
+use_case,A,0.636966,AI agent creation + launch,AI agent creation + use,4,2
+use_case,A,0.632642,trading automation,market analysis + trading automation,1,1
+use_case,A,0.62137,distributed AI compute (training/inference),distributed edge training/inference,1,1
+use_case,A,0.614338,SPL token on Solana,SPL token,2,1
+use_case,A,0.612439,DeFi automation + agents,trading + DeFi automation,1,1
+use_case,A,0.610392,GPU compute marketplace (training/inference),distributed AI compute (training/inference),1,1
+use_case,A,0.609402,memecoin,memecoin / token,1,1
+use_case,A,0.608145,verifiable credentials + digital ID,AI training + verifiable credentials,1,1
+use_case,A,0.608051,blockchain data indexing + queries,blockchain indexing + query answering,1,1
+use_case,A,0.604068,trading + DeFi automation,trading automation,1,1
+use_case,A,0.604056,memecoin / token,memecoin / community token,1,1
+use_case,A,0.602897,token ecosystem,DeFi ecosystem,2,1
+use_case,A,0.598883,L1 infrastructure,data storage infrastructure,1,1
+use_case,A,0.596768,decentralized AI inference,AI inference marketplace + decentralized compute,1,1
+use_case,A,0.591394,AI content creation (mobile app),AI content creation,1,1
+use_case,A,0.578497,token on Solana,trading/holding a token on Solana,7,1
+use_case,A,0.578031,no-code game creation from prompts,content generation from prompts,1,1
+use_case,A,0.576814,AI agent creation + use,AI agent creation + deployment,2,2
+use_case,A,0.574349,chat + content agent,community chat + content,1,1
+use_case,A,0.571869,data monetization + analytics/compute,data monetization + rewards,1,1
+use_case,A,0.568626,meme community token,memecoin / community token,2,1
+use_case,A,0.566497,distributed training,distributed edge training/inference,1,1
+use_case,A,0.566478,tokenized game economy,AI game + tokenized economy,1,1
+use_case,A,0.562155,AI content generation + social media agents,meme generation for social media,1,1
+use_case,A,0.562043,fast creation + monetization of UGC games,AI content creation + monetization,1,1
+use_case,A,0.558321,content generation + distribution,content generation + assistant,1,1
+use_case,A,0.555678,meme token,AI community meme token,17,1

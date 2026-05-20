@@ -1,0 +1,76 @@
+label_a,label_b,sim,heuristic_class,op,field
+decentralized AI inference/agents,decentralized AI inference,0.8385,likely_related,A,use_case
+token on Solana,SPL token on Solana,0.8185,likely_synonym,A,use_case
+AI agent creation + launch,no-code AI agent creation + launch,0.7967,likely_synonym,A,use_case
+ERC-20 token on Ethereum,token on Ethereum,0.7792,likely_synonym,A,use_case
+AI assistant for crypto trading + portfolios,AI assistant for crypto trading,0.7732,likely_synonym,A,use_case
+access to compute + AI tools,access to compute,0.7645,likely_related,A,use_case
+DeFi strategy automation,DeFi strategy automation + copy trading,0.7535,likely_related,A,use_case
+meme community token,meme community token (Solana),0.7304,likely_synonym,A,use_case
+DeFi automation + analytics,DeFi automation + agents,0.7258,likely_related,A,use_case
+crypto analytics + data API,crypto analytics,0.712,likely_related,A,use_case
+decentralized compute marketplace,AI inference marketplace + decentralized compute,0.711,likely_related,A,use_case
+sports analytics + forecasting,ML analytics + forecasting tools,0.7046,likely_related,A,use_case
+AI bot/tools for communities,bots/tools for communities,0.699,likely_related,A,use_case
+AI content creation + monetization,AI content creation,0.6935,likely_synonym,A,use_case
+token ecosystem,agent ecosystem + token economy,0.6753,likely_related,A,use_case
+build + deploy AI agents,build + deploy + monitor AI agents,0.6683,likely_synonym,A,use_case
+market analytics + forecasting signals,ML analytics + forecasting tools,0.6664,likely_related,A,use_case
+no-code AI agent creation + launch,no-code AI agents,0.6556,likely_related,A,use_case
+market analytics + forecasting signals,sports analytics + forecasting,0.6548,likely_related,A,use_case
+multichain AMM + launchpad + staking,multichain AMM DEX + launchpad,0.6541,likely_synonym,A,use_case
+access to compute + AI tools,GPU compute + AI tools,0.6514,likely_related,A,use_case
+L1 infrastructure,blockchain infrastructure,0.6394,likely_related,A,use_case
+inference marketplace,AI inference marketplace + decentralized compute,0.6386,likely_related,A,use_case
+AI agent creation + launch,AI agent creation + use,0.637,likely_synonym,A,use_case
+trading automation,market analysis + trading automation,0.6326,likely_related,A,use_case
+AI assistant for crypto trading + portfolios,AI assistant for crypto trading,0.8454,likely_synonym,B,use_case
+decentralized AI inference/agents,decentralized AI inference,0.8038,likely_related,B,use_case
+meme community token,meme community token (Solana),0.7958,likely_synonym,B,use_case
+AI content creation + monetization,AI content creation,0.7684,likely_synonym,B,use_case
+access to compute + AI tools,access to compute,0.7596,likely_related,B,use_case
+token on Solana,SPL token on Solana,0.7566,likely_synonym,B,use_case
+memecoin + community products,community/products,0.7564,likely_noise,B,use_case
+AI agent creation + launch,no-code AI agent creation + launch,0.7499,likely_synonym,B,use_case
+DeFi strategy automation,DeFi strategy automation + copy trading,0.7073,likely_related,B,use_case
+SPL token on Solana,SPL token,0.6973,likely_synonym,B,use_case
+ERC-20 token on Ethereum,token on Ethereum,0.6684,likely_synonym,B,use_case
+AI content creation (mobile app),AI content creation,0.6432,likely_synonym,B,use_case
+no-code AI agent creation + launch,no-code AI agents,0.6182,likely_related,B,use_case
+meme token,AI community meme token,0.6107,likely_synonym,B,use_case
+build + deploy AI agents,build + deploy + monitor AI agents,0.6025,likely_synonym,B,use_case
+memecoin + community products,memecoin / community token,0.6014,likely_related,B,use_case
+memecoin,memecoin / token,0.6007,likely_synonym,B,use_case
+trading automation,market analysis + trading automation,0.6,likely_related,B,use_case
+crypto analytics + data API,crypto analytics,0.5989,likely_related,B,use_case
+L1 for dApps + AI agents/AI apps,L1 for dApps (including AI apps),0.5939,likely_related,B,use_case
+meme token about AI culture,community token about AI,0.5902,likely_related,B,use_case
+inference marketplace,AI inference marketplace + decentralized compute,0.5866,likely_related,B,use_case
+IoT data transactions,IoT data marketplace,0.5823,likely_related,B,use_case
+AI agent creation + launch,AI agent creation + deployment,0.5792,likely_synonym,B,use_case
+AI agent creation + launch,AI agent creation + use,0.5768,likely_synonym,B,use_case
+decentralized AI inference/agents,decentralized AI inference,0.9642,likely_related,C,use_case
+L1 for dApps + AI agents/AI apps,L1 for dApps (including AI apps),0.9471,likely_related,C,use_case
+trading automation,trading operations automation,0.9326,likely_synonym,C,use_case
+AI assistant for crypto trading + portfolios,AI assistant for crypto trading,0.9308,likely_synonym,C,use_case
+AI agent creation + launch,no-code AI agent creation + launch,0.9197,likely_synonym,C,use_case
+deploy + run AI agents,build + deploy AI agents,0.9192,likely_synonym,C,use_case
+AI agent creation + launch,"create, launch + interact with AI agents",0.9128,likely_related,C,use_case
+meme token,meme community token,0.9106,likely_synonym,C,use_case
+AI bot/tools for communities,bots/tools for communities,0.9095,likely_related,C,use_case
+create/deploy tokenized AI agents,deploy + trade tokenized AI agents,0.9094,likely_related,C,use_case
+memecoin / token,memecoin / community token,0.9026,likely_synonym,C,use_case
+"chat, agents, API, launching AI solutions",create/launch AI agents + chats,0.9007,likely_noise,C,use_case
+build + deploy AI agents,build + deploy + monitor AI agents,0.8959,likely_synonym,C,use_case
+AI agent creation + deployment,build + deploy AI agents,0.8934,likely_noise,C,use_case
+build/share/monetize AI agents,create + monetize AI agents,0.8925,likely_related,C,use_case
+deploy + run AI agents,AI agent creation + deployment,0.8855,likely_noise,C,use_case
+decentralized data storage,decentralized storage + delivery of data/content,0.8808,likely_related,C,use_case
+AI agent creation + launch,launch + manage AI agents,0.878,likely_related,C,use_case
+tokenized game economy,AI game + tokenized economy,0.878,likely_synonym,C,use_case
+"create, launch + interact with AI agents",launch + manage AI agents,0.8668,likely_related,C,use_case
+"compute for AI, GPU marketplace",GPU compute + AI tools,0.8665,likely_noise,C,use_case
+decentralized GPU marketplace (inference),decentralized cloud + GPU marketplace,0.8665,likely_related,C,use_case
+meme community token,AI community meme token,0.8655,likely_synonym,C,use_case
+trading algorithm automation,trading automation,0.8646,likely_synonym,C,use_case
+meme community token,memecoin / community token,0.8594,likely_related,C,use_case

@@ -1,0 +1,9 @@
+field,freq_class,n_projects,mean_gap,median_gap,mean_tier1_share,mean_gap_ci95_low,mean_gap_ci95_high
+ai_component,head,19,0.304379,0.3333,0.695621,0.205258,0.393858
+ai_component,mid,29,0.262121,0.1667,0.737879,0.161545,0.3741
+ai_component,tail,608,0.14429,0.0,0.85571,0.12812,0.16147
+ai_component,missing,189,0.22789,0.2,0.77211,0.194581,0.261742
+use_case,head,29,0.324703,0.3333,0.675297,0.252866,0.401145
+use_case,mid,27,0.377881,0.3333,0.622119,0.286881,0.479293
+use_case,tail,713,0.143633,0.0,0.856367,0.130212,0.158322
+use_case,missing,76,0.291512,0.3095,0.708488,0.238221,0.350786

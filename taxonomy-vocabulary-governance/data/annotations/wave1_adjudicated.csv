@@ -1,0 +1,136 @@
+pair_id,field,value_a,value_b,stratum,ann1,ann2,adjudicated,is_synonym
+P001,use_case,decentralized AI inference,decentralized AI inference/agents,cross_family_stable,near_synonym,exact_synonym,near_synonym,1
+P002,ai_component,AI assistant for graph building (OpenAI-based),"meta-agentic orchestration, demos",negative_control,unrelated,unrelated,unrelated,0
+P003,use_case,no-code AI agent creation + launch,no-code AI agents,within_family_only,near_synonym,near_synonym,near_synonym,1
+P004,ai_component,AI features/AI products in ecosystem,positioning only (AI apps infrastructure),negative_control,related_but_distinct,related_but_distinct,related_but_distinct,0
+P005,use_case,smart contracts with verifiable AI inference,trustless AI-API results for smart contracts,negative_control,related_but_distinct,related_but_distinct,related_but_distinct,0
+P006,use_case,DeFi operations via integrations + aggregation,on-chain games/tournaments/NFT activities on Base,negative_control,unrelated,unrelated,unrelated,0
+P007,ai_component,AI agent launch platform,AI data (lineage + metering + royalties),negative_control,unrelated,unrelated,unrelated,0
+P008,ai_component,AI agents for sports forecasts/reports,ML models for sports forecasting,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P009,ai_component,AI agent marketplace + AI services,AI agents marketplace,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P010,ai_component,AI agents for Web3,LLM agents for Web3 tasks,single_operationalization,near_synonym,exact_synonym,near_synonym,1
+P011,use_case,AI insights/signals for trading + research,airdrops + lottery + NFT collectibles,negative_control,unrelated,unrelated,unrelated,0
+P012,ai_component,autonomous AI agent,platform for autonomous AI agents,single_operationalization,related_but_distinct,near_synonym,related_but_distinct,0
+P013,use_case,DeFi strategy automation,DeFi strategy automation + copy trading,within_family_only,near_synonym,near_synonym,near_synonym,1
+P014,use_case,trading automation,trading operations automation,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P015,ai_component,"positioning only (""AI agents"")","positioning only (""AI"" analytics)",single_operationalization,near_synonym,related_but_distinct,near_synonym,1
+P016,use_case,"analysis/chat, trading tools",video/image generation + video agents,negative_control,unrelated,unrelated,unrelated,0
+P017,use_case,autonomous agents for DeFi,programmable compliance for on-chain execution,negative_control,related_but_distinct,unrelated,related_but_distinct,0
+P018,ai_component,ML/AI strategies + portfolio scoring,multi-agent LLM (game generation + testing),negative_control,unrelated,unrelated,unrelated,0
+P019,ai_component,"AI agents (""AI Epals"")",AI services,negative_control,related_but_distinct,related_but_distinct,related_but_distinct,0
+P020,ai_component,GPU marketplace for AI/ML workloads,compute marketplace for AI/ML workloads,within_family_only,near_synonym,exact_synonym,near_synonym,1
+P021,use_case,AI agent creation + deployment,deploy + run AI agents,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P022,ai_component,AI agent marketplace + AI services,AI services,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P023,ai_component,AI agents for Web3,AI agents for Web3 workflows,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P024,ai_component,autonomous AI agent,autonomous AI agents + agent services,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P025,ai_component,AI agent + model marketplace,AI agents marketplace,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P026,ai_component,AI agents applicability,AI applicability for AI agents/dApps,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P027,use_case,memecoin,memecoin / token,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P028,use_case,meme community token,meme token,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P029,ai_component,AI agents/bots for trading,AI/ML signals + models for trading,negative_control,near_synonym,near_synonym,near_synonym,1
+P030,ai_component,GPU rentals + AI/ML tools,GPU rentals for AI workloads,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P031,use_case,lead exchange in a network/platform,meme token,negative_control,unrelated,unrelated,unrelated,0
+P032,ai_component,"positioning only (""AI agents"")",positioning only (AI toolkit),single_operationalization,near_synonym,near_synonym,near_synonym,1
+P033,use_case,SPL token,SPL token on Solana,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P034,ai_component,BCI neurofeedback + AI,voice AI agents for phone calls,negative_control,unrelated,unrelated,unrelated,0
+P035,use_case,market analysis + trading automation,trading automation,within_family_only,near_synonym,near_synonym,near_synonym,1
+P036,use_case,AI community meme token,meme community token,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P037,ai_component,voice-enabled AI agents,voice-enabled AI agents + voice models,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P038,ai_component,cloud infrastructure for AI workloads,compute infrastructure for AI workloads,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P039,ai_component,decentralized AI agent network + cell services,decentralized GPU cloud + data agent,negative_control,related_but_distinct,unrelated,related_but_distinct,0
+P040,use_case,inference marketplace,yield farming automation via vault strategies,negative_control,unrelated,unrelated,unrelated,0
+P041,use_case,agents for Telegram / assistants,compute marketplace + orchestration,negative_control,unrelated,unrelated,unrelated,0
+P042,use_case,build apps + workflows + smart contracts,data labeling marketplace + dataset trading,negative_control,unrelated,unrelated,unrelated,0
+P043,ai_component,GPU rentals for AI workloads,GPU rentals for AI workloads; AI API endpoints,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P044,ai_component,"""AI powered"" SaaS products (marketing/content/research)","GPU rentals, decentralized AI infrastructure",negative_control,unrelated,unrelated,unrelated,0
+P045,use_case,ML analytics + forecasting tools,market analytics + forecasting signals,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P046,ai_component,AI agents/bots for trading,AI assistant/bot for trading,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P047,ai_component,AI-influencers + FameEngine,generative AI art engine + Telegram bot,negative_control,related_but_distinct,related_but_distinct,related_but_distinct,0
+P048,use_case,L1 infrastructure,blockchain infrastructure,single_operationalization,near_synonym,exact_synonym,near_synonym,1
+P049,ai_component,AI search/analytics,CV/ML road event detection from video,negative_control,unrelated,unrelated,unrelated,0
+P050,ai_component,AI coach / workout personalization (feature),GPU/edge infrastructure for AI workloads,negative_control,unrelated,unrelated,unrelated,0
+P051,ai_component,AI service/tools,AI services,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P052,ai_component,decentralized AI agents marketplace,"robotics foundation models, data foundry",negative_control,unrelated,unrelated,unrelated,0
+P053,use_case,AI agent creation + launch,launch + manage AI agents,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P054,ai_component,AI wealth manager agent + investment committee simulation room,ML smart contract vulnerability analysis,negative_control,unrelated,unrelated,unrelated,0
+P055,ai_component,GPU/edge infrastructure for AI workloads,cloud infrastructure for AI workloads,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P056,ai_component,real-world data context for AI apps,swarm/federated-style model training across hospitals,negative_control,related_but_distinct,related_but_distinct,related_but_distinct,0
+P057,use_case,decentralized GPU marketplace (inference),decentralized cloud + GPU marketplace,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P058,ai_component,compute marketplace + AI agents + AI marketplace,compute marketplace + AI model hub,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P059,use_case,build + deploy + monitor AI agents,build + deploy AI agents,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P060,ai_component,AI assistant/agents for DeFi operations,NL assistant/agents for DeFi operations,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P061,use_case,AI agent creation + launch,no-code AI agent creation + launch,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P062,ai_component,AI agents marketplace,decentralized AI agents marketplace,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P063,use_case,AI agent creation + launch,AI agent creation + use,within_family_only,near_synonym,related_but_distinct,related_but_distinct,0
+P064,ai_component,autonomous AI agent,autonomous AI agent framework,within_family_only,near_synonym,related_but_distinct,related_but_distinct,0
+P065,ai_component,ML models for market analysis,predictive ML models for market analytics,within_family_only,near_synonym,exact_synonym,near_synonym,1
+P066,use_case,SPL token on Solana,token on Solana,within_family_only,near_synonym,exact_synonym,near_synonym,1
+P067,use_case,AI game + tokenized economy,tokenized game economy,single_operationalization,near_synonym,related_but_distinct,related_but_distinct,0
+P068,ai_component,"AI/ML for NFT forensics (wash trade, forgery, valuation)",Physical AI,negative_control,unrelated,unrelated,unrelated,0
+P069,use_case,decentralized data storage,decentralized storage + delivery of data/content,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P070,use_case,AI assistant for crypto trading,AI assistant for crypto trading + portfolios,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P071,ai_component,AI applicability for AI agents/dApps,"API for LLMs, embeddings, image generation",negative_control,related_but_distinct,related_but_distinct,related_but_distinct,0
+P072,use_case,programmable compliance for on-chain execution,smart contract vulnerability scanning,negative_control,related_but_distinct,near_synonym,related_but_distinct,0
+P073,ai_component,AgentData (real-time data streams for AI agents),real-time data for AI agents,single_operationalization,exact_synonym,exact_synonym,exact_synonym,1
+P074,ai_component,AI analytics + automated trade execution,AI appraisal + Art AI agent for tokenization,negative_control,unrelated,unrelated,unrelated,0
+P075,use_case,develop + launch autonomous agents,training medical models with privacy preservation,negative_control,unrelated,unrelated,unrelated,0
+P076,use_case,hashpower marketplace + validator staking,token generation + deployment via AI,negative_control,unrelated,unrelated,unrelated,0
+P077,ai_component,AI/ML crypto market analytics (app),ML/AI analytics for agriculture,negative_control,related_but_distinct,related_but_distinct,related_but_distinct,0
+P078,use_case,AI content creation,AI content creation (mobile app),single_operationalization,near_synonym,near_synonym,near_synonym,1
+P079,use_case,market analytics + forecasting signals,sports analytics + forecasting,single_operationalization,related_but_distinct,related_but_distinct,related_but_distinct,0
+P080,ai_component,AI coach / workout personalization (feature),predictive intelligence,negative_control,related_but_distinct,unrelated,related_but_distinct,0
+P081,ai_component,AI agent,autonomous AI agent,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P082,use_case,L1 for dApps (including AI apps),L1 for dApps + AI agents/AI apps,cross_family_stable,near_synonym,exact_synonym,near_synonym,1
+P083,use_case,"chat, agents, API, launching AI solutions",create/launch AI agents + chats,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P084,use_case,content generation + digital assets,on-chain economy for AI agents + their communities,negative_control,related_but_distinct,unrelated,related_but_distinct,0
+P085,use_case,memecoin / community token,memecoin / token,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P086,use_case,inference/RAG infrastructure for conversational AI,on-chain investigations (clusters/funds/insights),negative_control,unrelated,unrelated,unrelated,0
+P087,use_case,trading algorithm automation,trading automation,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P088,ai_component,GPU marketplace for AI/ML workloads,GPU/compute for AI/ML workloads,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P089,ai_component,AI agents for Web3 workflows,AI agents for Web3 workflows (agentic wallet),cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P090,use_case,GPU compute + AI tools,"compute for AI, GPU marketplace",single_operationalization,near_synonym,near_synonym,near_synonym,1
+P091,ai_component,AI agent for trading actions,infrastructure for running autonomous AI agents,negative_control,related_but_distinct,near_synonym,related_but_distinct,0
+P092,ai_component,GPU/edge infrastructure for AI workloads,compute infrastructure for AI workloads,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P093,use_case,crypto analytics,crypto analytics + data API,within_family_only,near_synonym,near_synonym,near_synonym,1
+P094,use_case,DeFi automation + agents,DeFi automation + analytics,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P095,ai_component,positioning only,"positioning only (""AI agents"")",within_family_only,near_synonym,near_synonym,near_synonym,1
+P096,ai_component,"agent population, mutation + selection",reinforcement-learning trading agents + MCP marketplace,negative_control,related_but_distinct,near_synonym,related_but_distinct,0
+P097,use_case,create/deploy tokenized AI agents,deploy + trade tokenized AI agents,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P098,use_case,social + payments app with token,token/community; product link not established,negative_control,related_but_distinct,unrelated,related_but_distinct,0
+P099,use_case,meme community token,memecoin / community token,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P100,use_case,AI inference marketplace + decentralized compute,decentralized compute marketplace,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P101,use_case,AI agent creation + launch,"create, launch + interact with AI agents",single_operationalization,near_synonym,near_synonym,near_synonym,1
+P102,ai_component,positioning only (AI toolkit),positioning only (AI tools/community),single_operationalization,near_synonym,near_synonym,near_synonym,1
+P103,ai_component,AI agent + model marketplace,AI agent marketplace + AI services,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P104,use_case,art/IP RWA tokenization + incentive economy,data storage infrastructure,negative_control,unrelated,unrelated,unrelated,0
+P105,ai_component,AI integration for immersive experience,execution/coordination infrastructure for AI agents,negative_control,unrelated,related_but_distinct,related_but_distinct,0
+P106,use_case,decentralized environmental data network,no-code AI agents,negative_control,unrelated,unrelated,unrelated,0
+P107,use_case,ERC-20 memecoin token,on-chain attribution + rewards for AI datasets,negative_control,unrelated,unrelated,unrelated,0
+P108,use_case,meme community token,meme community token (Solana),within_family_only,exact_synonym,near_synonym,near_synonym,1
+P109,ai_component,GPU rentals + AI/ML tools,sports analytics predictions,negative_control,unrelated,unrelated,unrelated,0
+P110,ai_component,GPU/compute for AI/ML workloads,compute marketplace for AI/ML workloads,within_family_only,near_synonym,near_synonym,near_synonym,1
+P111,use_case,ERC-20 token on Ethereum,token on Ethereum,within_family_only,exact_synonym,near_synonym,near_synonym,1
+P112,ai_component,AI agent creation + deployment platform,AI agent creation/training/deployment platform,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P113,use_case,Face-NFT creation + trading,crypto intelligence for humans + AI agents,negative_control,unrelated,unrelated,unrelated,0
+P114,use_case,AI inference marketplace + decentralized compute,inference marketplace,within_family_only,near_synonym,near_synonym,near_synonym,1
+P115,ai_component,AI agent marketplace + AI services,compute marketplace + AI agents + AI marketplace,single_operationalization,near_synonym,related_but_distinct,near_synonym,1
+P116,use_case,AI bot/tools for communities,bots/tools for communities,cross_family_stable,near_synonym,exact_synonym,near_synonym,1
+P117,use_case,building + optimizing teams of AI agents,decentralized AI inference/agents,negative_control,related_but_distinct,unrelated,related_but_distinct,0
+P118,ai_component,AI assistant for communities,AI chat assistant for communities,within_family_only,near_synonym,exact_synonym,near_synonym,1
+P119,ai_component,LLM inference via a compute node network,voice-enabled AI agents,negative_control,unrelated,unrelated,unrelated,0
+P120,ai_component,AI agent for trading actions,AI agents/bots for trading,single_operationalization,near_synonym,exact_synonym,near_synonym,1
+P121,use_case,fortune readings + token/contract «energy»,token,negative_control,related_but_distinct,unrelated,related_but_distinct,0
+P122,use_case,memecoin + community products,memecoin / community token,single_operationalization,near_synonym,related_but_distinct,near_synonym,1
+P123,use_case,multichain token + DAO voting/staking,signals/games around bull/bear markets,negative_control,unrelated,unrelated,unrelated,0
+P124,use_case,access to compute,access to compute + AI tools,within_family_only,near_synonym,near_synonym,near_synonym,1
+P125,ai_component,AI agent creation + launch platform,AI agent launch platform,cross_family_stable,near_synonym,near_synonym,near_synonym,1
+P126,ai_component,AI assistant/agents for DeFi operations,AI-assisted DeFi strategies/agents,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P127,use_case,AI agent creation + deployment,AI agent creation + launch,single_operationalization,exact_synonym,near_synonym,near_synonym,1
+P128,ai_component,AI agents/bots for trading,AI bots + trading analytics,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P129,use_case,create/deploy tokenized AI agents,quantum-secure EVM-compatible L1,negative_control,unrelated,unrelated,unrelated,0
+P130,ai_component,data for AI + agents,real-time data for AI agents,single_operationalization,near_synonym,near_synonym,near_synonym,1
+P131,use_case,DAO governance + ecosystem participation,run AI/ML workloads on a decentralized cloud,negative_control,unrelated,unrelated,unrelated,0
+P132,use_case,personal AI assistants + skills,signal analytics + Telegram trading,negative_control,unrelated,unrelated,unrelated,0
+P133,ai_component,AI assistant for communities,AI assistant for communities (NLP/knowledge graph),within_family_only,near_synonym,exact_synonym,near_synonym,1
+P134,ai_component,decentralized AI compute + marketplace,decentralized AI compute network,within_family_only,near_synonym,near_synonym,near_synonym,1
+P135,use_case,AI content creation,AI content creation + monetization,within_family_only,near_synonym,near_synonym,near_synonym,1

@@ -1,0 +1,101 @@
+field,op,similarity,label_a,label_b,freq_a,freq_b
+use_case,E,0.985526,AI assistant for crypto trading,AI assistant for crypto trading + portfolios,1,1
+use_case,E,0.981112,L1 for dApps (including AI apps),L1 for dApps + AI agents/AI apps,1,1
+use_case,E,0.980069,meme community token,memecoin / community token,2,1
+use_case,E,0.977120,decentralized AI inference,decentralized AI inference/agents,1,1
+use_case,E,0.971508,build + deploy + monitor AI agents,build + deploy AI agents,1,1
+use_case,E,0.970685,AI bot/tools for communities,bots/tools for communities,1,1
+use_case,E,0.967162,build + deploy AI agents,deploy + run AI agents,1,2
+use_case,E,0.966633,memecoin / community token,memecoin / token,1,1
+use_case,E,0.963465,multichain AMM + launchpad + staking,multichain AMM DEX + launchpad,1,1
+use_case,E,0.963431,trading automation,trading operations automation,1,1
+use_case,E,0.962689,meme token,memecoin / token,17,1
+use_case,E,0.959313,"metaverse, UGC, NFT assets","metaverse, UGC/builder, dApps + digital assets",1,1
+use_case,E,0.958016,build/share/monetize AI agents,create + monetize AI agents,1,1
+use_case,E,0.956872,memecoin,memecoin / token,1,1
+use_case,E,0.956751,blockchain data indexing + queries,blockchain indexing + query answering,1,1
+use_case,E,0.956251,AI content creation,AI content creation (mobile app),1,1
+use_case,E,0.955906,AI assistant + tools for crypto asset analysis/management,AI assistant for crypto trading + portfolios,1,1
+use_case,E,0.955744,AI agent creation + deployment,AI agent creation + use,2,2
+use_case,E,0.955595,AI agent app store + marketplace,AI agents marketplace,1,1
+use_case,E,0.955278,meme community token,meme token,2,17
+use_case,E,0.953177,"create, launch + interact with AI agents",create/launch AI agents + chats,1,1
+use_case,E,0.952276,AI community meme token,meme community token,1,2
+use_case,E,0.951774,AI agent creation + use,AI agent/bot creation + management,2,1
+use_case,E,0.951768,AI agents for Web3 interactions,Web3 task automation via AI agents,1,1
+use_case,E,0.951437,DeFi automation + agents,autonomous agents for DeFi,1,1
+use_case,E,0.950344,decentralized cloud + GPU marketplace,decentralized compute marketplace,1,2
+use_case,E,0.949609,AI content creation,AI persona/content creation,1,1
+use_case,E,0.949107,AI content creation,AI content creation + monetization,1,1
+use_case,E,0.948994,build + deploy + monitor AI agents,deploy + run AI agents,1,2
+use_case,E,0.948834,build + deploy AI agents,build + orchestrate AI agents,1,1
+use_case,E,0.948203,meme token,meme/social token,17,1
+use_case,E,0.948087,AI agent creation + launch,no-code AI agent creation + launch,4,1
+use_case,E,0.947820,AI agent creation + deployment,AI agent creation + launch,2,4
+use_case,E,0.947680,market analysis + trading automation,market analytics + automation,1,1
+use_case,E,0.947325,AI agent creation + launch,"create, launch + interact with AI agents",4,1
+use_case,E,0.946641,AI community meme token,meme token about AI culture,1,1
+use_case,E,0.946422,AI game + tokenized economy,tokenized game economy,1,1
+use_case,E,0.946368,AI agent creation + deployment,build + deploy AI agents,2,1
+use_case,E,0.946237,create/deploy tokenized AI agents,deploy + trade tokenized AI agents,1,1
+use_case,E,0.945764,meme community token,memecoin / token,2,1
+use_case,E,0.945741,analytics for on-chain markets + wallets,crypto market analytics + on-chain metrics,1,1
+use_case,E,0.945288,AI agent creation + launch,AI agent creation + use,4,2
+use_case,E,0.944842,crypto analytics,crypto analytics + data API,1,1
+use_case,E,0.944674,AI assistant + tools for crypto asset analysis/management,AI assistant for crypto trading,1,1
+use_case,E,0.944461,ERC-20 memecoin token,ERC-20 token on Ethereum,2,3
+use_case,E,0.944287,no-code AI agent creation + launch,no-code AI agents,1,1
+use_case,E,0.944186,build + deploy AI agents,build + run autonomous AI agents,1,1
+use_case,E,0.944052,create + monetize AI agents,create/train/monetize AI agents + iNFTs,1,1
+use_case,E,0.943629,AI agent creation + deployment,AI agent/bot creation + management,2,1
+use_case,E,0.943267,AI agent creation + launch,create/launch AI agents + chats,4,1
+use_case,E,0.943260,trading algorithm automation,trading automation,1,1
+use_case,E,0.943091,meme community token,meme community token (Solana),2,1
+use_case,E,0.942243,AI agent creation + deployment,deploy + run AI agents,2,2
+use_case,E,0.942045,AI assistant for token community,community token about AI,1,1
+use_case,E,0.941935,AI community meme token,community token about AI,1,1
+use_case,E,0.941807,agents/bots/dev tools for Web3,chat/agents for Web3,1,1
+use_case,E,0.941465,AI agents for Web3 interactions,agent interface for Web3 actions,1,1
+use_case,E,0.940141,AI agent creation + deployment,create/deploy tokenized AI agents,2,1
+use_case,E,0.940021,launch + tokenize AI agents,launch AI personas + agent tokens,1,1
+use_case,E,0.940019,AI inference marketplace + decentralized compute,decentralized AI inference,1,1
+use_case,E,0.939591,"build, deploy + monetize agents",build/share/monetize AI agents,1,1
+use_case,E,0.939316,build + orchestrate AI agents,build + run autonomous AI agents,1,1
+use_case,E,0.939220,meme community token (Solana),memecoin / community token,1,1
+use_case,E,0.939148,AI agents for Web3 interactions,chat/agents for Web3,1,1
+use_case,E,0.939145,"create, launch + interact with AI agents",launch + manage AI agents,1,1
+use_case,E,0.938436,private compute over encrypted data,private compute/storage for sensitive data,1,1
+use_case,E,0.937968,DeFi automation + analytics,trading + DeFi automation,1,1
+use_case,E,0.937593,agent interface for Web3 actions,chat/agents for Web3,1,1
+use_case,E,0.937327,memecoin + community products,memecoin / community token,1,1
+use_case,E,0.937118,AI assistant for crypto trading + portfolios,AI assistant for swaps/portfolios in DeFi (Solana),1,1
+use_case,E,0.936869,SPL token,SPL token on Solana,1,2
+use_case,E,0.936668,AI inference marketplace + decentralized compute,decentralized GPU marketplace (inference),1,1
+use_case,E,0.935997,token on Solana,trading/holding a token on Solana,7,1
+use_case,E,0.935962,access to AI modules + compute,access to compute + AI tools,1,1
+use_case,E,0.935952,launch + manage AI agents,launch + tokenize AI agents,1,1
+use_case,E,0.935888,launch + tokenize AI agents,launch tokenized AI agents for on-chain services,1,1
+use_case,E,0.935879,AI agent creation + launch,launch + manage AI agents,4,1
+use_case,E,0.935765,trading + DeFi automation,trading automation,1,1
+use_case,E,0.935557,AI agents (access to on-chain data),on-chain transactions between AI agents,2,1
+use_case,E,0.935000,AI agents for analytics/trading + ownership models,AI agents for gaming/trading/dApps,1,1
+use_case,E,0.934819,GPU compute + AI tools,access to compute + AI tools,1,1
+use_case,E,0.934809,AI agent creation + launch,private AI agent launch,4,1
+use_case,E,0.934786,Solana (token analysis + risk signals),Solana token + wallet analysis,1,1
+use_case,E,0.934636,trading automation,trading terminal + bots/automation,1,1
+use_case,E,0.934531,DeFi strategy automation,DeFi strategy automation + copy trading,1,1
+use_case,E,0.934009,meme token,memecoin / community token,17,1
+use_case,E,0.933951,build + run autonomous AI agents,deploy + run AI agents,1,2
+use_case,E,0.933783,DeFi automation + agents,DeFi automation + analytics,1,1
+use_case,E,0.933541,DeFi automation + agents,trading + DeFi automation,1,1
+use_case,E,0.932993,DeFi automation + analytics,DeFi strategy automation,1,1
+use_case,E,0.932762,meme ecosystem (NFTs/games/education),meme token + DeFi + NFT ecosystem,1,1
+use_case,E,0.932348,AI content creation (mobile app),AI content creation + monetization,1,1
+use_case,E,0.932291,DeFi automation + agents,"DeFi operations via ""agents""",1,1
+use_case,E,0.931886,AI inference marketplace + decentralized compute,decentralized AI inference/agents,1,1
+use_case,E,0.931886,GPU compute marketplace (training/inference),decentralized GPU marketplace (inference),1,1
+use_case,E,0.931705,AI assistant + dev API for Web3,Web3 task automation via AI agents,1,1
+use_case,E,0.931684,trading algorithm automation,trading operations automation,1,1
+use_case,E,0.931674,AI content creation (mobile app),AI persona/content creation,1,1
+use_case,E,0.931673,DeFi protocol,DeFi token,1,1
+use_case,E,0.931321,AI agents for Web3 interactions,AI services for Web3 users,1,1

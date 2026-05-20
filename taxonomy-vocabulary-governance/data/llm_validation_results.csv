@@ -1,0 +1,67 @@
+pair_id,field,value_a,value_b,stratum,human_is_synonym,llm_answer,llm_is_synonym
+P001,use_case,decentralized AI inference,decentralized AI inference/agents,cross_family_stable,1,no,0
+P002,ai_component,AI assistant for graph building (OpenAI-based),"meta-agentic orchestration, demos",negative_control,0,no,0
+P004,ai_component,AI features/AI products in ecosystem,positioning only (AI apps infrastructure),negative_control,0,no,0
+P005,use_case,smart contracts with verifiable AI inference,trustless AI-API results for smart contracts,negative_control,0,yes,1
+P006,use_case,DeFi operations via integrations + aggregation,on-chain games/tournaments/NFT activities on Base,negative_control,0,no,0
+P007,ai_component,AI agent launch platform,AI data (lineage + metering + royalties),negative_control,0,no,0
+P011,use_case,AI insights/signals for trading + research,airdrops + lottery + NFT collectibles,negative_control,0,no,0
+P016,use_case,"analysis/chat, trading tools",video/image generation + video agents,negative_control,0,no,0
+P017,use_case,autonomous agents for DeFi,programmable compliance for on-chain execution,negative_control,0,no,0
+P018,ai_component,ML/AI strategies + portfolio scoring,multi-agent LLM (game generation + testing),negative_control,0,no,0
+P019,ai_component,"AI agents (""AI Epals"")",AI services,negative_control,0,no,0
+P023,ai_component,AI agents for Web3,AI agents for Web3 workflows,cross_family_stable,1,no,0
+P029,ai_component,AI agents/bots for trading,AI/ML signals + models for trading,negative_control,1,no,0
+P031,use_case,lead exchange in a network/platform,meme token,negative_control,0,no,0
+P034,ai_component,BCI neurofeedback + AI,voice AI agents for phone calls,negative_control,0,no,0
+P037,ai_component,voice-enabled AI agents,voice-enabled AI agents + voice models,cross_family_stable,1,no,0
+P038,ai_component,cloud infrastructure for AI workloads,compute infrastructure for AI workloads,cross_family_stable,1,no,0
+P039,ai_component,decentralized AI agent network + cell services,decentralized GPU cloud + data agent,negative_control,0,no,0
+P040,use_case,inference marketplace,yield farming automation via vault strategies,negative_control,0,no,0
+P041,use_case,agents for Telegram / assistants,compute marketplace + orchestration,negative_control,0,no,0
+P042,use_case,build apps + workflows + smart contracts,data labeling marketplace + dataset trading,negative_control,0,no,0
+P043,ai_component,GPU rentals for AI workloads,GPU rentals for AI workloads; AI API endpoints,cross_family_stable,1,no,0
+P044,ai_component,"""AI powered"" SaaS products (marketing/content/research)","GPU rentals, decentralized AI infrastructure",negative_control,0,no,0
+P047,ai_component,AI-influencers + FameEngine,generative AI art engine + Telegram bot,negative_control,0,no,0
+P049,ai_component,AI search/analytics,CV/ML road event detection from video,negative_control,0,no,0
+P050,ai_component,AI coach / workout personalization (feature),GPU/edge infrastructure for AI workloads,negative_control,0,no,0
+P052,ai_component,decentralized AI agents marketplace,"robotics foundation models, data foundry",negative_control,0,no,0
+P054,ai_component,AI wealth manager agent + investment committee simulation room,ML smart contract vulnerability analysis,negative_control,0,no,0
+P056,ai_component,real-world data context for AI apps,swarm/federated-style model training across hospitals,negative_control,0,no,0
+P059,use_case,build + deploy + monitor AI agents,build + deploy AI agents,cross_family_stable,1,no,0
+P060,ai_component,AI assistant/agents for DeFi operations,NL assistant/agents for DeFi operations,cross_family_stable,1,no,0
+P061,use_case,AI agent creation + launch,no-code AI agent creation + launch,cross_family_stable,1,no,0
+P062,ai_component,AI agents marketplace,decentralized AI agents marketplace,cross_family_stable,1,no,0
+P068,ai_component,"AI/ML for NFT forensics (wash trade, forgery, valuation)",Physical AI,negative_control,0,no,0
+P070,use_case,AI assistant for crypto trading,AI assistant for crypto trading + portfolios,cross_family_stable,1,no,0
+P071,ai_component,AI applicability for AI agents/dApps,"API for LLMs, embeddings, image generation",negative_control,0,no,0
+P072,use_case,programmable compliance for on-chain execution,smart contract vulnerability scanning,negative_control,0,no,0
+P074,ai_component,AI analytics + automated trade execution,AI appraisal + Art AI agent for tokenization,negative_control,0,no,0
+P075,use_case,develop + launch autonomous agents,training medical models with privacy preservation,negative_control,0,no,0
+P076,use_case,hashpower marketplace + validator staking,token generation + deployment via AI,negative_control,0,no,0
+P077,ai_component,AI/ML crypto market analytics (app),ML/AI analytics for agriculture,negative_control,0,no,0
+P080,ai_component,AI coach / workout personalization (feature),predictive intelligence,negative_control,0,no,0
+P082,use_case,L1 for dApps (including AI apps),L1 for dApps + AI agents/AI apps,cross_family_stable,1,yes,1
+P084,use_case,content generation + digital assets,on-chain economy for AI agents + their communities,negative_control,0,no,0
+P086,use_case,inference/RAG infrastructure for conversational AI,on-chain investigations (clusters/funds/insights),negative_control,0,no,0
+P088,ai_component,GPU marketplace for AI/ML workloads,GPU/compute for AI/ML workloads,cross_family_stable,1,no,0
+P089,ai_component,AI agents for Web3 workflows,AI agents for Web3 workflows (agentic wallet),cross_family_stable,1,no,0
+P091,ai_component,AI agent for trading actions,infrastructure for running autonomous AI agents,negative_control,0,no,0
+P096,ai_component,"agent population, mutation + selection",reinforcement-learning trading agents + MCP marketplace,negative_control,0,no,0
+P098,use_case,social + payments app with token,token/community; product link not established,negative_control,0,no,0
+P104,use_case,art/IP RWA tokenization + incentive economy,data storage infrastructure,negative_control,0,no,0
+P105,ai_component,AI integration for immersive experience,execution/coordination infrastructure for AI agents,negative_control,0,no,0
+P106,use_case,decentralized environmental data network,no-code AI agents,negative_control,0,no,0
+P107,use_case,ERC-20 memecoin token,on-chain attribution + rewards for AI datasets,negative_control,0,no,0
+P109,ai_component,GPU rentals + AI/ML tools,sports analytics predictions,negative_control,0,no,0
+P112,ai_component,AI agent creation + deployment platform,AI agent creation/training/deployment platform,cross_family_stable,1,yes,1
+P113,use_case,Face-NFT creation + trading,crypto intelligence for humans + AI agents,negative_control,0,no,0
+P116,use_case,AI bot/tools for communities,bots/tools for communities,cross_family_stable,1,yes,1
+P117,use_case,building + optimizing teams of AI agents,decentralized AI inference/agents,negative_control,0,no,0
+P119,ai_component,LLM inference via a compute node network,voice-enabled AI agents,negative_control,0,no,0
+P121,use_case,fortune readings + token/contract «energy»,token,negative_control,0,no,0
+P123,use_case,multichain token + DAO voting/staking,signals/games around bull/bear markets,negative_control,0,no,0
+P125,ai_component,AI agent creation + launch platform,AI agent launch platform,cross_family_stable,1,no,0
+P129,use_case,create/deploy tokenized AI agents,quantum-secure EVM-compatible L1,negative_control,0,no,0
+P131,use_case,DAO governance + ecosystem participation,run AI/ML workloads on a decentralized cloud,negative_control,0,no,0
+P132,use_case,personal AI assistants + skills,signal analytics + Telegram trading,negative_control,0,no,0
