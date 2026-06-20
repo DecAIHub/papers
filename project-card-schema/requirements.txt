@@ -1,7 +1,7 @@
 # Replication dependencies for the project-card-schema package.
-# Python 3.9+ (tested on 3.9–3.13).
+# Python 3.9 or newer.
 # Lower bounds are minimum compatible versions, not exact pins, so the
-# package reproduces on the full Python 3.9+ range stated in the README.
+# package reproduces across the supported Python range.
 numpy>=1.21
 matplotlib>=3.5
 requests>=2.25
