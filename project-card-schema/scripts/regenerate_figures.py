@@ -18,10 +18,15 @@ except ImportError:
     sys.exit(1)
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ZENODO = os.path.join(BASE, "zenodo")
-ASSETS = os.path.join(BASE, "assets")
 
-with open(os.path.join(ZENODO, "project_cards.json"), "r", encoding="utf-8") as f:
+# Path to the Zenodo dataset (project_cards.json), DOI 10.5281/zenodo.18900950.
+# Pass it as argv[1], set the PROJECT_CARDS env var, or place project_cards.json
+# in the working directory. Figures are written to FIGURES_DIR (default: figures/).
+DATA = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("PROJECT_CARDS", "project_cards.json")
+ASSETS = os.environ.get("FIGURES_DIR", os.path.join(BASE, "figures"))
+os.makedirs(ASSETS, exist_ok=True)
+
+with open(DATA, "r", encoding="utf-8") as f:
     cards = json.load(f)
 
 SEGMENTS_MAIN = ["Infra", "AI/Other", "AI/Agents", "DeFi", "Meme",
