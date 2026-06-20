@@ -85,7 +85,7 @@ def split_md_row(line: str) -> list[str]:
 
 
 def _split_simple(line: str) -> list[str]:
-    """Split a markdown row by literal pipe (legacy behaviour matching Article C)."""
+    """Split a markdown row by literal pipe (legacy counting behaviour)."""
     return [c.strip() for c in line.strip().split("|")]
 
 
@@ -93,7 +93,7 @@ def parse_table(text: str, header_pattern: str, *, escape_pipe: bool = True) -> 
     """Find a markdown table after a line matching header_pattern.
 
     escape_pipe=True  → use split_md_row (handles \\|)
-    escape_pipe=False → use simple split (matches legacy Article C counting)
+    escape_pipe=False → use simple split (matches legacy counting)
     """
     splitter = split_md_row if escape_pipe else _split_simple
     lines = text.split("\n")
