@@ -4,11 +4,11 @@ Replication packages and supplementary materials for the DecAIHub research progr
 
 ## Papers
 
-| Directory | Title | Target Journal |
-|-----------|-------|----------------|
-| [adversarial-verification](adversarial-verification) | Manipulation-Resistant Verification in Trust-Critical Digital Registries: Adversarial Framework with Protocol Validation and Boundary Diagnostics | Computer Standards & Interfaces (CSI) |
-| [project-card-schema](project-card-schema) | A Project-Card Schema and Completeness Diagnostics for AI–Blockchain Registries | Scientific Data |
-| [taxonomy-vocabulary-governance](taxonomy-vocabulary-governance/) | Evaluating Sparse and Dense Sentence Encoders for Vocabulary Governance in Emerging-Domain Taxonomies: A Cross-Family Robustness Approach | Natural Language Processing Journal |
+| Directory | Paper |
+|-----------|-------|
+| [adversarial-verification](adversarial-verification) | Manipulation-Resistant Verification in Trust-Critical Digital Registries: Adversarial Framework with Protocol Validation and Boundary Diagnostics |
+| [project-card-schema](project-card-schema) | A Project-Card Schema and Completeness Diagnostics for AI–Blockchain Registries |
+| [taxonomy-vocabulary-governance](taxonomy-vocabulary-governance/) | Sparse and dense sentence-encoder evaluation for vocabulary governance in emerging-domain taxonomies |
 
 ## About
 
