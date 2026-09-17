@@ -2,10 +2,10 @@
 Agreement between the independent coder's passport-field coding (coding tool export, task 1) and the curator's
 values in the deposit (v1.1.0), for the 50 sampled cards.
 
-The coder chose from the ten-value lists of the first version of the descriptor (Table 7 of v1.0.0): 20 Category
+The coder chose from the controlled lists of the first version of the descriptor (Table 7 of v1.0.0): 20 Category
 labels, one token model out of 7, one ai_component class out of 10, one use_case class out of 10, plus
 "cannot determine" (nd) and "none of the list" (nil, with a free-text suggestion). The curator's free-text
-ai_component / use_case descriptors of the sampled cards are mapped onto the same ten-value lists by a mapping
+ai_component / use_case descriptors of the sampled cards are mapped onto the same lists by a mapping
 table approved by the curator (irr/mapping_sample50_to_table7.csv; __not_assignable__ = descriptor states that no
 component / use case was established). Category labels outside the coder's list are mapped by the same table.
 
