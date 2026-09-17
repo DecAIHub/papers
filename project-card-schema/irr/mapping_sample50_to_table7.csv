@@ -1,0 +1,89 @@
+field,curator_value,coder_vocabulary_class
+ai_component,AI chat assistant for communities,inference
+ai_component,"""AI powered"" SaaS products (marketing/content/research)",content generation
+ai_component,dataset collection + improvement for AI training,data labeling
+ai_component,AI agents for social intelligence,agents
+ai_component,policy protocol for AI agents,agents
+ai_component,AI computing,compute orchestration
+ai_component,personal data for AI applications,other
+ai_component,AI-driven strategies + risk engine,autonomous trading
+ai_component,agents engine for market/security insights,agents
+ai_component,fraud/rugpull prediction + wallet analytics,analytics
+ai_component,platform for autonomous AI agents,agents
+ai_component,AI assistant for communities,inference
+ai_component,AI triage + symptom Q&A,inference
+ai_component,AI-driven decisions on IoT big data,analytics
+ai_component,crypto MCP server + 200+ tools,agents
+ai_component,deterministic on-chain ML inference (Synapse/CVM),inference
+ai_component,AI-powered aggregator/launcher,other
+ai_component,positioning only,__not_assignable__
+ai_component,AI agent creation + training (content/posting),agents
+ai_component,on-chain agents + shared skills library,agents
+ai_component,AI/ML signals + models for trading,analytics
+ai_component,AI extensions (inference/vector DB/memory),inference
+ai_component,swarm/federated-style model training across hospitals,training
+ai_component,AI-native dev toolkits (AIGNE/IDD),agents
+ai_component,"AI/ML for NFT forensics (wash trade, forgery, valuation)",analytics
+ai_component,decentralized AI compute network,compute orchestration
+ai_component,AI consumer product (details unknown),__not_assignable__
+ai_component,L2 for AI dApps (Parallel EVM + GPU network),compute orchestration
+ai_component,voice AI agents for phone calls,agents
+ai_component,strategy ranking via Bittensor ML network,analytics
+ai_component,"AI-driven DeFi, AiFi tokenisation",other
+ai_component,Telegram bot S.A.R.A.H.,inference
+ai_component,real-time market agents,agents
+ai_component,friendly AI agent,agents
+ai_component,AI assistants/search/recommendations,inference
+ai_component,"positioning only (""AI"" analytics)",__not_assignable__
+use_case,AI bot/tools for communities,other
+use_case,decentralized compute marketplace,decentralized compute
+use_case,meme token,other
+use_case,user-owned data + rewards for contributions,data marketplace
+use_case,trading insights + analytics,other
+use_case,ERC-20 memecoin token,other
+use_case,programmable compliance for on-chain execution,other
+use_case,rewards for consented data sharing,data marketplace
+use_case,PoW EVM L1,other
+use_case,self-sovereign data wallet + SSO + messaging,identity verification
+use_case,non-custodial portfolio management,DeFi portfolio management
+use_case,agentic market analytics,prediction
+use_case,data tokenization + DeFi mechanics,data marketplace
+use_case,risk scoring for addresses/pools,security auditing
+use_case,social network + API for AI agents,other
+use_case,moderation + analytics + assistant,other
+use_case,telemedicine + online consultations,other
+use_case,IoT data transactions,data marketplace
+use_case,AI agents (access to on-chain data),other
+use_case,AI smart contracts + AI dApps,other
+use_case,DAO analytics + launcher,other
+use_case,token use case not established,__not_assignable__
+use_case,on-chain economy for AI agents + their communities,other
+use_case,"self-funding agents, on-chain transactions",trading bots
+use_case,AI insights/signals for trading + research,trading bots
+use_case,relational L1 for dApp chains + fast queries,other
+use_case,blockchain infrastructure,other
+use_case,training medical models with privacy preservation,other
+use_case,AI agents + LLM app tooling,other
+use_case,NFT analytics/forensics + on-chain activity,security auditing
+use_case,distributed-node execution of AI tasks,decentralized compute
+use_case,consumer app under the AI Waifu brand,other
+use_case,high-performance execution layer,other
+use_case,launch app-specific L1 (chainlets) with shared security,other
+use_case,call + support automation,other
+use_case,strategy evaluation + ranking in a subnet,other
+use_case,"AiFi/DeFAI infrastructure, KEY→SFI migration",other
+use_case,platform utility token (exchange),other
+use_case,AI assistant for token community,other
+use_case,DeFi token,other
+use_case,autonomous agents for DeFi,DeFi portfolio management
+use_case,tools + user assistance,other
+use_case,RWA marketplace + DeFi + game,other
+use_case,pet community + NFTs + data marketplace,data marketplace
+use_case,ERC-20 token on Ethereum,other
+Category,AI/DeFi,AI/Other | DeFi
+Category,AI/Training,AI/Other
+Category,Launchpad,DeFi
+Category,Data,AI/Data
+Category,AI/Assistants,AI/Agents
+Category,L1,Infra
+Category,SocialFi,Social

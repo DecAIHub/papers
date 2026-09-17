@@ -1,0 +1,2095 @@
+{
+ "tool_version": "v1.1",
+ "exported_at": "2026-09-02T12:18:49.249Z",
+ "task1": {
+  "747-all-in": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Other",
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "inference"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 531,
+   "started_at": "2026-09-02T08:08:48.646Z",
+   "finished_at": "2026-09-02T08:19:41.244Z"
+  },
+  "242-linqai": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Compute",
+      "DePIN"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "compute orchestration"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "decentralized compute"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 250,
+   "started_at": "2026-09-02T08:19:41.247Z",
+   "finished_at": "2026-09-02T08:23:51.510Z"
+  },
+  "588-catalorian-token": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Meme"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": false,
+     "nil": true,
+     "sugg": "meme / no product utility",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 223,
+   "started_at": "2026-09-02T08:23:51.514Z",
+   "finished_at": "2026-09-02T08:27:34.390Z"
+  },
+  "487-navigate": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Data",
+      "Gaming"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "data labeling"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "data marketplace"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 224,
+   "started_at": "2026-09-02T08:27:34.394Z",
+   "finished_at": "2026-09-02T08:31:18.612Z"
+  },
+  "378-mind-ai": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Analytics",
+      "AI/Agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "analytics"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "could be agents"
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 211,
+   "started_at": "2026-09-02T08:31:18.612Z",
+   "finished_at": "2026-09-02T08:34:49.229Z"
+  },
+  "816-goatseus-maximus-eth": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Meme"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "just a meme"
+    },
+    "token_type": {
+     "canon": [],
+     "nd": false,
+     "nil": true,
+     "sugg": "meme / no product utility",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 174,
+   "started_at": "2026-09-02T08:34:49.234Z",
+   "finished_at": "2026-09-02T08:38:54.668Z"
+  },
+  "90-newton-protocol": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "just infra"
+    },
+    "token_type": {
+     "canon": [
+      "security"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 262,
+   "started_at": "2026-09-02T08:38:54.672Z",
+   "finished_at": "2026-09-02T08:43:16.867Z"
+  },
+  "688-insights-network": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Social",
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "reward"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 245,
+   "started_at": "2026-09-02T08:43:16.869Z",
+   "finished_at": "2026-09-02T08:47:22.094Z"
+  },
+  "555-ethereumfair": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 218,
+   "started_at": "2026-09-02T08:47:22.097Z",
+   "finished_at": "2026-09-02T08:51:00.509Z"
+  },
+  "506-verida": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra",
+      "Privacy"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "identity verification"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 183,
+   "started_at": "2026-09-02T08:51:00.511Z",
+   "finished_at": "2026-09-02T08:54:03.152Z"
+  },
+  "698-qubitica": {
+   "fields": {
+    "Category": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": "empty whitepaper"
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 172,
+   "started_at": "2026-09-02T08:54:03.153Z",
+   "finished_at": "2026-09-02T08:58:56.602Z"
+  },
+  "243-singularitydao": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "DeFi",
+      "DAO",
+      "AI/Agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "governance"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "autonomous trading"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "could be agents"
+    },
+    "use_case": {
+     "canon": [
+      "DeFi portfolio management"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 237,
+   "started_at": "2026-09-02T08:58:56.606Z",
+   "finished_at": "2026-09-02T09:02:54.450Z"
+  },
+  "201-strawberry-ai": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "AI/Analytics"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "prediction"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 228,
+   "started_at": "2026-09-02T09:02:54.451Z",
+   "finished_at": "2026-09-02T09:06:42.461Z"
+  },
+  "253-big-data-protocol": {
+   "fields": {
+    "Category": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": "site timeout"
+    },
+    "token_type": {
+     "canon": [
+      "reward"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 1610,
+   "started_at": "2026-09-02T09:06:42.464Z",
+   "finished_at": "2026-09-02T09:36:01.735Z"
+  },
+  "403-chainaware-ai": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Analytics",
+      "AI/Agents",
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "analytics"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "security auditing"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 196,
+   "started_at": "2026-09-02T09:36:01.735Z",
+   "finished_at": "2026-09-02T09:39:17.815Z"
+  },
+  "804-acria-ai-aimarket": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "site coming soon"
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 250,
+   "started_at": "2026-09-02T09:39:17.816Z",
+   "finished_at": "2026-09-02T09:44:54.726Z"
+  },
+  "906-moltbook": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Social"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "just a social network"
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 186,
+   "started_at": "2026-09-02T09:44:54.730Z",
+   "finished_at": "2026-09-02T09:47:59.930Z"
+  },
+  "454-octavia": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "Social"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 193,
+   "started_at": "2026-09-02T09:47:59.933Z",
+   "finished_at": "2026-09-02T09:51:12.858Z"
+  },
+  "693-doc-com": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Consumer",
+      "AI/Other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "inference"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 202,
+   "started_at": "2026-09-02T09:51:12.861Z",
+   "finished_at": "2026-09-02T09:54:35.033Z"
+  },
+  "543-cpchain": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 269,
+   "started_at": "2026-09-02T09:54:35.034Z",
+   "finished_at": "2026-09-02T09:59:04.627Z"
+  },
+  "272-hive-intelligence": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 302,
+   "started_at": "2026-09-02T09:59:04.631Z",
+   "finished_at": "2026-09-02T10:04:05.831Z"
+  },
+  "214-cortex": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra",
+      "AI/Inference"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "inference"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 360,
+   "started_at": "2026-09-02T10:04:05.834Z",
+   "finished_at": "2026-09-02T10:10:05.189Z"
+  },
+  "499-neurobro": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "DeFi",
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "trading bots"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 180,
+   "started_at": "2026-09-02T10:10:05.192Z",
+   "finished_at": "2026-09-02T10:14:53.097Z"
+  },
+  "200-daobase": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "DAO",
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "governance"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 228,
+   "started_at": "2026-09-02T10:14:53.101Z",
+   "finished_at": "2026-09-02T10:18:40.993Z"
+  },
+  "767-blockgpt": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Other",
+      "AI/Data"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "site is a casino now"
+    },
+    "token_type": {
+     "canon": [
+      "governance"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "inference"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "content creation"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 176,
+   "started_at": "2026-09-02T10:18:40.995Z",
+   "finished_at": "2026-09-02T10:22:21.732Z"
+  },
+  "169-creatorbid": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "Social",
+      "DeFi"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 330,
+   "started_at": "2026-09-02T10:22:21.735Z",
+   "finished_at": "2026-09-02T10:27:52.272Z"
+  },
+  "429-bankr-coin": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "DeFi"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 255,
+   "started_at": "2026-09-02T10:27:52.272Z",
+   "finished_at": "2026-09-02T10:32:07.226Z"
+  },
+  "109-phoenix-global-new": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "AI/Analytics",
+      "DeFi"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "trading bots"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 268,
+   "started_at": "2026-09-02T10:32:07.230Z",
+   "finished_at": "2026-09-02T10:36:34.947Z"
+  },
+  "59-chromia": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 322,
+   "started_at": "2026-09-02T10:36:34.950Z",
+   "finished_at": "2026-09-02T10:41:57.736Z"
+  },
+  "694-seele": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 248,
+   "started_at": "2026-09-02T10:41:57.738Z",
+   "finished_at": "2026-09-02T10:46:05.760Z"
+  },
+  "137-galeon": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Data",
+      "DAO",
+      "Privacy"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "governance"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "training"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 351,
+   "started_at": "2026-09-02T10:46:05.761Z",
+   "finished_at": "2026-09-02T10:51:56.952Z"
+  },
+  "815-kyra": {
+   "fields": {
+    "Category": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": "site timeout"
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 173,
+   "started_at": "2026-09-02T10:51:56.956Z",
+   "finished_at": "2026-09-02T10:56:38.361Z"
+  },
+  "83-arcblock": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra",
+      "AI/Agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 283,
+   "started_at": "2026-09-02T10:56:38.365Z",
+   "finished_at": "2026-09-02T11:01:21.244Z"
+  },
+  "209-bitscrunch": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Analytics",
+      "NFT",
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "analytics"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 273,
+   "started_at": "2026-09-02T11:01:21.248Z",
+   "finished_at": "2026-09-02T11:05:54.561Z"
+  },
+  "686-aichain": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": "two different sites"
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 219,
+   "started_at": "2026-09-02T11:05:54.565Z",
+   "finished_at": "2026-09-02T11:09:52.494Z"
+  },
+  "483-ai-waifu": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "project discontinued"
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "content generation"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "content creation"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 207,
+   "started_at": "2026-09-02T11:09:52.497Z",
+   "finished_at": "2026-09-02T11:13:58.884Z"
+  },
+  "324-reddio": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 294,
+   "started_at": "2026-09-02T11:13:58.889Z",
+   "finished_at": "2026-09-02T11:18:52.600Z"
+  },
+  "96-saga": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Infra"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "security"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 322,
+   "started_at": "2026-09-02T11:18:52.600Z",
+   "finished_at": "2026-09-02T11:24:14.852Z"
+  },
+  "595-obot": {
+   "fields": {
+    "Category": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": "still in development"
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 190,
+   "started_at": "2026-09-02T11:24:14.855Z",
+   "finished_at": "2026-09-02T11:28:27.545Z"
+  },
+  "490-ring-ai": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 187,
+   "started_at": "2026-09-02T11:28:27.548Z",
+   "finished_at": "2026-09-02T11:31:33.748Z"
+  },
+  "482-efficientfrontier": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Analytics",
+      "DeFi"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "none"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "no token of its own"
+    },
+    "ai_component": {
+     "canon": [
+      "analytics"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 208,
+   "started_at": "2026-09-02T11:31:33.753Z",
+   "finished_at": "2026-09-02T11:35:02.166Z"
+  },
+  "257-selfkey": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "DeFi",
+      "AI/Compute",
+      "AI/Agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "compute orchestration"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "decentralized compute"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 294,
+   "started_at": "2026-09-02T11:35:02.166Z",
+   "finished_at": "2026-09-02T11:39:56.221Z"
+  },
+  "705-oceanex-token": {
+   "fields": {
+    "Category": {
+     "canon": [],
+     "nd": false,
+     "nil": true,
+     "sugg": "CEX / crypto exchange",
+     "comment": "just an exchange"
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 162,
+   "started_at": "2026-09-02T11:39:56.223Z",
+   "finished_at": "2026-09-02T11:42:38.878Z"
+  },
+  "276-bad-idea-ai": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "Meme",
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [],
+     "nd": false,
+     "nil": true,
+     "sugg": "meme / ecosystem token without product utility",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "inference"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 272,
+   "started_at": "2026-09-02T11:42:38.881Z",
+   "finished_at": "2026-09-02T11:47:10.081Z"
+  },
+  "399-yfdai-finance": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "DeFi"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "staking"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 252,
+   "started_at": "2026-09-02T11:47:10.082Z",
+   "finished_at": "2026-09-02T11:52:25.383Z"
+  },
+  "533-gud-tech": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "DeFi"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "site timeout"
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 241,
+   "started_at": "2026-09-02T11:52:25.386Z",
+   "finished_at": "2026-09-02T11:57:23.874Z"
+  },
+  "727-roseon": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "DeFi",
+      "AI/Agents",
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "site hijacked"
+    },
+    "token_type": {
+     "canon": [
+      "governance"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "DeFi portfolio management"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 185,
+   "started_at": "2026-09-02T11:57:23.877Z",
+   "finished_at": "2026-09-02T12:04:37.349Z"
+  },
+  "612-virtu-2": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "AI/Agents",
+      "Consumer"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": "site timeout"
+    },
+    "token_type": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "agents"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 193,
+   "started_at": "2026-09-02T12:04:37.352Z",
+   "finished_at": "2026-09-02T12:09:02.661Z"
+  },
+  "369-mbd-financials": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "DeFi",
+      "Gaming",
+      "NFT"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "utility"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [
+      "inference"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "other"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 317,
+   "started_at": "2026-09-02T12:09:02.661Z",
+   "finished_at": "2026-09-02T12:14:19.729Z"
+  },
+  "419-pawtocol": {
+   "fields": {
+    "Category": {
+     "canon": [
+      "NFT",
+      "Consumer",
+      "AI/Data"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "token_type": {
+     "canon": [
+      "payment"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "ai_component": {
+     "canon": [],
+     "nd": true,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    },
+    "use_case": {
+     "canon": [
+      "data marketplace"
+     ],
+     "nd": false,
+     "nil": false,
+     "sugg": "",
+     "comment": ""
+    }
+   },
+   "seconds": 259,
+   "started_at": "2026-09-02T12:14:19.730Z",
+   "finished_at": "2026-09-02T12:18:38.281Z"
+  }
+ },
+ "task2": {}
+}

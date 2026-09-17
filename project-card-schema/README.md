@@ -1,99 +1,82 @@
-# Project-Card Schema and Completeness Diagnostics
+# ABPC — AI–Blockchain Project-Card Dataset: replication package
 
-Replication package for:
+Replication code for:
 
-> Kadochnikov, N. N. (2026). *A Project-Card Schema and Completeness Diagnostics for AI–Blockchain Registries.*
+> Kadochnikov, N. N. (2026). *Descriptor: AI–Blockchain Project-Card Dataset (ABPC).* IEEE Data Descriptions (in revision, DATA-00089-2026).
 
-## Dataset
+Dataset: Zenodo, concept DOI **10.5281/zenodo.18900949** (v1.1.0 = 10.5281/zenodo.22800707; v1.0.0 = 10.5281/zenodo.18900950), CC BY 4.0.
 
-The dataset — 845 AI–blockchain project cards, the JSON Schema, and the data dictionary — is deposited at Zenodo under a CC-BY 4.0 license:
+This package accompanies dataset v1.1.0. The package released with v1.0.0 is preserved in the repository history: [commit ed69f9f](https://github.com/DecAIHub/papers/tree/ed69f9f000669a7a701d86ec0f1dfe9cac2b6a4e/project-card-schema).
 
-**https://doi.org/10.5281/zenodo.18900950**
+## Layout
 
-The analysis and verification scripts in this repository operate on `project_cards.json` from that deposit (see [Data location](#data-location)).
+| Path | Purpose |
+|---|---|
+| `schema/project_card.schema.json` | JSON Schema (draft 2020-12), version 1.1.0 |
+| `scripts/extract_cards.py` | Parse the curated project cards (markdown) into an intermediate JSON |
+| `scripts/vocab.py` | Controlled vocabularies of Category, chain, type, token_type; derivation of `ai_component_status` |
+| `scripts/build_mapping_tables.py` | Write the per-value mapping tables (`mapping_*.csv`) |
+| `scripts/wayback_lookup.py` | Internet Archive capture closest to 2026-03-05 for every evidence URL |
+| `scripts/build_deposit.py` | Assemble `project_cards.json`, `cards/`, derive `claim_field`, attach archived copies |
+| `scripts/validate.py` | Validate every record against the schema (exit code 1 on any violation) |
+| `scripts/package_deposit.py` | README (with known issues and change log), mapping table, `cards.zip` |
+| `scripts/compute_stats.py` | All statistics, tables and figures of the descriptor from `project_cards.json` |
+| `scripts/case_study.py` | Reproducible downstream example (seed 42) |
+| `scripts/irr_passport_agreement.py` | Agreement between the independent coder and the curator on the passport fields |
+| `scripts/claim_support_audit.py` | Claim-support audit: summary of the coder's verdicts on 150 evidence entries |
+| `scripts/persistence_audit_summary.py` | Persistence audit T1: summary of the per-URL log |
+| `irr/sample.json` | Sample definition (seed 20260824): 50 cards (passport coding) and 150 evidence entries (claim-support audit) |
+| `irr/coder_tool.html` | Coding tool shown to the coder (value definitions, links, evidence entries; card excerpts omitted) |
+| `irr/irr_results_task1.json`, `irr/irr_results_task2.json` | Anonymized coder responses (passport fields; claim support) |
+| `irr/mapping_sample50_to_table7.csv` | Curator-approved mapping of the sampled cards' descriptors onto the coder's value lists |
+| `irr/source_status_at_coding_2026-09-05.csv` | State of each sampled card's sources at coding time (live-same / partial / live-changed) |
+| `irr/pilot_2026-02/` | Claim-intensity pilot (February 2026): protocol given to the coder (`README_TASK.md`), the coder's sheet (`coding_sheet.csv`: tiers of the cited artifacts and 13 flags for 50 cards), the curator's reference coding (`ground_truth.csv`) and the computation script (`compute_irr.py`) |
+| `audit/link_audit_t1.py` | Persistence audit probe (HEAD, 8 s timeout, GET on 405; retry pass) |
+| `audit/t1_probe_2026-09-05.csv`, `audit/t1_retry_2026-09-05.csv` | Per-URL log of the 2026-09-05 run (10,219 URLs) and of the retry pass |
 
-## Repository contents
+## Reproduce from the deposit (no access to the source cards needed)
 
-### Scripts that run on the published dataset (`project_cards.json`)
+```bash
+pip install -r requirements.txt
+python scripts/validate.py project_cards.json schema/project_card.schema.json
+python scripts/compute_stats.py project_cards.json out/stats
+python scripts/case_study.py project_cards.json out/case_study.json
+python scripts/irr_passport_agreement.py irr/irr_results_task1.json project_cards.json out/irr.json --sample-map irr/mapping_sample50_to_table7.csv --strata irr/source_status_at_coding_2026-09-05.csv
+python scripts/claim_support_audit.py irr/sample.json irr/irr_results_task2.json out/claim_support.json --probe audit/t1_probe_2026-09-05.csv
+python scripts/persistence_audit_summary.py project_cards.json audit/t1_probe_2026-09-05.csv audit/t1_retry_2026-09-05.csv out/t1_audit.json
+python irr/pilot_2026-02/compute_irr.py irr/pilot_2026-02/coding_sheet.csv
+```
 
-| Script | Purpose |
-|--------|---------|
-| `scripts/verify_stats.py` | Reproduce the descriptive statistics reported in the paper |
-| `scripts/verify_tables.py` | Reproduce Tables 5 and 7 |
-| `scripts/verify_table5_detail.py` | Detailed Table 5 overlap computation, incl. tie-break sensitivity |
-| `scripts/tier_count.py` | Evidence tier distribution (Tier-1/2/3) and unique Tier-1 URL count |
-| `scripts/check_urls.py` | Evidence-URL formatting / hygiene checks |
-| `scripts/check_synthetic.py` | Verify absence of synthetic fallback Tier-1 evidence; tier distribution |
-| `scripts/regenerate_figures.py` | Regenerate Figures 3 and 4 from the dataset |
-| `scripts/fix_cyrillic.py` | Dataset-preparation step: normalize residual non-English category values |
+`compute_stats.py` writes `stats.json` (every corpus statistic reported in the article) and the four figures; the
+remaining scripts reproduce the inter-rater, claim-support and persistence figures (`compute_irr.py` writes
+`irr_report.md` next to itself).
 
-### Scripts that document the upstream extraction
+## Rebuild the deposit from the source cards (curator only; cards are not redistributed)
 
-These read the curated source registry (project-card markdown). The raw source is **not redistributed** here; the curated output is the published Zenodo dataset. They are included for transparency of the processing pipeline.
+```bash
+python scripts/extract_cards.py <cards_dir> build/cards_raw.json
+python scripts/build_mapping_tables.py build/cards_raw.json build/mapping
+python scripts/wayback_lookup.py build/cards_raw.json build/archive_map.json --workers 4
+python scripts/build_deposit.py build/cards_raw.json deposit --archive build/archive_map.json
+python scripts/validate.py deposit/project_cards.json deposit/project_card.schema.json
+python scripts/package_deposit.py deposit build/mapping
+```
 
-| Script | Purpose |
-|--------|---------|
-| `scripts/extract_zenodo.py` | Extraction pipeline: project-card markdown → `project_cards.json` + per-card JSON + schema |
-| `scripts/audit_and_vocab.py` | Link-reachability audit (sampled HTTP checks) and chain-vocabulary coverage (`--projects-dir`, deterministic with `--seed 42`) |
+The pipeline is deterministic; re-running it on the February 2026 cards reproduces the deposit.
 
-### Other contents
+## Language
 
-| Path | Description |
-|------|-------------|
-| `figures/` | Publication-quality figures (PNG) |
-| `requirements.txt` | Python dependencies (minimum compatible versions) |
-| `LICENSE` | MIT |
-
-## Processing & analysis pipeline
-
-1. **Extraction** (`extract_zenodo.py`) — parse the curated project-card registry into a schema-conforming corpus: `project_cards.json`, one JSON per card, and the JSON Schema.
-2. **Normalization** (`fix_cyrillic.py`) — normalize residual non-English values in the controlled passport fields.
-3. **Tier accounting** (`tier_count.py`) — tally the Tier-1/2/3 evidence distribution and unique Tier-1 URLs.
-4. **Quality control** (`check_urls.py`, `check_synthetic.py`) — evidence-URL formatting hygiene and confirmation that no synthetic fallback Tier-1 entries remain.
-5. **Link & vocabulary audit** (`audit_and_vocab.py`) — sampled HTTP reachability of Tier-1 sources and chain-vocabulary coverage.
-6. **Verification** (`verify_stats.py`, `verify_tables.py`, `verify_table5_detail.py`) — recompute the statistics and tables reported in the manuscript.
-7. **Figures** (`regenerate_figures.py`) — regenerate Figures 3 and 4.
+The source cards are written in Russian; everything released here is English. The parsers (`extract_cards.py`,
+`link_audit_t1.py`) contain the Russian headings and keys of the card template, `build_deposit.py` the Russian stems
+matched in the curator's source notes, and `vocab.py` the table that renders the 98 exported values carrying Russian
+annotations in English. In the pilot materials the protocol is an English rendering of the Russian original given to the
+coder and the coder's six notes are translated; in the audit logs, operating-system error messages are rendered in
+English.
 
 ## Requirements
 
-- Python 3.9 or newer
-- `numpy`, `matplotlib`, `requests` (see `requirements.txt`)
-
-```bash
-pip install -r requirements.txt
-```
-
-## Data location
-
-The repository does not bundle the dataset. Each dataset-consuming script locates `project_cards.json` in this order:
-
-1. first command-line argument — `python scripts/tier_count.py /path/to/project_cards.json`
-2. the `PROJECT_CARDS` environment variable
-3. `project_cards.json` in the current working directory (default)
-
-(`fix_cyrillic.py` takes the dataset *directory* — via `argv[1]` or `DATA_DIR` — since it also rewrites the per-card files.)
-
-## Reproduction
-
-```bash
-pip install -r requirements.txt
-
-# Download project_cards.json from the Zenodo deposit (DOI 10.5281/zenodo.18900950),
-# then point the scripts at it:
-export PROJECT_CARDS=/path/to/project_cards.json     # Windows: set PROJECT_CARDS=...
-
-python scripts/verify_stats.py
-python scripts/verify_tables.py
-python scripts/tier_count.py
-python scripts/check_urls.py
-python scripts/check_synthetic.py
-python scripts/regenerate_figures.py
-```
-
-## Reproducibility scope
-
-All diagnostics, verification, and figure scripts reproduce directly from the published `project_cards.json`. The extraction and chain-vocabulary scripts (`extract_zenodo.py`, `audit_and_vocab.py`) document the upstream step from the curated source registry, whose raw markdown is not redistributed; the curated result is the Zenodo dataset itself.
+Python 3.11 or newer (run with 3.13); package versions pinned in `requirements.txt`.
 
 ## License
 
-MIT — see `LICENSE`.
+MIT (code). Dataset: CC BY 4.0.

@@ -1,0 +1,1207 @@
+{
+ "tool_version": "v1.1",
+ "exported_at": "2026-09-03T11:44:27.375Z",
+ "task1": {},
+ "task2": {
+  "102-infinit#e1": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 202,
+   "started_at": "2026-09-03T08:38:34.793Z",
+   "finished_at": "2026-09-03T08:42:36.485Z"
+  },
+  "441-targon#e2": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 44,
+   "started_at": "2026-09-03T08:42:36.486Z",
+   "finished_at": "2026-09-03T08:43:48.367Z"
+  },
+  "256-ispolink#e3": {
+   "dead": true,
+   "support": null,
+   "comment": "file forbidden",
+   "seconds": 18,
+   "started_at": "2026-09-03T08:43:48.370Z",
+   "finished_at": "2026-09-03T08:44:14.607Z"
+  },
+  "154-balance#e4": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 40,
+   "started_at": "2026-09-03T08:44:14.609Z",
+   "finished_at": "2026-09-03T08:45:20.746Z"
+  },
+  "64-tokenbot-2#e5": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 46,
+   "started_at": "2026-09-03T08:45:20.746Z",
+   "finished_at": "2026-09-03T08:46:56.016Z"
+  },
+  "413-plankton-in-pain#e6": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 33,
+   "started_at": "2026-09-03T08:46:56.017Z",
+   "finished_at": "2026-09-03T08:47:51.233Z"
+  },
+  "264-dtec-token#e7": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 52,
+   "started_at": "2026-09-03T08:47:51.233Z",
+   "finished_at": "2026-09-03T08:49:11.909Z"
+  },
+  "784-viridis-network#e8": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 34,
+   "started_at": "2026-09-03T08:49:11.913Z",
+   "finished_at": "2026-09-03T08:50:38.272Z"
+  },
+  "122-nfprompt#e9": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 54,
+   "started_at": "2026-09-03T08:50:38.273Z",
+   "finished_at": "2026-09-03T08:52:05.657Z"
+  },
+  "469-sportstensor#e10": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 48,
+   "started_at": "2026-09-03T08:52:05.657Z",
+   "finished_at": "2026-09-03T08:53:36.408Z"
+  },
+  "725-raze-network#e11": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 36,
+   "started_at": "2026-09-03T08:53:36.408Z",
+   "finished_at": "2026-09-03T08:54:27.020Z"
+  },
+  "342-workloop-ai#e12": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 42,
+   "started_at": "2026-09-03T08:54:27.022Z",
+   "finished_at": "2026-09-03T08:55:43.843Z"
+  },
+  "117-zerebro#e13": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 30,
+   "started_at": "2026-09-03T08:55:43.843Z",
+   "finished_at": "2026-09-03T08:56:38.618Z"
+  },
+  "211-phantasma#e14": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 42,
+   "started_at": "2026-09-03T08:56:38.620Z",
+   "finished_at": "2026-09-03T08:57:50.125Z"
+  },
+  "277-only1#e15": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 36,
+   "started_at": "2026-09-03T08:57:50.127Z",
+   "finished_at": "2026-09-03T08:58:32.710Z"
+  },
+  "100-agoras-tokens#e16": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 27,
+   "started_at": "2026-09-03T08:58:32.713Z",
+   "finished_at": "2026-09-03T08:59:52.522Z"
+  },
+  "600-ruri-truth-terminals-crush#e17": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 38,
+   "started_at": "2026-09-03T08:59:52.526Z",
+   "finished_at": "2026-09-03T09:00:43.988Z"
+  },
+  "351-starrynift#e18": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 47,
+   "started_at": "2026-09-03T09:00:43.988Z",
+   "finished_at": "2026-09-03T09:01:37.911Z"
+  },
+  "549-artificial-intelligence#e19": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 49,
+   "started_at": "2026-09-03T09:01:37.913Z",
+   "finished_at": "2026-09-03T09:02:57.549Z"
+  },
+  "823-yahtzee-dao#e20": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 51,
+   "started_at": "2026-09-03T09:02:57.552Z",
+   "finished_at": "2026-09-03T09:04:40.421Z"
+  },
+  "81-swarm-network-ai#e21": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 53,
+   "started_at": "2026-09-03T09:04:40.425Z",
+   "finished_at": "2026-09-03T09:06:15.198Z"
+  },
+  "617-drpepe-ai#e22": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 26,
+   "started_at": "2026-09-03T09:06:15.199Z",
+   "finished_at": "2026-09-03T09:07:23.056Z"
+  },
+  "723-murall#e23": {
+   "dead": false,
+   "support": "no",
+   "comment": "not a whitepaper",
+   "seconds": 29,
+   "started_at": "2026-09-03T09:07:23.056Z",
+   "finished_at": "2026-09-03T09:08:13.897Z"
+  },
+  "238-swarmnode-ai#e24": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 52,
+   "started_at": "2026-09-03T09:08:13.901Z",
+   "finished_at": "2026-09-03T09:09:54.015Z"
+  },
+  "664-syntor-ai#e25": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 43,
+   "started_at": "2026-09-03T09:09:54.015Z",
+   "finished_at": "2026-09-03T09:11:09.480Z"
+  },
+  "583-flying-avocado-cat#e26": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 28,
+   "started_at": "2026-09-03T09:11:09.484Z",
+   "finished_at": "2026-09-03T09:12:47.238Z"
+  },
+  "752-neuroni-ai#e27": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 22,
+   "started_at": "2026-09-03T09:12:47.239Z",
+   "finished_at": "2026-09-03T09:13:31.028Z"
+  },
+  "821-volaris-games#e28": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 30,
+   "started_at": "2026-09-03T09:13:31.030Z",
+   "finished_at": "2026-09-03T09:14:40.640Z"
+  },
+  "289-aipad#e29": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 41,
+   "started_at": "2026-09-03T09:14:40.642Z",
+   "finished_at": "2026-09-03T09:15:55.135Z"
+  },
+  "790-burnifyai#e30": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 26,
+   "started_at": "2026-09-03T09:15:55.137Z",
+   "finished_at": "2026-09-03T09:16:51.544Z"
+  },
+  "43-siren-bsc#e31": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 38,
+   "started_at": "2026-09-03T09:16:51.548Z",
+   "finished_at": "2026-09-03T09:18:20.274Z"
+  },
+  "34-iotex#e32": {
+   "dead": false,
+   "support": "no",
+   "comment": "page not found",
+   "seconds": 36,
+   "started_at": "2026-09-03T09:18:20.276Z",
+   "finished_at": "2026-09-03T09:19:37.504Z"
+  },
+  "900-warden#e33": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 37,
+   "started_at": "2026-09-03T09:19:37.506Z",
+   "finished_at": "2026-09-03T09:20:29.057Z"
+  },
+  "392-darwinslab#e34": {
+   "dead": true,
+   "support": null,
+   "comment": "",
+   "seconds": 20,
+   "started_at": "2026-09-03T09:20:29.061Z",
+   "finished_at": "2026-09-03T09:21:05.210Z"
+  },
+  "230-jojoworld#e35": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 32,
+   "started_at": "2026-09-03T09:21:05.212Z",
+   "finished_at": "2026-09-03T09:22:30.680Z"
+  },
+  "520-kitten-haimer#e36": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 34,
+   "started_at": "2026-09-03T09:22:30.682Z",
+   "finished_at": "2026-09-03T09:23:35.788Z"
+  },
+  "599-flowerai#e37": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 25,
+   "started_at": "2026-09-03T09:23:35.792Z",
+   "finished_at": "2026-09-03T09:24:12.836Z"
+  },
+  "698-qubitica#e38": {
+   "dead": false,
+   "support": "supports",
+   "comment": "just an imprint",
+   "seconds": 26,
+   "started_at": "2026-09-03T09:24:12.838Z",
+   "finished_at": "2026-09-03T09:24:47.709Z"
+  },
+  "665-orcai#e39": {
+   "dead": true,
+   "support": null,
+   "comment": "",
+   "seconds": 16,
+   "started_at": "2026-09-03T09:24:47.709Z",
+   "finished_at": "2026-09-03T09:25:25.352Z"
+  },
+  "48-arkham#e40": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 23,
+   "started_at": "2026-09-03T09:25:25.354Z",
+   "finished_at": "2026-09-03T09:26:15.157Z"
+  },
+  "376-morpheus-labs-v2#e41": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 19,
+   "started_at": "2026-09-03T09:26:15.161Z",
+   "finished_at": "2026-09-03T09:26:43.341Z"
+  },
+  "522-nomai#e42": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 22,
+   "started_at": "2026-09-03T09:26:43.341Z",
+   "finished_at": "2026-09-03T09:27:51.450Z"
+  },
+  "327-yoracle-ai#e43": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 39,
+   "started_at": "2026-09-03T09:27:51.452Z",
+   "finished_at": "2026-09-03T09:28:49.737Z"
+  },
+  "354-arcona#e44": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 50,
+   "started_at": "2026-09-03T09:28:49.737Z",
+   "finished_at": "2026-09-03T09:29:56.207Z"
+  },
+  "51-paal-ai#e45": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 48,
+   "started_at": "2026-09-03T09:29:56.207Z",
+   "finished_at": "2026-09-03T09:30:53.955Z"
+  },
+  "379-aimedis-new#e46": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 49,
+   "started_at": "2026-09-03T09:30:53.958Z",
+   "finished_at": "2026-09-03T09:32:20.495Z"
+  },
+  "349-the-winkyverse#e47": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 25,
+   "started_at": "2026-09-03T09:32:20.499Z",
+   "finished_at": "2026-09-03T09:33:25.149Z"
+  },
+  "277-only1#e48": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 40,
+   "started_at": "2026-09-03T09:33:25.153Z",
+   "finished_at": "2026-09-03T09:34:59.941Z"
+  },
+  "763-kvants-ai#e49": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 21,
+   "started_at": "2026-09-03T09:34:59.944Z",
+   "finished_at": "2026-09-03T09:35:29.540Z"
+  },
+  "637-defi-agents-ai#e50": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 34,
+   "started_at": "2026-09-03T09:35:29.543Z",
+   "finished_at": "2026-09-03T09:36:55.742Z"
+  },
+  "161-metacade#e51": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 41,
+   "started_at": "2026-09-03T09:36:55.746Z",
+   "finished_at": "2026-09-03T09:37:43.669Z"
+  },
+  "471-luminous#e52": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 36,
+   "started_at": "2026-09-03T09:37:43.669Z",
+   "finished_at": "2026-09-03T09:38:26.896Z"
+  },
+  "82-tars-protocol#e53": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 48,
+   "started_at": "2026-09-03T09:38:26.898Z",
+   "finished_at": "2026-09-03T09:39:46.520Z"
+  },
+  "583-flying-avocado-cat#e54": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 25,
+   "started_at": "2026-09-03T09:39:46.524Z",
+   "finished_at": "2026-09-03T09:40:59.028Z"
+  },
+  "352-tradetomato#e55": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 37,
+   "started_at": "2026-09-03T09:40:59.029Z",
+   "finished_at": "2026-09-03T09:42:31.081Z"
+  },
+  "637-defi-agents-ai#e56": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 40,
+   "started_at": "2026-09-03T09:42:31.084Z",
+   "finished_at": "2026-09-03T09:43:22.524Z"
+  },
+  "136-rss3#e57": {
+   "dead": true,
+   "support": null,
+   "comment": "",
+   "seconds": 29,
+   "started_at": "2026-09-03T09:43:22.527Z",
+   "finished_at": "2026-09-03T09:44:10.760Z"
+  },
+  "237-yesnoerror#e58": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 31,
+   "started_at": "2026-09-03T09:44:10.764Z",
+   "finished_at": "2026-09-03T09:45:19.302Z"
+  },
+  "778-moros-net#e59": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 40,
+   "started_at": "2026-09-03T09:45:19.306Z",
+   "finished_at": "2026-09-03T09:46:30.541Z"
+  },
+  "226-nodeops#e60": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 39,
+   "started_at": "2026-09-03T09:46:30.541Z",
+   "finished_at": "2026-09-03T09:47:23.040Z"
+  },
+  "277-only1#e61": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 38,
+   "started_at": "2026-09-03T09:47:23.043Z",
+   "finished_at": "2026-09-03T09:48:08.741Z"
+  },
+  "05-filecoin#e62": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 43,
+   "started_at": "2026-09-03T09:48:08.741Z",
+   "finished_at": "2026-09-03T09:49:21.485Z"
+  },
+  "102-infinit#e63": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 52,
+   "started_at": "2026-09-03T09:49:21.485Z",
+   "finished_at": "2026-09-03T09:50:24.073Z"
+  },
+  "567-onchain-ai#e64": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 30,
+   "started_at": "2026-09-03T09:50:24.073Z",
+   "finished_at": "2026-09-03T09:51:26.744Z"
+  },
+  "18-livepeer#e65": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 29,
+   "started_at": "2026-09-03T09:51:26.746Z",
+   "finished_at": "2026-09-03T09:52:22.295Z"
+  },
+  "605-ai9000#e66": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 32,
+   "started_at": "2026-09-03T09:52:22.298Z",
+   "finished_at": "2026-09-03T09:53:45.927Z"
+  },
+  "882-aiws#e67": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 46,
+   "started_at": "2026-09-03T09:53:45.930Z",
+   "finished_at": "2026-09-03T09:55:18.043Z"
+  },
+  "324-reddio#e68": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 51,
+   "started_at": "2026-09-03T09:55:18.044Z",
+   "finished_at": "2026-09-03T09:56:42.288Z"
+  },
+  "267-pingpong#e69": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 24,
+   "started_at": "2026-09-03T09:56:42.291Z",
+   "finished_at": "2026-09-03T09:57:35.817Z"
+  },
+  "734-marketmove#e70": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 35,
+   "started_at": "2026-09-03T09:57:35.819Z",
+   "finished_at": "2026-09-03T09:58:20.173Z"
+  },
+  "480-data-universe#e71": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 53,
+   "started_at": "2026-09-03T09:58:20.177Z",
+   "finished_at": "2026-09-03T09:59:30.483Z"
+  },
+  "48-arkham#e72": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 1126,
+   "started_at": "2026-09-03T09:59:30.484Z",
+   "finished_at": "2026-09-03T10:18:55.422Z"
+  },
+  "631-nora#e73": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 42,
+   "started_at": "2026-09-03T10:18:55.423Z",
+   "finished_at": "2026-09-03T10:20:15.133Z"
+  },
+  "873-levelsprotocol#e74": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 38,
+   "started_at": "2026-09-03T10:20:15.136Z",
+   "finished_at": "2026-09-03T10:21:12.014Z"
+  },
+  "528-cloudbric#e75": {
+   "dead": true,
+   "support": null,
+   "comment": "",
+   "seconds": 20,
+   "started_at": "2026-09-03T10:21:12.015Z",
+   "finished_at": "2026-09-03T10:21:42.249Z"
+  },
+  "657-keira#e76": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 31,
+   "started_at": "2026-09-03T10:21:42.253Z",
+   "finished_at": "2026-09-03T10:23:04.522Z"
+  },
+  "15-origintrail#e77": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 22,
+   "started_at": "2026-09-03T10:23:04.525Z",
+   "finished_at": "2026-09-03T10:24:09.092Z"
+  },
+  "42-kgen#e78": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 39,
+   "started_at": "2026-09-03T10:24:09.096Z",
+   "finished_at": "2026-09-03T10:24:55.938Z"
+  },
+  "144-trusta-ai#e79": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 44,
+   "started_at": "2026-09-03T10:24:55.940Z",
+   "finished_at": "2026-09-03T10:25:50.110Z"
+  },
+  "473-ocean-protocol#e80": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 44,
+   "started_at": "2026-09-03T10:25:50.113Z",
+   "finished_at": "2026-09-03T10:27:11.570Z"
+  },
+  "127-forta#e81": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 34,
+   "started_at": "2026-09-03T10:27:11.571Z",
+   "finished_at": "2026-09-03T10:28:12.229Z"
+  },
+  "751-cryptoai#e82": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 47,
+   "started_at": "2026-09-03T10:28:12.229Z",
+   "finished_at": "2026-09-03T10:29:15.502Z"
+  },
+  "68-phala-network#e83": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 46,
+   "started_at": "2026-09-03T10:29:15.503Z",
+   "finished_at": "2026-09-03T10:30:41.998Z"
+  },
+  "96-saga#e84": {
+   "dead": false,
+   "support": "no",
+   "comment": "",
+   "seconds": 21,
+   "started_at": "2026-09-03T10:30:42.002Z",
+   "finished_at": "2026-09-03T10:31:39.583Z"
+  },
+  "132-neuralai#e85": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 40,
+   "started_at": "2026-09-03T10:31:39.584Z",
+   "finished_at": "2026-09-03T10:32:47.376Z"
+  },
+  "176-grok-erc#e86": {
+   "dead": true,
+   "support": null,
+   "comment": "",
+   "seconds": 17,
+   "started_at": "2026-09-03T10:32:47.376Z",
+   "finished_at": "2026-09-03T10:33:19.576Z"
+  },
+  "63-zentry#e87": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 58,
+   "started_at": "2026-09-03T10:33:19.580Z",
+   "finished_at": "2026-09-03T10:34:44.757Z"
+  },
+  "770-aione#e88": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 28,
+   "started_at": "2026-09-03T10:34:44.759Z",
+   "finished_at": "2026-09-03T10:35:59.009Z"
+  },
+  "37-vana#e89": {
+   "dead": false,
+   "support": "no",
+   "comment": "",
+   "seconds": 30,
+   "started_at": "2026-09-03T10:35:59.011Z",
+   "finished_at": "2026-09-03T10:37:13.489Z"
+  },
+  "770-aione#e90": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 22,
+   "started_at": "2026-09-03T10:37:13.489Z",
+   "finished_at": "2026-09-03T10:37:50.329Z"
+  },
+  "212-atlas-navi#e91": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 36,
+   "started_at": "2026-09-03T10:37:50.333Z",
+   "finished_at": "2026-09-03T10:39:00.256Z"
+  },
+  "127-forta#e92": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 29,
+   "started_at": "2026-09-03T10:39:00.257Z",
+   "finished_at": "2026-09-03T10:40:11.816Z"
+  },
+  "223-silencio#e93": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 50,
+   "started_at": "2026-09-03T10:40:11.820Z",
+   "finished_at": "2026-09-03T10:41:09.793Z"
+  },
+  "235-super-champs#e94": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 33,
+   "started_at": "2026-09-03T10:41:09.797Z",
+   "finished_at": "2026-09-03T10:42:21.773Z"
+  },
+  "115-assemble-protocol#e95": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 23,
+   "started_at": "2026-09-03T10:42:21.775Z",
+   "finished_at": "2026-09-03T10:43:18.450Z"
+  },
+  "200-daobase#e96": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 24,
+   "started_at": "2026-09-03T10:43:18.452Z",
+   "finished_at": "2026-09-03T10:44:36.963Z"
+  },
+  "88-flock-io#e97": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 25,
+   "started_at": "2026-09-03T10:44:36.964Z",
+   "finished_at": "2026-09-03T10:45:26.326Z"
+  },
+  "67-olaxbt#e98": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 25,
+   "started_at": "2026-09-03T10:45:26.329Z",
+   "finished_at": "2026-09-03T10:46:30.786Z"
+  },
+  "831-simian-ai#e99": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 31,
+   "started_at": "2026-09-03T10:46:30.789Z",
+   "finished_at": "2026-09-03T10:47:32.548Z"
+  },
+  "192-switchboard-protocol#e100": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 49,
+   "started_at": "2026-09-03T10:47:32.552Z",
+   "finished_at": "2026-09-03T10:48:33.514Z"
+  },
+  "117-zerebro#e101": {
+   "dead": false,
+   "support": "no",
+   "comment": "",
+   "seconds": 40,
+   "started_at": "2026-09-03T10:48:33.516Z",
+   "finished_at": "2026-09-03T10:49:52.012Z"
+  },
+  "129-oortech#e102": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 24,
+   "started_at": "2026-09-03T10:49:52.013Z",
+   "finished_at": "2026-09-03T10:50:44.760Z"
+  },
+  "206-kadena#e103": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 31,
+   "started_at": "2026-09-03T10:50:44.761Z",
+   "finished_at": "2026-09-03T10:52:14.933Z"
+  },
+  "238-swarmnode-ai#e104": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 25,
+   "started_at": "2026-09-03T10:52:14.933Z",
+   "finished_at": "2026-09-03T10:53:35.278Z"
+  },
+  "833-simsai#e105": {
+   "dead": true,
+   "support": null,
+   "comment": "",
+   "seconds": 17,
+   "started_at": "2026-09-03T10:53:35.278Z",
+   "finished_at": "2026-09-03T10:54:04.441Z"
+  },
+  "370-quain#e106": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 32,
+   "started_at": "2026-09-03T10:54:04.445Z",
+   "finished_at": "2026-09-03T10:55:07.408Z"
+  },
+  "722-uberstate-inc#e107": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 33,
+   "started_at": "2026-09-03T10:55:07.411Z",
+   "finished_at": "2026-09-03T10:56:01.486Z"
+  },
+  "174-byte#e108": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 22,
+   "started_at": "2026-09-03T10:56:01.489Z",
+   "finished_at": "2026-09-03T10:57:14.756Z"
+  },
+  "61-openledger#e109": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 43,
+   "started_at": "2026-09-03T10:57:14.756Z",
+   "finished_at": "2026-09-03T10:58:43.346Z"
+  },
+  "346-xmon#e110": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 35,
+   "started_at": "2026-09-03T10:58:43.348Z",
+   "finished_at": "2026-09-03T11:00:08.535Z"
+  },
+  "42-kgen#e111": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 34,
+   "started_at": "2026-09-03T11:00:08.536Z",
+   "finished_at": "2026-09-03T11:01:07.312Z"
+  },
+  "258-zypher-network#e112": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 31,
+   "started_at": "2026-09-03T11:01:07.314Z",
+   "finished_at": "2026-09-03T11:02:51.456Z"
+  },
+  "681-datum#e113": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 45,
+   "started_at": "2026-09-03T11:02:51.456Z",
+   "finished_at": "2026-09-03T11:04:13.113Z"
+  },
+  "821-volaris-games#e114": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 27,
+   "started_at": "2026-09-03T11:04:13.117Z",
+   "finished_at": "2026-09-03T11:04:46.269Z"
+  },
+  "15-origintrail#e115": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 37,
+   "started_at": "2026-09-03T11:04:46.269Z",
+   "finished_at": "2026-09-03T11:06:20.522Z"
+  },
+  "135-akedo#e116": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 32,
+   "started_at": "2026-09-03T11:06:20.524Z",
+   "finished_at": "2026-09-03T11:07:33.399Z"
+  },
+  "26-baby-doge-coin#e117": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 44,
+   "started_at": "2026-09-03T11:07:33.399Z",
+   "finished_at": "2026-09-03T11:08:31.655Z"
+  },
+  "265-dexcheck#e118": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 37,
+   "started_at": "2026-09-03T11:08:31.656Z",
+   "finished_at": "2026-09-03T11:09:38.546Z"
+  },
+  "675-datai-network#e119": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 49,
+   "started_at": "2026-09-03T11:09:38.548Z",
+   "finished_at": "2026-09-03T11:10:55.768Z"
+  },
+  "195-trias-token#e120": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 42,
+   "started_at": "2026-09-03T11:10:55.768Z",
+   "finished_at": "2026-09-03T11:12:26.138Z"
+  },
+  "193-deepnode#e121": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 44,
+   "started_at": "2026-09-03T11:12:26.142Z",
+   "finished_at": "2026-09-03T11:13:48.015Z"
+  },
+  "73-holoworld-ai#e122": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 20,
+   "started_at": "2026-09-03T11:13:48.016Z",
+   "finished_at": "2026-09-03T11:14:36.670Z"
+  },
+  "502-genius-token-nft-collections#e123": {
+   "dead": false,
+   "support": "no",
+   "comment": "",
+   "seconds": 41,
+   "started_at": "2026-09-03T11:14:36.671Z",
+   "finished_at": "2026-09-03T11:16:13.514Z"
+  },
+  "74-delysium#e124": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 43,
+   "started_at": "2026-09-03T11:16:13.514Z",
+   "finished_at": "2026-09-03T11:17:02.828Z"
+  },
+  "134-natix-network#e125": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 49,
+   "started_at": "2026-09-03T11:17:02.828Z",
+   "finished_at": "2026-09-03T11:18:13.009Z"
+  },
+  "367-neur-sh#e126": {
+   "dead": false,
+   "support": "no",
+   "comment": "404 not parking",
+   "seconds": 36,
+   "started_at": "2026-09-03T11:18:13.013Z",
+   "finished_at": "2026-09-03T11:19:37.130Z"
+  },
+  "112-hey-anon#e127": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 32,
+   "started_at": "2026-09-03T11:19:37.132Z",
+   "finished_at": "2026-09-03T11:20:24.197Z"
+  },
+  "442-ai16z#e128": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 34,
+   "started_at": "2026-09-03T11:20:24.199Z",
+   "finished_at": "2026-09-03T11:21:31.839Z"
+  },
+  "399-yfdai-finance#e129": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 30,
+   "started_at": "2026-09-03T11:21:31.842Z",
+   "finished_at": "2026-09-03T11:22:33.369Z"
+  },
+  "418-project-plutus-ai#e130": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 41,
+   "started_at": "2026-09-03T11:22:33.373Z",
+   "finished_at": "2026-09-03T11:23:42.043Z"
+  },
+  "131-humans-ai#e131": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 33,
+   "started_at": "2026-09-03T11:23:42.044Z",
+   "finished_at": "2026-09-03T11:24:27.728Z"
+  },
+  "777-deepcave#e132": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 30,
+   "started_at": "2026-09-03T11:24:27.730Z",
+   "finished_at": "2026-09-03T11:25:09.627Z"
+  },
+  "134-natix-network#e133": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 29,
+   "started_at": "2026-09-03T11:25:09.629Z",
+   "finished_at": "2026-09-03T11:25:49.162Z"
+  },
+  "814-sentra#e134": {
+   "dead": false,
+   "support": "no",
+   "comment": "",
+   "seconds": 24,
+   "started_at": "2026-09-03T11:25:49.162Z",
+   "finished_at": "2026-09-03T11:26:27.573Z"
+  },
+  "07-artificial-superintelligence-alliance#e135": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 24,
+   "started_at": "2026-09-03T11:26:27.575Z",
+   "finished_at": "2026-09-03T11:27:44.074Z"
+  },
+  "19-beldex#e136": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 47,
+   "started_at": "2026-09-03T11:27:44.076Z",
+   "finished_at": "2026-09-03T11:29:26.975Z"
+  },
+  "55-destra-network#e137": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 20,
+   "started_at": "2026-09-03T11:29:26.978Z",
+   "finished_at": "2026-09-03T11:29:57.498Z"
+  },
+  "598-naval-ai#e138": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 41,
+   "started_at": "2026-09-03T11:29:57.502Z",
+   "finished_at": "2026-09-03T11:31:21.877Z"
+  },
+  "132-neuralai#e139": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 29,
+   "started_at": "2026-09-03T11:31:21.878Z",
+   "finished_at": "2026-09-03T11:32:00.982Z"
+  },
+  "542-encrypgen#e140": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 45,
+   "started_at": "2026-09-03T11:32:00.983Z",
+   "finished_at": "2026-09-03T11:33:10.289Z"
+  },
+  "160-zkml#e141": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 46,
+   "started_at": "2026-09-03T11:33:10.290Z",
+   "finished_at": "2026-09-03T11:34:38.003Z"
+  },
+  "850-elon-ai-agent#e142": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 24,
+   "started_at": "2026-09-03T11:34:38.005Z",
+   "finished_at": "2026-09-03T11:35:45.057Z"
+  },
+  "872-arcana-ai#e143": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 56,
+   "started_at": "2026-09-03T11:35:45.060Z",
+   "finished_at": "2026-09-03T11:36:48.883Z"
+  },
+  "903-immunefi#e144": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 25,
+   "started_at": "2026-09-03T11:36:48.886Z",
+   "finished_at": "2026-09-03T11:37:27.186Z"
+  },
+  "05-filecoin#e145": {
+   "dead": false,
+   "support": "partial",
+   "comment": "",
+   "seconds": 42,
+   "started_at": "2026-09-03T11:37:27.189Z",
+   "finished_at": "2026-09-03T11:39:00.468Z"
+  },
+  "420-cryptify-ai-ethereum#e146": {
+   "dead": true,
+   "support": null,
+   "comment": "",
+   "seconds": 18,
+   "started_at": "2026-09-03T11:39:00.471Z",
+   "finished_at": "2026-09-03T11:39:42.986Z"
+  },
+  "84-alethea-artificial-liquid-intelligence-token#e147": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 36,
+   "started_at": "2026-09-03T11:39:42.987Z",
+   "finished_at": "2026-09-03T11:40:25.634Z"
+  },
+  "805-three-protocol-token#e148": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 38,
+   "started_at": "2026-09-03T11:40:25.634Z",
+   "finished_at": "2026-09-03T11:41:46.072Z"
+  },
+  "277-only1#e149": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 28,
+   "started_at": "2026-09-03T11:41:46.072Z",
+   "finished_at": "2026-09-03T11:43:04.572Z"
+  },
+  "458-iota-macrocosmos-ai#e150": {
+   "dead": false,
+   "support": "supports",
+   "comment": "",
+   "seconds": 36,
+   "started_at": "2026-09-03T11:43:04.572Z",
+   "finished_at": "2026-09-03T11:44:18.255Z"
+  }
+ }
+}

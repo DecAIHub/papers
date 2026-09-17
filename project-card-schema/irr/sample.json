@@ -1,0 +1,1007 @@
+{
+ "seed": 20260824,
+ "generated_at": "2026-08-24",
+ "passport_coding": {
+  "strata_counts": {
+   "AI/Compute": 54,
+   "AI/Other": 245,
+   "AI/Agents": 216,
+   "DeFi": 22,
+   "AI/* (other)": 42,
+   "Infra": 65,
+   "non-AI (other)": 40,
+   "AI/Data": 41,
+   "AI/Inference": 21,
+   "Meme": 52,
+   "AI/Analytics": 20,
+   "no-category": 27
+  },
+  "quota": {
+   "AI/Compute": 3,
+   "AI/Other": 15,
+   "AI/Agents": 13,
+   "DeFi": 1,
+   "AI/* (other)": 3,
+   "Infra": 4,
+   "non-AI (other)": 2,
+   "AI/Data": 2,
+   "AI/Inference": 1,
+   "Meme": 3,
+   "AI/Analytics": 1,
+   "no-category": 2
+  },
+  "cards": [
+   "747",
+   "242",
+   "588",
+   "487",
+   "378",
+   "816",
+   "90",
+   "688",
+   "555",
+   "506",
+   "698",
+   "243",
+   "201",
+   "253",
+   "403",
+   "804",
+   "906",
+   "454",
+   "693",
+   "543",
+   "272",
+   "214",
+   "499",
+   "200",
+   "767",
+   "169",
+   "429",
+   "109",
+   "59",
+   "694",
+   "137",
+   "815",
+   "83",
+   "209",
+   "686",
+   "483",
+   "324",
+   "96",
+   "595",
+   "490",
+   "482",
+   "257",
+   "705",
+   "276",
+   "399",
+   "533",
+   "727",
+   "612",
+   "369",
+   "419"
+  ]
+ },
+ "claim_support": {
+  "population": 4314,
+  "quota": {
+   "ai_component × Tier-1": 36,
+   "ai_component × Tier-2": 7,
+   "ai_component × Tier-3": 2,
+   "token_type × Tier-1": 36,
+   "token_type × Tier-2": 7,
+   "token_type × Tier-3": 2,
+   "Category × Tier-1": 24,
+   "Category × Tier-2": 5,
+   "Category × Tier-3": 1,
+   "chain × Tier-1": 16,
+   "chain × Tier-2": 3,
+   "chain × Tier-3": 1,
+   "use_case × Tier-1": 7,
+   "type × Tier-1": 3
+  },
+  "entries": [
+   {
+    "num": "102",
+    "url": "https://github.com/infinit-xyz/in-token-contract-audit/blob/main/PeckShield-Audit-Report-IN-Staking-v1.0.pdf",
+    "claim_field": "chain",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "441",
+    "url": "https://taostats.io/subnets/4/chart",
+    "claim_field": "chain",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "256",
+    "url": "https://ispo-files.s3.eu-central-1.amazonaws.com/static/Ispolink_Whitepaper_v1.pdf",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "154",
+    "url": "https://etherscan.io/token/0x3Dc8e2d80b6215a1BCcAe4d38715C3520581E77c",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "64",
+    "url": "https://clanker.gitbook.io/clanker-documentation/references/audits",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "413",
+    "url": "https://coinmarketcap.com/currencies/plankton-in-pain/",
+    "claim_field": "chain",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "264",
+    "url": "https://dtec.space/documents/WhitepaperEN.pdf",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "784",
+    "url": "https://github.com/hide001/ViridisNetwork",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "122",
+    "url": "https://bscscan.com/token/0x551897f8203bd131b350601D3aC0679Ba0Fc0136",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "469",
+    "url": "https://taostats.io/subnets/41/chart",
+    "claim_field": "Category",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "725",
+    "url": "https://raze.network/",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "342",
+    "url": "https://www.workloopai.com/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "117",
+    "url": "https://coinmarketcap.com/currencies/zerebro/",
+    "claim_field": "token_type",
+    "tier": "Tier-3"
+   },
+   {
+    "num": "211",
+    "url": "https://phantasma.info/blockchain/",
+    "claim_field": "use_case",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "277",
+    "url": "https://trywink.gitbook.io/wink",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "100",
+    "url": "https://etherscan.io/token/0x738865301a9b7dd80dc3666dd48cf034ec42bdda",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "600",
+    "url": "https://www.ruricatgirl.com/overview.html",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "351",
+    "url": "https://bscscan.com/token/0x5c4625ac040486ce7a9054924b8cd3e4ba8480a6",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "549",
+    "url": "https://bscscan.com/token/0x4c403b1879aa6a79ba9c599a393ccc5d9fd2e788",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "823",
+    "url": "https://explorer.solana.com/address/6hUC9DN73kdinkth3JdELGYnEbLEnEE4NvbzzoG3yPKK",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "81",
+    "url": "https://gitbook.swarmnetwork.ai/roadmap",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "617",
+    "url": "https://docs.drpepe.ai/ai-longevity-agents/gaia-decentralized-ai",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "723",
+    "url": "https://murall.art/whitepaper",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "238",
+    "url": "https://explorer.solana.com/address/APbVLtq66bKBpUUdncHtVSab9TM1UrcqZ9wodXzmpump?cluster=mainnet",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "664",
+    "url": "https://www.syntor.ai/stake",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "583",
+    "url": "https://github.com/cyberscope-io/audits/blob/main/2-fac/audit.pdf",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "752",
+    "url": "https://etherscan.io/token/0x922e2708462c7a3d014d8344f7c4d92b27ecf332",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "821",
+    "url": "https://docs.volaris.games/wp/usdvols/utilities",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "289",
+    "url": "https://aipad-1.gitbook.io/aipad/overview",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "790",
+    "url": "https://burnify-ai.gitbook.io/burnify.ai/how-to-use-burnify.ai",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "43",
+    "url": "https://www.sirenai.me",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "34",
+    "url": "https://hackenproof.com/iotex/iotex",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "900",
+    "url": "https://docs.wardenprotocol.org/ward/introduction",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "392",
+    "url": "https://darwinslab.ai/",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "230",
+    "url": "https://www.coingecko.com/en/coins/jojoworld",
+    "claim_field": "Category",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "520",
+    "url": "https://coinmarketcap.com/currencies/kitten-haimer/",
+    "claim_field": "ai_component",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "599",
+    "url": "https://solscan.io/token/AVyjco9j8vv7ZPkhCpEoPJ3bLEuw7G1wrrNt8DrApump",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "698",
+    "url": "https://www.qubitica.net",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "665",
+    "url": "https://www.orcadefai.com/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "48",
+    "url": "https://www.arkhamintelligence.com/announcements",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "376",
+    "url": "https://etherscan.io/token/0xc9eb61ffb66d5815d643bbb8195e17c49687ae1e",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "522",
+    "url": "https://basescan.org/token/0x4d70f1058b73198f12a76c193aef5db5dd75babd",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "327",
+    "url": "https://docs.yoracle.ai/links",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "354",
+    "url": "https://medium.com/@arconaico",
+    "claim_field": "ai_component",
+    "tier": "Tier-3"
+   },
+   {
+    "num": "51",
+    "url": "https://www.paal.ai/",
+    "claim_field": "use_case",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "379",
+    "url": "https://polygonscan.com/token/0x33b6d77c607ea499ab5db7e2201c5a516a78a5db",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "349",
+    "url": "https://basescan.org/token/0xbF82115918A88E2120C0f73d99CCd8f95c301B59",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "277",
+    "url": "https://trywink.gitbook.io/wink/benefits/pay-with-card",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "763",
+    "url": "https://www.coingecko.com/en/coins/kvants-ai",
+    "claim_field": "token_type",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "637",
+    "url": "https://aidefiagents.gitbook.io/whitepaper/help/social-media",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "161",
+    "url": "https://docs.metacade.co/",
+    "claim_field": "use_case",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "471",
+    "url": "https://coinmarketcap.com/currencies/luminous/",
+    "claim_field": "token_type",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "82",
+    "url": "https://docs.tars.pro/",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "583",
+    "url": "https://etherscan.io/token/0x1a3a8cf347b2bf5890d3d6a1b981c4f4432c8661",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "352",
+    "url": "https://docs.tradetomato.com/fundamentals/ai-forecaster",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "637",
+    "url": "https://aidefiagents.gitbook.io/whitepaper",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "136",
+    "url": "https://docs.rss3.io/guide/vsl/links/contract-addresses",
+    "claim_field": "type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "237",
+    "url": "https://solscan.io/token/7D1iYWfhw2cr9yBZBFE6nZaaSUvXHqG5FizFFEZwpump",
+    "claim_field": "ai_component",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "778",
+    "url": "https://morosnet.com/roadmap",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "226",
+    "url": "https://nodeops.network/products#security-hub",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "277",
+    "url": "https://trywink.gitbook.io/wink/crypto/like-tokenomics/basic-information",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "05",
+    "url": "https://spec.filecoin.io/systems/filecoin_token/token_allocation/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "102",
+    "url": "https://etherscan.io/token/0x61fac5f038515572d6f42d4bcb6b581642753d50",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "567",
+    "url": "https://github.com/OnchainAItech",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "18",
+    "url": "https://immunefi.com/bounty/livepeer/",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "605",
+    "url": "https://www.delaunch.ai/launch",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "882",
+    "url": "https://raw.githubusercontent.com/tedl-1990/AIWS/master/README.md",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "324",
+    "url": "https://static.reddio.com/REDDIO%20WHITEPAPER.pdf",
+    "claim_field": "type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "267",
+    "url": "https://docs.pingpong.build/compute-resource-exchange/yield-enhanced-mining-backed-on-chain-forwards",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "734",
+    "url": "https://coinmarketcap.com/currencies/marketmove/",
+    "claim_field": "token_type",
+    "tier": "Tier-3"
+   },
+   {
+    "num": "480",
+    "url": "https://github.com/macrocosm-os/data-universe/blob/main/README.md",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "48",
+    "url": "https://assets-global.website-files.com/62879326fd745f7489b43224/64abc4471879916bc4e2aeb0_Arkham_Whitepaper_FINAL.pdf",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "631",
+    "url": "https://docs.speaktonora.com/interacting-with-nora",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "873",
+    "url": "https://coinmarketcap.com/currencies/levelsprotocol/",
+    "claim_field": "token_type",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "528",
+    "url": "https://www.cloudbric.io",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "657",
+    "url": "https://basescan.org/token/0x710eec215b3bb653d42fc6e70e0531ea13f51a7a",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "15",
+    "url": "https://etherscan.io/token/0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "42",
+    "url": "https://bscscan.com/token/0xf3d5b4c34ed623478cc5141861776e6cf7ae3a1e",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "144",
+    "url": "https://trusta-labs.gitbook.io/trustaai/tokenomics",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "473",
+    "url": "https://blog.openzeppelin.com/ocean-vesting-wallet-audit",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "127",
+    "url": "https://docs.forta.network/en/latest/2022-7-11%20Forta%20Litepaper.pdf",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "751",
+    "url": "https://coinmarketcap.com/currencies/cryptoai/",
+    "claim_field": "token_type",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "68",
+    "url": "https://docs.phala.network/dstack/security-audit",
+    "claim_field": "use_case",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "96",
+    "url": "https://www.saga.xyz/saga-protocol",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "132",
+    "url": "https://audits.hacken.io/neuralai/",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "176",
+    "url": "https://grokoneth.meme/whitepaper",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "63",
+    "url": "https://github.com/zentryHQ/zentry-token/releases",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "770",
+    "url": "https://coinmarketcap.com/currencies/aione/",
+    "claim_field": "token_type",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "37",
+    "url": "https://docs.vana.org/docs/system-architecture",
+    "claim_field": "type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "770",
+    "url": "https://www.coingecko.com/en/coins/aione/",
+    "claim_field": "token_type",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "212",
+    "url": "https://coinmarketcap.com/currencies/atlas-navi/",
+    "claim_field": "ai_component",
+    "tier": "Tier-3"
+   },
+   {
+    "num": "127",
+    "url": "https://docs.forta.network/en/latest/delegated-staking-introduction/",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "223",
+    "url": "https://storefront.silencio.network/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "235",
+    "url": "https://coinmarketcap.com/currencies/super-champs/",
+    "claim_field": "Category",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "115",
+    "url": "https://docs.ns3.ai/roadmap",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "200",
+    "url": "https://docs.daobase.ai/daobase/smart-contract/security-audit",
+    "claim_field": "use_case",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "88",
+    "url": "https://www.flock.io/blog/mainnet-launch--token-generation-event-on-base",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "67",
+    "url": "https://olaxbt-docs.gitbook.io/olaxbt-doc",
+    "claim_field": "use_case",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "831",
+    "url": "https://coinmarketcap.com/currencies/simian-ai/",
+    "claim_field": "ai_component",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "192",
+    "url": "https://solscan.io/token/SW1TCHLmRGTfW5xZknqQdpdarB8PD95sJYWpNp9TbFx",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "117",
+    "url": "https://zerebro.org/terms",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "129",
+    "url": "https://www.oortfoundation.org/governance",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "206",
+    "url": "https://cdn.sanity.io/files/agrhq0bu/production/1e4f5f6b99d1cb0701432df6e23e9bbbf46ea363.pdf",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "238",
+    "url": "https://solscan.io/token/APbVLtq66bKBpUUdncHtVSab9TM1UrcqZ9wodXzmpump",
+    "claim_field": "ai_component",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "833",
+    "url": "https://www.simsai.io/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "370",
+    "url": "https://twitter.com/quaindotcom",
+    "claim_field": "chain",
+    "tier": "Tier-3"
+   },
+   {
+    "num": "722",
+    "url": "https://t.me/uberstaterit",
+    "claim_field": "Category",
+    "tier": "Tier-3"
+   },
+   {
+    "num": "174",
+    "url": "https://coinmarketcap.com/currencies/byte/",
+    "claim_field": "ai_component",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "61",
+    "url": "https://docs.openledgerfoundation.com/network-information",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "346",
+    "url": "https://blog.0xmons.xyz/79081566310",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "42",
+    "url": "https://kgenfoundation.gitbook.io/docs.kgenfoundation.com/tokenomics/usdkgen",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "258",
+    "url": "https://scalebit.xyz/reports/20250813-Zypher-Network-Token-Final-Audit-Report.pdf",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "681",
+    "url": "https://app.datum.org/",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "821",
+    "url": "https://volaris.games/",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "15",
+    "url": "https://origintrail.io/documents/Verifiable_Internet_for_Artificial_Intelligence_whitepaper_v3_pre_publication.pdf",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "135",
+    "url": "https://learn.akedo.fun/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "26",
+    "url": "https://docs.babydogeswap.com/babydoge-docs-1/developers/smart-contracts",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "265",
+    "url": "https://docs.dexcheck.ai/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "675",
+    "url": "https://datai.network/docs/contracts/token-functionality",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "195",
+    "url": "https://etherscan.io/token/0x3A856d4effa670C54585a5D523e96513e148e95d",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "193",
+    "url": "https://deepnode.gitbook.io/docs/platform",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "73",
+    "url": "https://docs.holoworld.com/holoworld/ava-studio/getting-started",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "502",
+    "url": "https://docs.gnus.ai/gnus.ai-gitbook/technical-information/super-genius-blockchain-technical-details",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "74",
+    "url": "https://delysium.gitbook.io/whitepaper/technical-overview/tokenomics",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "134",
+    "url": "https://docs.natix.network/whitepaper",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "367",
+    "url": "https://neur.sh/",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "112",
+    "url": "https://docs.heyanon.ai/heyanon.ai/general-information/team-telegram-contacts",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "442",
+    "url": "https://docs.elizaos.ai/tokenomics",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "399",
+    "url": "https://yfdaifinance.medium.com/",
+    "claim_field": "ai_component",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "418",
+    "url": "https://dexscreener.com/solana/dmmg42zlxezmj6n4feavdvBNsGfzzmTax6XuEBGfW7gA",
+    "claim_field": "Category",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "131",
+    "url": "https://docs.humans.ai/developer/smart-contracts",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "777",
+    "url": "https://deepcave.io/whitepaper/",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "134",
+    "url": "https://docs.natix.network/whitepaper/natix-economy/natix-economy-break-down/xnodes",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "814",
+    "url": "https://www.trysentra.ai/",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "07",
+    "url": "https://docs.superintelligence.io/artificial-superintelligence-alliance/leadership-and-governance",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "19",
+    "url": "https://docs.beldex.io/",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "55",
+    "url": "https://www.coingecko.com/en/coins/destra-network",
+    "claim_field": "Category",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "598",
+    "url": "https://solscan.io/token/7wM4MnbsPsG95A3WhZgbrPWvMtydKmJjqKr2ZVJVpump",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "132",
+    "url": "https://goneural.ai/",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "542",
+    "url": "https://www.coingecko.com/en/coins/encrypgen",
+    "claim_field": "token_type",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "160",
+    "url": "https://zkml-1.gitbook.io/zkml/overview/what-we-do",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "850",
+    "url": "https://coinmarketcap.com/currencies/elon-ai-agent/",
+    "claim_field": "ai_component",
+    "tier": "Tier-2"
+   },
+   {
+    "num": "872",
+    "url": "https://solscan.io/token/4sGgD7ZSiZ5wmvyMCJjDbptaq2UKKUW487tWCFrhpump",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "903",
+    "url": "https://www.immunefi.foundation/",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "05",
+    "url": "https://docs.filecoin.io/basics/interplanetary-consensus",
+    "claim_field": "ai_component",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "420",
+    "url": "https://docs.cryptify.ai/tokenomics/token-overview-and-contract",
+    "claim_field": "chain",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "84",
+    "url": "https://etherscan.io/tx/0xdc90c052cdc5859a41ce83645ae6d5c4668336f84b8af2aed5132bf5f59f829d",
+    "claim_field": "token_type",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "805",
+    "url": "https://jobs3.io",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "277",
+    "url": "https://trywink.gitbook.io/wink/product/marketplace",
+    "claim_field": "use_case",
+    "tier": "Tier-1"
+   },
+   {
+    "num": "458",
+    "url": "https://docs.macrocosmos.ai/subnets/subnet-9-iota",
+    "claim_field": "Category",
+    "tier": "Tier-1"
+   }
+  ]
+ }
+}

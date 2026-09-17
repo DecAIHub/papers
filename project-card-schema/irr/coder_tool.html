@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DecAIHub — project card coding (IRR)</title>
+<style>
+  :root{
+    --bg:#f4f5f7; --card:#ffffff; --ink:#1a202c; --muted:#64748b;
+    --accent:#2563eb; --accent-soft:#eff6ff; --border:#e2e8f0;
+    --ok:#16a34a; --warn:#d97706; --danger:#dc2626;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:1320px;margin:0 auto;padding:16px 16px 90px}
+  #panel-t2,#panel-exp{max-width:880px;margin:0 auto}
+  header{background:var(--card);border-bottom:1px solid var(--border);
+         position:sticky;top:0;z-index:20}
+  .head-in{max-width:880px;margin:0 auto;padding:10px 16px;display:flex;
+           flex-wrap:wrap;gap:10px;align-items:center}
+  .head-in h1{font-size:16px;margin:0;flex:1 1 auto}
+  details.instr summary{font-weight:700;font-size:16px;cursor:pointer;padding:2px 0}
+  details.instr summary:hover{color:var(--accent)}
+  nav.tabs{max-width:880px;margin:0 auto;padding:0 16px;display:flex;gap:4px}
+  nav.tabs button{border:none;background:none;font:inherit;padding:10px 14px;
+      cursor:pointer;border-bottom:3px solid transparent;color:var(--muted)}
+  nav.tabs button.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+  nav.tabs button .cnt{font-size:12px;background:var(--accent-soft);color:var(--accent);
+      border-radius:10px;padding:1px 7px;margin-left:6px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;
+        padding:18px 20px;margin:14px 0}
+  .progress{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 4px}
+  .progress .bar{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden;min-width:140px}
+  .progress .bar i{display:block;height:100%;background:var(--accent)}
+  .progress b{white-space:nowrap}
+  .jump{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+  .jump button{border:1px solid var(--border);background:var(--card);border-radius:8px;
+      padding:4px 10px;cursor:pointer;font:13px system-ui}
+  .jump button.done{background:#ecfdf5;border-color:#a7f3d0;color:#047857}
+  .jump button.cur{outline:2px solid var(--accent)}
+  h2.proj{font-size:22px;margin:2px 0 2px}
+  .pid{color:var(--muted);font-size:13px;margin-bottom:10px}
+  .links{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+  .links a{display:inline-block;background:var(--accent-soft);color:var(--accent);
+      text-decoration:none;border-radius:8px;padding:5px 10px;font-size:13.5px;
+      border:1px solid #dbeafe}
+  .links a:hover{background:#dbeafe}
+  .links a .t{color:#3730a3;font-weight:600}
+  .fieldblock{border-top:1px solid var(--border);margin-top:16px;padding-top:14px}
+  .fieldblock h3{margin:0 0 2px;font-size:16px}
+  .fieldblock .q{color:var(--muted);font-size:13.5px;margin:0 0 10px}
+  .desc-h{font-weight:600;margin:12px 0 6px}
+  .desc{border:1px solid var(--border);background:#fafbfc;border-radius:10px;
+        padding:4px 14px;max-height:420px;overflow:auto;font-size:14px}
+  /* Task 1: project info on the left, coding fields on the right (v0.7) */
+  .t1grid{display:grid;grid-template-columns:minmax(360px,11fr) minmax(400px,13fr);
+      gap:0 26px;align-items:start;margin-top:8px}
+  .t1info{position:sticky;top:8px;max-height:calc(100vh - 20px);overflow:auto}
+  @media (min-width:1024px){
+    .t1info .desc{max-height:calc(100vh - 330px)}
+  }
+  @media (max-width:1023px){
+    .t1grid{grid-template-columns:1fr}
+    .t1info{position:static;max-height:none;overflow:visible}
+  }
+  .desc h3{font-size:15px;margin:12px 0 4px}
+  .desc h4{font-size:14px;margin:10px 0 3px}
+  .desc h5{font-size:13.5px;margin:8px 0 3px;color:#334155}
+  .desc ul{margin:4px 0;padding-left:22px}
+  .desc p{margin:6px 0}
+  .desc table{border-collapse:collapse;margin:6px 0;font-size:13px}
+  .desc td,.desc th{border:1px solid var(--border);padding:3px 8px}
+  .cmt label{font-size:13px;color:var(--muted);display:block;margin:8px 0 3px}
+  .cmt{display:none;margin-top:4px}
+  .cmt.show{display:block}
+  .cmt-toggle{display:inline-block;font-size:12.5px;color:var(--accent);cursor:pointer;
+      margin-top:7px;user-select:none}
+  .cmt-toggle:hover{text-decoration:underline}
+  textarea{width:100%;border:1px solid var(--border);border-radius:8px;padding:8px 10px;
+      font:inherit;resize:vertical;min-height:38px}
+  .opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:2px 14px;margin:6px 0}
+  .opts.single{grid-template-columns:1fr}
+  .grp{grid-column:1/-1;font-size:12px;font-weight:700;color:var(--muted);
+       text-transform:uppercase;letter-spacing:.05em;margin:8px 0 2px;
+       border-bottom:1px solid var(--border);padding-bottom:3px}
+  .opt{display:flex;gap:8px;align-items:flex-start;padding:5px 8px;border-radius:8px;cursor:pointer}
+  .opt:hover{background:var(--accent-soft)}
+  .opt input{margin-top:3px;accent-color:var(--accent)}
+  .opt.service{color:var(--warn);font-weight:500}
+  .hint{display:inline-flex;align-items:center;justify-content:center;flex:none;
+      width:16px;height:16px;border-radius:50%;background:#e2e8f0;color:#475569;
+      font-size:11px;font-weight:700;line-height:1;cursor:help;margin-left:2px;margin-top:2px;
+      user-select:none}
+  .hint:hover,.hint:focus{background:var(--accent);color:#fff;outline:none}
+  .tipbox{grid-column:1/-1;background:#f8fafc;border:1px solid var(--border);
+      border-left:3px solid var(--accent);border-radius:8px;padding:8px 12px;
+      font-size:13px;color:#334155;margin:2px 0 6px}
+  .tipbox b{color:#1e293b}
+  .svc-sep{border:none;border-top:1px dashed var(--border);margin:6px 0}
+  .limit{font-size:12.5px;color:var(--muted)}
+  .limit.max{color:var(--danger);font-weight:600}
+  input.sugg{border:1px solid var(--border);border-radius:8px;padding:6px 10px;font:inherit;
+      width:100%;margin-top:4px;display:none}
+  input.sugg.show{display:block}
+  .navbtns{display:flex;justify-content:space-between;gap:10px;margin:18px 0}
+  .btn{border:1px solid var(--border);background:var(--card);border-radius:10px;
+      padding:10px 18px;font:inherit;cursor:pointer}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+  .btn.primary:hover{background:#1d4ed8}
+  .btn.danger{color:var(--danger);border-color:#fecaca}
+  .savestate{position:fixed;bottom:14px;right:16px;background:#0f172a;color:#e2e8f0;
+      border-radius:10px;padding:7px 14px;font-size:13px;opacity:0;transition:opacity .3s;z-index:30}
+  .savestate.show{opacity:.92}
+  .claimbox{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;margin:10px 0}
+  .claimbox .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#92400e;font-weight:700}
+  .claimbox p{margin:4px 0 0;font-size:15px}
+  .urlbox{margin:10px 0}
+  .urlbox a{font-size:15.5px;word-break:break-all}
+  .badge{display:inline-block;background:#eef2ff;color:#4338ca;border-radius:8px;
+      padding:3px 10px;font-size:13px;font-weight:600;margin-left:6px}
+  .note{background:var(--accent-soft);border:1px solid #dbeafe;border-radius:10px;
+      padding:10px 14px;font-size:13.5px;margin:10px 0}
+  .warnbox{background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:10px 14px;
+      font-size:13.5px;margin:10px 0;color:#7f1d1d}
+  .exp-row{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+  table.sum{border-collapse:collapse;width:100%;font-size:14px}
+  table.sum td,table.sum th{border:1px solid var(--border);padding:6px 10px;text-align:left}
+  .miss{color:var(--danger);font-weight:600}
+  .okk{color:var(--ok);font-weight:600}
+  .instr h3{margin:18px 0 6px}
+  .instr table{border-collapse:collapse;width:100%;font-size:13.5px;margin:8px 0}
+  .instr td,.instr th{border:1px solid var(--border);padding:6px 9px;vertical-align:top}
+  .kbd{background:#f1f5f9;border:1px solid var(--border);border-radius:5px;padding:0 5px;font-size:12.5px}
+  @media (max-width:640px){ .opts{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header>
+  <div class="head-in">
+    <h1>Project card coding: passport fields and evidence checks</h1>
+  </div>
+  <nav class="tabs">
+    <button data-tab="t1" class="active">Task 1 · Passport fields <span class="cnt" id="cnt1">0/0</span></button>
+    <button data-tab="t2">Task 2 · Evidence <span class="cnt" id="cnt2">0/0</span></button>
+    <button data-tab="exp">Export</button>
+  </nav>
+</header>
+
+<div class="wrap">
+
+<!-- ================= TASK 1 ================= -->
+<section class="panel active" id="panel-t1">
+  <details class="card instr" id="instr1">
+    <summary>Instructions and FAQ — Task 1</summary>
+    <p>For each project you see the <b>card description</b> (field values and curator scores have been removed
+    from it) and <b>links to sources</b>. Note: the card description is in Russian (unpublished project content);
+    everything else is in English. Read the description; if it is not enough — open the links
+    (website, documentation, whitepaper, explorer). Then, for each of the four fields, pick a value
+    from the closed list. Next to every value there is a <span class="hint" style="cursor:default">?</span> icon —
+    click it to see a short explanation of the term (definitions come from the project glossary).
+    Progress is saved automatically in this browser — you can close the tab and come back later.</p>
+    <h3>Fields</h3>
+    <table>
+      <tr><th>Field</th><th>Question</th><th>Notes</th></tr>
+      <tr><td><b>Category</b></td><td>Which segments does the project belong to?</td><td>Pick <b>1–3</b> values</td></tr>
+      <tr><td><b>token_type</b></td><td>What is the primary token model?</td><td>One value. <b>none</b> = the project has no token at all (that is an answer, not "don't know")</td></tr>
+      <tr><td><b>ai_component</b></td><td>Which AI component does the project implement/claim?</td><td>One value</td></tr>
+      <tr><td><b>use_case</b></td><td>What is the primary use case?</td><td>One value</td></tr>
+    </table>
+    <h3>Service answers (present in every list)</h3>
+    <ul>
+      <li><b>"Cannot be determined"</b> — sources are unavailable or contain no information. This is an honest answer; do not hesitate to use it.</li>
+      <li><b>"No suitable value in the list"</b> — you understood what it is, but no label in the list fits. Type your own value into the field that appears.</li>
+    </ul>
+    <p><b>Conservative rule:</b> pick a value only if it follows from the description/sources. When torn between
+    a value and "cannot be determined" — choose "cannot be determined". The per-field comment is optional
+    (fill it in only if you had doubts or want to explain).</p>
+    <h3>FAQ</h3>
+    <p><b>Links do not open.</b> Try the card's other links; if there is still no information — "cannot be determined".</p>
+    <p><b>Source in an unfamiliar language.</b> Use a translator; if still unclear — note it in the comment.</p>
+    <p><b>The project looks dead/abandoned.</b> Code what is claimed in the surviving sources; note it in the comment.</p>
+    <p><b>Torn between two values.</b> Pick the more specific one and name the second candidate in the comment.</p>
+    <p><b>Do not discuss ambiguous cases</b> with anyone until the work is finished — they are the subject of the study.
+    Technical questions (a file/button does not work) are fine.</p>
+  </details>
+  <div class="progress"><b id="t1pos"></b><div class="bar"><i id="t1bar"></i></div><span id="t1done" class="limit"></span></div>
+  <div class="jump" id="t1jump"></div>
+  <div class="card" id="t1card"></div>
+  <div class="navbtns">
+    <button class="btn" id="t1prev">← Previous</button>
+    <button class="btn primary" id="t1next">Save and continue →</button>
+  </div>
+</section>
+
+<!-- ================= TASK 2 ================= -->
+<section class="panel" id="panel-t2">
+  <details class="card instr" id="instr2">
+    <summary>Instructions and FAQ — Task 2</summary>
+    <p>Each evidence entry is a link (artifact) plus the curator's claim about what this link proves.
+    Progress is saved automatically. For each entry:</p>
+    <ol>
+      <li><b>Open the link.</b> If it does not open — tick "URL unreachable"; the second question will be skipped.</li>
+      <li><b>Does the artifact support the curator's claim?</b> "Fully" / "Partially" / "Does not support".
+      Partially = the page covers the claim's topic, but not everything stated is visible.</li>
+    </ol>
+    <p>The "Mapped to field" badge shows which card field the claim belongs to — it is context only,
+    you do not evaluate it.</p>
+    <h3>FAQ</h3>
+    <p><b>Source in an unfamiliar language.</b> Use a translator; if still unclear — note it in the comment.</p>
+    <p><b>Do not discuss ambiguous cases</b> with anyone until the work is finished — they are the subject of the study.
+    Technical questions (a file/button does not work) are fine.</p>
+  </details>
+  <div class="progress"><b id="t2pos"></b><div class="bar"><i id="t2bar"></i></div><span id="t2done" class="limit"></span></div>
+  <div class="jump" id="t2jump"></div>
+  <div class="card" id="t2card"></div>
+  <div class="navbtns">
+    <button class="btn" id="t2prev">← Previous</button>
+    <button class="btn primary" id="t2next">Save and continue →</button>
+  </div>
+</section>
+
+<!-- ================= EXPORT ================= -->
+<section class="panel" id="panel-exp">
+  <div class="card">
+    <h2>Export results</h2>
+    <div id="expWarn"></div>
+    <table class="sum" id="expSum"></table>
+    <div class="exp-row">
+      <button class="btn primary" id="dlJson">Download JSON (everything)</button>
+      <button class="btn" id="dlCsv1">CSV — Task 1</button>
+      <button class="btn" id="dlCsv2">CSV — Task 2</button>
+    </div>
+    <p class="limit">Send the JSON file to the author (CSV is a duplicate format for eyeballing).</p>
+    <hr class="svc-sep">
+    <button class="btn danger" id="resetAll">Reset all answers…</button>
+  </div>
+</section>
+
+</div>
+<div class="savestate" id="saveState">Saved</div>
+
+<script>
+const DATA = {"cards": [{"id": "747-all-in", "name": "ALLIN (All In Society)", "links": [{"type": "Website", "url": "https://allin.so/"}, {"type": "Docs", "url": "https://github.com/allinxproject/wiki"}, {"type": "GitHub", "url": "https://github.com/allinxproject/wiki"}, {"type": "Releases / Changelog", "url": "https://github.com/allinxproject/wiki/commits"}, {"type": "Whitepaper", "url": "https://drive.google.com/file/d/1VSfZGzQzNNthjIrp3GFs1Tixd6_2dI9A/view?usp=sharing"}, {"type": "Security advisories", "url": "https://github.com/allinxproject/wiki/security"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x9B2b931d6AB97B6A887b2C5d8529537E6FE73Ebe"}, {"type": "App / Demo", "url": "https://terminal.allin.so/"}, {"type": "X", "url": "https://twitter.com/allinerc20"}, {"type": "Telegram", "url": "https://t.me/AllInSocietyPortal"}, {"type": "Medium", "url": "https://medium.com/@allinsociety"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/all-in"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/all-in/"}], "desc_html": ""}, {"id": "242-linqai", "name": "LinqAI / LinqProtocol", "links": [{"type": "Website", "url": "https://www.linqai.com"}, {"type": "Docs", "url": "https://www.linqai.com/linqprotocol-litepaper.pdf"}, {"type": "GitHub", "url": "https://github.com/linqai-com"}, {"type": "Releases / Changelog", "url": "https://www.linqai.com/blog/categories/all"}, {"type": "Whitepaper", "url": "https://www.linqai.com/linqprotocol-litepaper.pdf"}, {"type": "Roadmap", "url": "https://www.linqai.com/linq-protocol?scroll=protocol-roadmap"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xD4F4D0a10BcaE123bB6655E8Fe93a30d01eEbD04"}, {"type": "X", "url": "https://twitter.com/linq_ai"}, {"type": "Discord", "url": "https://discord.gg/linqai"}, {"type": "Telegram", "url": "https://t.me/LinqAI"}, {"type": "Audit report(s)", "url": "https://hacken.io/audits/linqai/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/linqai"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/linqai/"}], "desc_html": ""}, {"id": "588-catalorian-token", "name": "Catalorian", "links": [{"type": "Website", "url": "https://thefirstcatalorian.com/"}, {"type": "Docs", "url": "https://www.catalorian.com/"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x8baf5d75cae25c7df6d1e0d26c52d19ee848301a"}, {"type": "X", "url": "https://twitter.com/CatalorianOGETH"}, {"type": "Telegram", "url": "https://t.me/CatalorianComm"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/catalorian"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/catalorian-token/"}], "desc_html": ""}, {"id": "487-navigate", "name": "Navigate", "links": [{"type": "Website", "url": "https://nvg8.io/"}, {"type": "Docs", "url": "https://docs.nvg8.io/navigate-documentation-hub/"}, {"type": "Releases / Changelog", "url": "https://paragraph.xyz/@navigate"}, {"type": "Explorer", "url": "https://basescan.org/token/0x5d6Cae0422A950dbd7918D1e74434A35156b3Ba4"}, {"type": "App / Demo", "url": "https://dataquest.nvg8.io/"}, {"type": "X", "url": "https://twitter.com/navigate_ai"}, {"type": "Discord", "url": "https://discord.gg/nvg8"}, {"type": "Telegram", "url": "https://t.me/navigatedatasurfers"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/navigate"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/navigate/"}], "desc_html": ""}, {"id": "378-mind-ai", "name": "Mind AI", "links": [{"type": "Website", "url": "https://www.mind-ai.io/"}, {"type": "Docs", "url": "https://docs.mind-ai.io/"}, {"type": "Roadmap", "url": "https://docs.mind-ai.io/economy/roadmap"}, {"type": "Explorer", "url": "https://bscscan.com/token/0xb5ab5cf2e2c686ae43f01f23859f3a55a8629c1c"}, {"type": "App / Demo", "url": "https://app.mind-ai.io/"}, {"type": "X", "url": "https://twitter.com/MindAI_io"}, {"type": "Telegram", "url": "http://t.me/MindAIGroup"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/mind-ai"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/mind-ai/"}], "desc_html": ""}, {"id": "816-goatseus-maximus-eth", "name": "Goatseus Maximus (ETH)", "links": [{"type": "Website", "url": "https://goatchan.com/"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x847f6695874fe9d2abB6fE8Bf56D809BBF1e83DA"}, {"type": "X", "url": "https://twitter.com/gospelofgoats"}, {"type": "Telegram", "url": "https://t.me/GoatseusMaximusEth"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/goatseus-maximus-eth/"}], "desc_html": ""}, {"id": "90-newton-protocol", "name": "Newton Protocol", "links": [{"type": "Website", "url": "https://newt.foundation/"}, {"type": "Docs", "url": "https://docs.newt.foundation/"}, {"type": "GitHub", "url": "https://github.com/newt-foundation"}, {"type": "Releases / Changelog", "url": "https://blog.newt.foundation/"}, {"type": "Whitepaper", "url": "https://blog.newt.foundation/the-litepaper/"}, {"type": "Security advisories", "url": "https://github.com/newt-foundation/newton-token/security/advisories"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xD0eC028a3D21533Fdd200838F39c85B03679285D"}, {"type": "X", "url": "https://twitter.com/newtfoundation"}, {"type": "Discord", "url": "https://discord.com/invite/magicnewton"}, {"type": "Bug bounty", "url": "https://hackerone.com/magic-bbp/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/newton-protocol"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/newton-protocol/"}], "desc_html": ""}, {"id": "688-insights-network", "name": "Instars (Insights Network)", "links": [{"type": "Website", "url": "https://instars.com/"}, {"type": "Docs", "url": "https://s3.amazonaws.com/insightsnetwork/InsightsNetworkWhitepaperV0.5.pdf"}, {"type": "GitHub", "url": "https://github.com/insights-network/instar"}, {"type": "Releases / Changelog", "url": "https://github.com/insights-network/instar/commits"}, {"type": "Whitepaper", "url": "https://s3.amazonaws.com/insightsnetwork/InsightsNetworkWhitepaperV0.5.pdf"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x8193711b2763bc7dfd67da0d6c8c26642eafdaf3"}, {"type": "X", "url": "https://twitter.com/instartoken"}, {"type": "Telegram", "url": "https://t.me/InsightsNetwork"}, {"type": "Medium", "url": "https://medium.com/@InsightsNetwork"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/insights-network/"}], "desc_html": ""}, {"id": "555-ethereumfair", "name": "EthereumFair", "links": [{"type": "Website", "url": "https://etherfair.org/"}, {"type": "Docs", "url": "https://etherfair.org/EthereumFair%20Whitepaper.pdf"}, {"type": "GitHub", "url": "https://github.com/orgs/ethereumfair/repositories"}, {"type": "Releases / Changelog", "url": "https://github.com/ethereumfair/go-ethereum/commits/master"}, {"type": "Whitepaper", "url": "https://etherfair.org/whitepaper"}, {"type": "Roadmap", "url": "https://etherfair.org/technology_roadmap"}, {"type": "Security advisories", "url": "https://github.com/ethereumfair/go-ethereum/security"}, {"type": "Explorer", "url": "https://www.oklink.com/ethf"}, {"type": "X", "url": "https://twitter.com/EthereumFair"}, {"type": "Discord", "url": "https://discord.com/invite/hJysvjSJGD"}, {"type": "Telegram", "url": "https://t.me/ethereumfair_en"}, {"type": "Medium", "url": "https://medium.com/@EthereumFair"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/ethereumfair"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/ethereumfair/"}], "desc_html": ""}, {"id": "506-verida", "name": "Verida", "links": [{"type": "Website", "url": "https://verida.ai/"}, {"type": "Docs", "url": "https://www.verida.network/whitepaper"}, {"type": "GitHub", "url": "https://github.com/verida"}, {"type": "Releases / Changelog", "url": "https://news.verida.network/"}, {"type": "Whitepaper", "url": "https://www.verida.network/whitepaper"}, {"type": "Roadmap", "url": "https://www.verida.network/roadmap"}, {"type": "Security advisories", "url": "https://github.com/orgs/verida/security"}, {"type": "Explorer", "url": "https://polygonscan.com/token/0x683565196C3EAb450003C964D4bad1fd3068D4cC"}, {"type": "X", "url": "https://twitter.com/Verida_io"}, {"type": "Discord", "url": "https://discord.gg/verida"}, {"type": "Telegram", "url": "https://t.me/verida_community"}, {"type": "Medium", "url": "https://news.verida.network/"}, {"type": "Audit report(s)", "url": "https://hashlock.com/audits/verida-protocol-audit"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/verida"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/verida/"}], "desc_html": ""}, {"id": "698-qubitica", "name": "Qubitica", "links": [{"type": "Website", "url": "https://www.qubitica.net"}, {"type": "GitHub", "url": "https://github.com/dantak2000/qubitica"}, {"type": "Whitepaper", "url": "https://qubitica.net/whitepaper"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x1602af2C782cC03F9241992E243290Fccf73Bb13"}, {"type": "X", "url": "https://twitter.com/Qubitica"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/qubitica/"}], "desc_html": ""}, {"id": "243-singularitydao", "name": "SingularityDAO", "links": [{"type": "Website", "url": "https://www.singularitydao.ai/"}, {"type": "Docs", "url": "https://www.docs.singularitydao.ai"}, {"type": "GitHub", "url": "https://github.com/singularitydao"}, {"type": "Releases / Changelog", "url": "https://t.me/sdaoann"}, {"type": "Whitepaper", "url": "https://www.docs.singularitydao.ai"}, {"type": "Roadmap", "url": "https://medium.com/singularitydao/singularitydao-roadmap-2022-1st-quarter-dadc2f4d11c4"}, {"type": "Security advisories", "url": "https://docs.singularitydao.ai/security"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x993864e43caa7f7f12953ad6feb1d1ca635b875f"}, {"type": "App / Demo", "url": "https://singularitydao.ai/dynasets"}, {"type": "X", "url": "https://twitter.com/SingularityDao"}, {"type": "Discord", "url": "https://discord.gg/singularitydao"}, {"type": "Telegram", "url": "https://t.me/SingDAO"}, {"type": "Medium", "url": "https://medium.com/singularitydao/"}, {"type": "Audit report(s)", "url": "https://docs.singularitydao.ai/security/smart-contract-audits"}, {"type": "Bug bounty", "url": "https://immunefi.com/bug-bounty/singularitydao/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/singularitydao"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/singularitydao/"}], "desc_html": ""}, {"id": "201-strawberry-ai", "name": "Strawberry AI", "links": [{"type": "Website", "url": "https://usestrawberry.ai"}, {"type": "Docs", "url": "https://usestrawberry.gitbook.io/strawberryai"}, {"type": "Roadmap", "url": "https://usestrawberry.gitbook.io/strawberryai/other/roadmap"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xCb76314C2540199f4B844D4ebbC7998C604880cA"}, {"type": "X", "url": "https://twitter.com/StrawberryAI_5"}, {"type": "Telegram", "url": "https://t.me/strawberryai_X"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/strawberry-ai"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/strawberry-ai/"}], "desc_html": ""}, {"id": "253-big-data-protocol", "name": "Big Data Protocol", "links": [{"type": "Website", "url": "https://bigdataprotocol.com"}, {"type": "Docs", "url": "https://bigdataprotocol.com/docs"}, {"type": "GitHub", "url": "https://github.com/bigdataprotocol/bdp-contracts"}, {"type": "Releases / Changelog", "url": "https://github.com/bigdataprotocol/bdp-contracts/releases"}, {"type": "Whitepaper", "url": "https://bigdataprotocol.com/whitepaper"}, {"type": "Roadmap", "url": "https://bigdataprotocol.com/roadmap"}, {"type": "Security advisories", "url": "https://bigdataprotocol.com/BDP_IncidentReport.pdf"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xf3dcbc6D72a4E1892f7917b7C43b74131Df8480e"}, {"type": "X", "url": "https://twitter.com/bigdataprotocol"}, {"type": "Telegram", "url": "https://t.me/bigdataprotocol"}, {"type": "Medium", "url": "https://medium.com/big-data-protocol"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/big-data-protocol"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/big-data-protocol/"}], "desc_html": ""}, {"id": "403-chainaware-ai", "name": "ChainAware.ai", "links": [{"type": "Website", "url": "https://chainaware.ai/"}, {"type": "App / Demo", "url": "https://chainaware.ai/"}, {"type": "Docs", "url": "https://learn.chainaware.ai/how-to-use-chainaware.ai"}, {"type": "Releases / Changelog", "url": "https://chainaware.ai/blog/"}, {"type": "Whitepaper", "url": "https://chainaware.ai/whitepaper"}, {"type": "Roadmap", "url": "https://chainaware.ai/blog/chainaware-ai-ai-agents-and-roadmap-for-invidual-users/"}, {"type": "Security advisories", "url": "https://learn.chainaware.ai/ai-fraud-detection-for-users"}, {"type": "Explorer", "url": "https://bscscan.com/token/0xcf221109f45854ac52159420c543757fe84c113a"}, {"type": "X", "url": "https://twitter.com/ChainAware"}, {"type": "Discord", "url": "https://discord.gg/RJx9Junef8"}, {"type": "Telegram", "url": "https://t.me/ChainAware_ai"}, {"type": "Audit report(s)", "url": "https://learn.chainaware.ai/ai-fraud-detection-for-users/how-to-share-your-wallet-audit"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/chainaware-ai"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/chainaware-ai/"}], "desc_html": ""}, {"id": "804-acria-ai-aimarket", "name": "Acria AI AImarket", "links": [{"type": "Website", "url": "https://acria.network/"}, {"type": "Docs", "url": "https://docs.acria.network/"}, {"type": "GitHub", "url": "https://github.com/Acria-Network"}, {"type": "Explorer", "url": "https://aicscan.net"}, {"type": "X", "url": "https://twitter.com/acrianetwork1"}, {"type": "Telegram", "url": "https://t.me/aicchain"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/acria-ai-aimarket/"}], "desc_html": ""}, {"id": "906-moltbook", "name": "Moltbook", "links": [{"type": "Website", "url": "https://www.moltbook.com/"}, {"type": "Docs", "url": "https://www.moltbook.com/skill.md"}, {"type": "Explorer", "url": "https://basescan.org/token/0xB695559b26BB2c9703ef1935c37AeaE9526bab07"}, {"type": "App / Demo", "url": "https://www.moltbook.com/"}, {"type": "X", "url": "https://twitter.com/moltbook"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/moltbook"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/moltbook/"}], "desc_html": ""}, {"id": "454-octavia", "name": "Octavia", "links": [{"type": "Website", "url": "https://octavia.one/"}, {"type": "Docs", "url": "https://docs.octavia.one/"}, {"type": "GitHub", "url": "https://github.com/Octavia-Labs"}, {"type": "Releases / Changelog", "url": "https://medium.com/@OctaviaToken"}, {"type": "Whitepaper", "url": "https://octavia.one/pitchdeck.pdf"}, {"type": "Roadmap", "url": "https://docs.octavia.one/docs/project/roadmap"}, {"type": "Security advisories", "url": "https://github.com/Octavia-Labs/octavia-token/security"}, {"type": "Explorer", "url": "https://bscscan.com/token/0x21ac3bB914f90A2Bb1a16088E673a9fdDa641434"}, {"type": "App / Demo", "url": "https://app.renatus.ai"}, {"type": "X", "url": "https://twitter.com/OctaviaToken"}, {"type": "Discord", "url": "https://discord.gg/octavia"}, {"type": "Telegram", "url": "https://t.me/octaviaai"}, {"type": "Medium", "url": "https://medium.com/@OctaviaToken"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/octavia"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/octavia/"}], "desc_html": ""}, {"id": "693-doc-com", "name": "Doc.com", "links": [{"type": "Website", "url": "https://doc.com/"}, {"type": "Docs", "url": "https://cdn.docademic.com/documents/Docademic+ICO+White+Paper.pdf"}, {"type": "GitHub", "url": "https://github.com/Docademic/"}, {"type": "Releases / Changelog", "url": "https://github.com/Docademic/MTC/commits"}, {"type": "Whitepaper", "url": "https://cdn.docademic.com/documents/Docademic+ICO+White+Paper.pdf"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x905E337c6c8645263D3521205Aa37bf4d034e745"}, {"type": "X", "url": "https://twitter.com/doc_comofficial"}, {"type": "Telegram", "url": "https://t.me/docToken"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/doc-com/"}], "desc_html": ""}, {"id": "543-cpchain", "name": "CPChain", "links": [{"type": "Website", "url": "https://cpchain.io/"}, {"type": "Docs", "url": "https://docs.cpchain.io/"}, {"type": "GitHub", "url": "https://github.com/cpchain"}, {"type": "Releases / Changelog", "url": "https://github.com/CPChain/chain/commits/master/"}, {"type": "Whitepaper", "url": "https://cpchain.io/whitepaper"}, {"type": "Security advisories", "url": "https://github.com/CPChain/chain/security"}, {"type": "Explorer", "url": "https://explorer.bnbchain.org/asset/CPC-FED"}, {"type": "X", "url": "https://twitter.com/cpchain_io"}, {"type": "Discord", "url": "https://discord.gg/Z6DVS84"}, {"type": "Telegram", "url": "https://t.me/cpchain"}, {"type": "Medium", "url": "https://medium.com/cpchain-tech"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/cpchain/"}], "desc_html": ""}, {"id": "272-hive-intelligence", "name": "Hive Intelligence", "links": [{"type": "Website", "url": "https://hiveintelligence.xyz/"}, {"type": "Docs", "url": "https://hiveintelligence.xyz/docs"}, {"type": "GitHub", "url": "https://github.com/hive-intel/hive-crypto-mcp"}, {"type": "Roadmap", "url": "https://hiveintelligence.xyz/docs/roadmap"}, {"type": "Explorer", "url": "https://basescan.org/token/0x91dA780BC7f4B7Cf19ABE90411a2a296Ec5FF787"}, {"type": "X", "url": "https://twitter.com/Hive_Intel"}, {"type": "Telegram", "url": "https://t.me/HiveIntelligence"}, {"type": "App / Demo", "url": "https://hiveintelligence.xyz/mcp"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/hive-intelligence"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/hive-intelligence/"}], "desc_html": ""}, {"id": "214-cortex", "name": "Cortex", "links": [{"type": "Website", "url": "http://www.cortexlabs.ai/"}, {"type": "App / Demo", "url": "https://cerebro.cortexlabs.ai/"}, {"type": "Docs", "url": "https://cortexlabs.ai/cortex_2_0_whitepaper_en"}, {"type": "GitHub", "url": "https://github.com/CortexFoundation"}, {"type": "Releases / Changelog", "url": "https://github.com/CortexFoundation/CortexTheseus/releases"}, {"type": "Whitepaper", "url": "https://cortexlabs.ai/cortex_2_0_whitepaper_en"}, {"type": "Roadmap", "url": "https://www.cortexlabs.ai/cortex-blockchain"}, {"type": "Explorer", "url": "https://cerebro.cortexlabs.ai/"}, {"type": "X", "url": "https://twitter.com/CTXCBlockchain"}, {"type": "Discord", "url": "https://discord.gg/DJZeEXrsxF"}, {"type": "Telegram", "url": "https://t.me/CortexOfficialEN"}, {"type": "Medium", "url": "https://medium.com/cortexlabs"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/cortex"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/cortex/"}], "desc_html": ""}, {"id": "499-neurobro", "name": "Neurobro", "links": [{"type": "Website", "url": "https://neurobro.ai/"}, {"type": "Docs", "url": "https://neurobro.gitbook.io/neuro.bro"}, {"type": "GitHub", "url": "https://github.com/axioma-ai-labs"}, {"type": "Whitepaper", "url": "https://whitepaper.neurobro.ai/"}, {"type": "Explorer", "url": "https://basescan.org/token/0xc796e499cc8f599a2a8280825d8bda92f7a895e0"}, {"type": "X", "url": "https://twitter.com/0xNeurobro"}, {"type": "Telegram", "url": "https://t.me/+lgEC3JKudyY4ZDFi"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/neurobro"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/neurobro/"}], "desc_html": ""}, {"id": "200-daobase", "name": "DAOBase", "links": [{"type": "Website", "url": "https://daobase.ai"}, {"type": "Docs", "url": "https://docs.daobase.ai/daobase"}, {"type": "GitHub", "url": "https://github.com/DAOBase-AI"}, {"type": "Releases / Changelog", "url": "https://medium.com/@daobase_ai"}, {"type": "Roadmap", "url": "https://thepassto.notion.site/DAO-BASE-Development-and-Operation-Footprints-8c85c5ed3a8e4a2f8dbb6188def3d3ba"}, {"type": "Security advisories", "url": "https://skynet.certik.com/projects/thepass"}, {"type": "Explorer", "url": "https://basescan.org/token/0x1f1bA52c445755C92caFFe7B608B87dCDAf9d825"}, {"type": "X", "url": "https://twitter.com/daobase_ai"}, {"type": "Discord", "url": "https://discord.com/invite/N6f25tPs9W"}, {"type": "Telegram", "url": "https://t.me/daobase_ai"}, {"type": "Medium", "url": "https://medium.com/@daobase_ai"}, {"type": "Audit report(s)", "url": "https://docs.daobase.ai/daobase/smart-contract/security-audit"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/daobase/"}], "desc_html": ""}, {"id": "767-blockgpt", "name": "BlockGPT", "links": [{"type": "Website", "url": "https://blockgptbsc.com/"}, {"type": "Explorer", "url": "https://bscscan.com/token/0xe6f12e0fb5366fe34a06845eafcac4667f210a4e"}, {"type": "X", "url": "https://twitter.com/BlockGPT_BSC"}, {"type": "Discord", "url": "https://discord.com/invite/PQFBcsgRVY"}, {"type": "Telegram", "url": "https://t.me/BlockGPTChat"}, {"type": "Medium", "url": "https://medium.com/@BlockGPT"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/blockgpt/"}], "desc_html": ""}, {"id": "169-creatorbid", "name": "CreatorBid", "links": [{"type": "Website", "url": "https://creator.bid/"}, {"type": "Docs", "url": "https://docs.creator.bid/"}, {"type": "GitHub", "url": "https://github.com/creatorbid"}, {"type": "Releases / Changelog", "url": "https://blog.creator.bid/"}, {"type": "Whitepaper", "url": "https://docs.creator.bid/"}, {"type": "Explorer", "url": "https://bscscan.com/token/0xa1832f7F4e534aE557f9B5AB76dE54B1873e498B"}, {"type": "App / Demo", "url": "https://creator.bid/"}, {"type": "X", "url": "https://twitter.com/CreatorBid"}, {"type": "Telegram", "url": "https://t.me/creatorbid"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/creatorbid"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/creatorbid/"}], "desc_html": ""}, {"id": "429-bankr-coin", "name": "Bankr Coin", "links": [{"type": "Website", "url": "https://bankr.bot/"}, {"type": "Docs", "url": "https://docs.bankr.bot"}, {"type": "GitHub", "url": "https://github.com/BankrBot/"}, {"type": "Releases / Changelog", "url": "https://paragraph.com/@bankr"}, {"type": "Whitepaper", "url": "https://bankr.bot/bankr-manifesto.pdf"}, {"type": "Roadmap", "url": "https://bankr.bot/bankr-manifesto.pdf"}, {"type": "Explorer", "url": "https://basescan.org/token/0x22aF33FE49fD1Fa80c7149773dDe5890D3c76F3b"}, {"type": "X", "url": "https://twitter.com/bankrbot"}, {"type": "Telegram", "url": "https://t.me/bankr_ai_bot"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/bankercoin-2"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/bankr-coin/"}, {"type": "App / Demo", "url": "https://bankr.bot/leaderboard"}], "desc_html": ""}, {"id": "109-phoenix-global-new", "name": "Phoenix (Phoenix Global)", "links": [{"type": "Website", "url": "https://www.phoenix.global/"}, {"type": "Docs", "url": "https://computation-sdk.phoenix.global/"}, {"type": "GitHub", "url": "https://github.com/phoenixglobal"}, {"type": "Releases / Changelog", "url": "https://github.com/PhoenixGlobal/Phoenix-Computation-SDK/releases"}, {"type": "Whitepaper", "url": "https://www.phoenix.global/AlphaNet-intro-litepaper.pdf"}, {"type": "Roadmap", "url": "https://phoenixglobal.medium.com/phoenix-global-oracle-development-plan-status-report-2444667e0760"}, {"type": "Security advisories", "url": "https://github.com/PhoenixGlobal/Phoenix-Computation-SDK/security/advisories"}, {"type": "Explorer", "url": "https://bscscan.com/token/0x0409633A72D846fc5BBe2f98D88564D35987904D"}, {"type": "App / Demo", "url": "https://alphanet.phoenix.global/"}, {"type": "X", "url": "https://twitter.com/Phoenix_Chain"}, {"type": "Discord", "url": "https://discord.gg/gF5EZY4tFS"}, {"type": "Telegram", "url": "https://t.me/APEXcommunity"}, {"type": "Medium", "url": "https://phoenixglobal.medium.com/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/phoenix-global"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/phoenix-global-new/"}], "desc_html": ""}, {"id": "59-chromia", "name": "Chromia", "links": [{"type": "Website", "url": "https://chromia.com/"}, {"type": "Docs", "url": "https://chromia.com/documents/Chromia-_-Platform-white-paper2019.pdf"}, {"type": "GitHub", "url": "https://bitbucket.org/chromawallet/"}, {"type": "Releases / Changelog", "url": "https://docs.chromia.com/cli/cli-release-notes"}, {"type": "Whitepaper", "url": "https://chromia.com/whitepaper"}, {"type": "Roadmap", "url": "https://chromia.com/roadmap"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x8a2279d4a90b6fe1c4b30fa660cc9f926797baa2"}, {"type": "X", "url": "https://twitter.com/Chromia"}, {"type": "Discord", "url": "https://discord.gg/chromia"}, {"type": "Telegram", "url": "https://t.me/hellochromia"}, {"type": "Audit report(s)", "url": "https://blog.chromia.com/exec-summary-audits-and-hacknet/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/chromia"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/chromia/"}], "desc_html": ""}, {"id": "694-seele", "name": "Seele", "links": [{"type": "Website", "url": "https://seelen.pro/#/"}, {"type": "Docs", "url": "https://seeleteam.github.io/seele-doc/index.html"}, {"type": "GitHub", "url": "https://github.com/seeleteam"}, {"type": "Releases / Changelog", "url": "https://github.com/seeleteam/go-seele/releases"}, {"type": "Whitepaper", "url": "https://seele.pro/research.html"}, {"type": "Explorer", "url": "https://seelescan.net"}, {"type": "Explorer (ERC‑20 token)", "url": "https://etherscan.io/token/0xb1e93236ab6073fdac58ada5564897177d4bcc43"}, {"type": "X", "url": "https://twitter.com/n_seele"}, {"type": "Telegram", "url": "https://t.me/seeletech"}, {"type": "Medium", "url": "https://medium.com/seeletech"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/seele/"}], "desc_html": ""}, {"id": "137-galeon", "name": "Galeon", "links": [{"type": "Website", "url": "https://www.galeon.care"}, {"type": "Docs", "url": "https://whitepaper.galeon.care/whitepaper"}, {"type": "Whitepaper", "url": "https://whitepaper.galeon.care/"}, {"type": "Roadmap", "url": "https://whitepaper.galeon.care/whitepaper/solution/roadmap"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x478d742e1c7Ed2A8883Da95E6A5d6b41f2b8545d"}, {"type": "X", "url": "https://twitter.com/galeoncare"}, {"type": "Telegram", "url": "https://t.me/Galeon_ANN"}, {"type": "Medium", "url": "https://galeoncare.medium.com/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/galeon"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/galeon/"}], "desc_html": ""}, {"id": "815-kyra", "name": "Kyra", "links": [{"type": "Website", "url": "https://kyraevolves.com/"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x4B41A481a7A3E0396751aA49BEe970B842FdAedE"}, {"type": "X", "url": "https://x.com/KyraEvolves"}, {"type": "Telegram", "url": "https://t.me/kyraevolves"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/kyra"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/kyra/"}], "desc_html": ""}, {"id": "83-arcblock", "name": "ArcBlock", "links": [{"type": "Website", "url": "https://www.arcblock.io/"}, {"type": "Docs", "url": "https://www.arcblock.io/file/whitepaper/WhitePaperEnV2_en-US.pdf"}, {"type": "GitHub", "url": "https://github.com/arcblock"}, {"type": "Releases / Changelog", "url": "https://www.arcblock.io/content/blog"}, {"type": "Whitepaper", "url": "https://arcblock.io/whitepaper"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xb98d4c97425d9908e66e53a6fdf673acca0be986"}, {"type": "App / Demo", "url": "https://www.aigne.io/en"}, {"type": "X", "url": "https://twitter.com/ArcBlock_io"}, {"type": "Telegram", "url": "https://t.me/ArcBlock"}, {"type": "Medium", "url": "https://medium.com/arcblock"}, {"type": "Audit report(s)", "url": "https://github.com/HackSafeAudit/HackSafe-Audit/raw/main/ArcBlock.pdf"}, {"type": "Bug bounty", "url": "https://github.com/ArcBlock/bounty-program-issues"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/arcblock"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/arcblock/"}], "desc_html": ""}, {"id": "209-bitscrunch", "name": "bitsCrunch", "links": [{"type": "Website", "url": "https://bitscrunch.com/"}, {"type": "Docs", "url": "https://bitscrunch.com/bitsCrunch_Whitepaper.pdf"}, {"type": "GitHub", "url": "https://github.com/bitscrunch"}, {"type": "Releases / Changelog", "url": "https://blog.bitscrunch.com/"}, {"type": "Whitepaper", "url": "https://bitscrunch.com/bitsCrunch_Whitepaper.pdf"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xBEF26Bd568e421D6708CCA55Ad6e35f8bfA0C406"}, {"type": "X", "url": "https://twitter.com/bitsCrunch"}, {"type": "Discord", "url": "https://discord.gg/bitscrunch"}, {"type": "Telegram", "url": "https://t.me/bitscrunch"}, {"type": "Medium", "url": "https://medium.com/@bitscrunch"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/bitscrunch-token"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/bitscrunch/"}], "desc_html": ""}, {"id": "686-aichain", "name": "AI‑Chain", "links": [{"type": "Website", "url": "https://aichain.me/"}, {"type": "Docs", "url": "https://github.com/AICHAIN-CORE/go-aichain"}, {"type": "GitHub", "url": "https://github.com/AICHAIN-CORE"}, {"type": "Releases / Changelog", "url": "https://github.com/AICHAIN-CORE/go-aichain/releases"}, {"type": "Whitepaper", "url": "http://www.aichain.me/static/home/file/whitepaper-en.pdf"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x79650799e7899a802cb96c0bc33a6a8d4ce4936c"}, {"type": "X", "url": "https://twitter.com/AICHAIN1"}, {"type": "Telegram", "url": "https://t.me/ait_cn"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/aichain"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/aichain/"}], "desc_html": ""}, {"id": "483-ai-waifu", "name": "AI Waifu", "links": [{"type": "Website", "url": "https://aiwaifu.gg"}, {"type": "Docs", "url": "https://docs.aiwaifu.gg"}, {"type": "Whitepaper", "url": "https://whitepaper.aiwaifu.gg/"}, {"type": "Security advisories", "url": "https://docs.aiwaifu.gg/help/security"}, {"type": "Explorer", "url": "https://basescan.org/token/0x23471e7250bcd7ee21df3f39ed6151931d1e076b"}, {"type": "X", "url": "https://twitter.com/aiwaifugg"}, {"type": "Discord", "url": "https://discord.gg/aiwaifugg"}, {"type": "Telegram", "url": "https://t.me/aiwaifugg_news"}, {"type": "Audit report(s)", "url": "https://2962445708-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces/WVjPlLULqiG5paaFi4wR/uploads/77iyD6R6nv3nKPp1a24l/PeckShield-Audit-Report-AIWaifu-v1.0.pdf?alt=media&token=44e857f1-b3dc-4463-a154-3fd17841a8d3"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/ai-waifu-2"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/ai-waifu/"}], "desc_html": ""}, {"id": "324-reddio", "name": "Reddio", "links": [{"type": "Website", "url": "https://www.reddio.com/"}, {"type": "Docs", "url": "https://docs.reddio.com/"}, {"type": "GitHub", "url": "https://github.com/reddio-com/reddio"}, {"type": "Releases / Changelog", "url": "https://reddio.medium.com/"}, {"type": "Whitepaper", "url": "https://static.reddio.com/REDDIO%20WHITEPAPER.pdf"}, {"type": "Security advisories", "url": "https://github.com/reddio-com/reddio/security"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x57240C3E140f98abe315CA8E0213c7a77F34A334"}, {"type": "X", "url": "https://twitter.com/reddio_com"}, {"type": "Discord", "url": "https://discord.com/invite/reddio"}, {"type": "Telegram", "url": "https://t.me/Reddio_com"}, {"type": "Medium", "url": "https://reddio.medium.com/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/reddio"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/reddio/"}], "desc_html": ""}, {"id": "96-saga", "name": "Saga", "links": [{"type": "Website", "url": "https://www.saga.xyz/"}, {"type": "Docs", "url": "https://sagaxyz.cdn.prismic.io/sagaxyz/08e727f2-88a2-4c95-ad17-b0b9579d2b69_saga-litepaper-march-2022.pdf"}, {"type": "GitHub", "url": "https://github.com/sagaxyz/ssc"}, {"type": "Releases / Changelog", "url": "https://github.com/sagaxyz/ssc/releases"}, {"type": "Whitepaper", "url": "https://sagaxyz.cdn.prismic.io/sagaxyz/08e727f2-88a2-4c95-ad17-b0b9579d2b69_saga-litepaper-march-2022.pdf"}, {"type": "Roadmap", "url": "https://www.saga.xyz/roadmap-events"}, {"type": "Security advisories", "url": "https://github.com/sagaxyz/ssc/security/advisories"}, {"type": "Explorer", "url": "https://www.mintscan.io/saga"}, {"type": "X", "url": "https://twitter.com/Sagaxyz__"}, {"type": "Discord", "url": "https://discord.com/invite/UCRsTy82Ub"}, {"type": "Telegram", "url": "https://t.me/sagaofficialchannel"}, {"type": "Medium", "url": "https://medium.com/sagaxyz"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/saga-2"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/saga/"}], "desc_html": ""}, {"id": "595-obot", "name": "OBOT", "links": [{"type": "Website", "url": "https://o.bot/"}, {"type": "Docs", "url": "http://docs.o.xyz/p/gKJPT8IsR-e5zz/USDOBOT-AI-MEME-COIN"}, {"type": "GitHub", "url": "https://github.com/o-xyz"}, {"type": "Whitepaper", "url": "http://docs.o.xyz/p/gKJPT8IsR-e5zz/USDOBOT-AI-MEME-COIN"}, {"type": "Explorer", "url": "https://explorer.solana.com/address/7yZFFUhq9ac7DY4WobLL539pJEUbMnQ5AGQQuuEMpump"}, {"type": "X", "url": "https://twitter.com/OBOT_OFFICIAL"}, {"type": "Discord", "url": "https://discord.gg/oxyz"}, {"type": "Telegram", "url": "https://t.me/oxyz"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/obot/"}], "desc_html": ""}, {"id": "490-ring-ai", "name": "Ring AI", "links": [{"type": "Website", "url": "https://www.tryring.ai/"}, {"type": "Docs", "url": "https://docs.tryring.ai/"}, {"type": "Whitepaper", "url": "https://tryring.ai/whitepaper"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xc092A137df3cF2B9e5971ba1874D26487C12626d"}, {"type": "X", "url": "https://twitter.com/TryRingAI"}, {"type": "Telegram", "url": "https://t.me/ringcommunity"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/ring-ai"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/ring-ai/"}], "desc_html": ""}, {"id": "482-efficientfrontier", "name": "Efficient Frontier", "links": [{"type": "Website", "url": "https://t.signalplus.com/mining"}, {"type": "Docs", "url": "https://github.com/EfficientFrontier-SignalPlus/EfficientFrontier/tree/main/docs"}, {"type": "GitHub", "url": "https://github.com/EfficientFrontier-SignalPlus/EfficientFrontier"}, {"type": "Releases / Changelog", "url": "https://github.com/EfficientFrontier-SignalPlus/EfficientFrontier/commits/main/"}, {"type": "Whitepaper", "url": "https://signalplus.com/whitepaper"}, {"type": "Roadmap", "url": "https://github.com/EfficientFrontier-SignalPlus/EfficientFrontier#product-roadmap"}, {"type": "Security advisories", "url": "https://github.com/EfficientFrontier-SignalPlus/EfficientFrontier/security"}, {"type": "Explorer", "url": "https://taostats.io/subnets/53/chart"}, {"type": "X", "url": "https://x.com/Effi_Frontier"}, {"type": "Telegram", "url": "https://t.me/bittensor_subnet53"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/efficientfrontier"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/efficientfrontier/"}], "desc_html": ""}, {"id": "257-selfkey", "name": "SelfKey / Singularity Finance", "links": [{"type": "Website", "url": "https://selfkey.org/"}, {"type": "Docs", "url": "https://selfkey.org/whitepaper/"}, {"type": "GitHub", "url": "https://github.com/SelfKeyFoundation/"}, {"type": "Releases / Changelog", "url": "https://github.com/SelfKeyFoundation/selfkey-token/releases"}, {"type": "Whitepaper", "url": "https://selfkey.org/whitepaper"}, {"type": "Roadmap", "url": "https://selfkey.org/roadmap/"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x4cc19356f2d37338b9802aa8e8fc58b0373296e7"}, {"type": "X", "url": "https://twitter.com/Singularity_fi"}, {"type": "Telegram", "url": "https://t.me/Singularity_Fi"}, {"type": "Medium", "url": "https://medium.com/selfkey"}, {"type": "Bug bounty", "url": "https://selfkey.org/how-to-qualify-for-self-selfkey-dao-bug-bounty"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/selfkey"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/selfkey/"}], "desc_html": ""}, {"id": "705-oceanex-token", "name": "OceanEx Token", "links": [{"type": "Website", "url": "https://oceanex.pro/"}, {"type": "Docs", "url": "https://api.oceanex.pro/doc/v1/"}, {"type": "GitHub", "url": "https://github.com/OceanEx"}, {"type": "Releases / Changelog", "url": "https://github.com/OceanEx/ocean-websocket-client/commits"}, {"type": "Security advisories", "url": "https://github.com/OceanEx/ocean-websocket-client/security"}, {"type": "Explorer", "url": "https://vechainstats.com/account/0x0ce6661b4ba86a0ea7ca2bd86a0de87b0b860f14"}, {"type": "X", "url": "https://twitter.com/OceanexOfficial"}, {"type": "Telegram", "url": "https://t.me/OceanEx_Official/"}, {"type": "Medium", "url": "https://medium.com/@OceanEx/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/oceanex"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/oceanex-token/"}], "desc_html": ""}, {"id": "276-bad-idea-ai", "name": "Bad Idea AI", "links": [{"type": "Website", "url": "https://www.badidea.ai/"}, {"type": "Docs", "url": "https://bad-idea-ai.gitbook.io/bad-idea-ai-pitchdeck/"}, {"type": "GitHub", "url": "https://github.com/MrLightspeed/Bad-Idea-AI"}, {"type": "Releases / Changelog", "url": "https://github.com/MrLightspeed/Bad-Idea-AI/blob/main/docs/CHANGELOG.md"}, {"type": "Whitepaper", "url": "https://static1.squarespace.com/static/64568e2523471d05956228f1/t/64570517d89163351580ef5c/1683424539459/BAD+IDEA+AI+WHITEPAPER+v1.0.pdf"}, {"type": "Roadmap", "url": "https://bad-idea-ai.gitbook.io/bad-idea-ai-pitchdeck/"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x32b86b99441480a7e5bd3a26c124ec2373e3f015"}, {"type": "X", "url": "https://twitter.com/badideaai"}, {"type": "Discord", "url": "https://discord.gg/badideaaiofficial"}, {"type": "Telegram", "url": "https://t.me/badideaai"}, {"type": "Medium", "url": "https://medium.com/@MrLightspeed"}, {"type": "App / Demo", "url": "https://t.me/badideaaibot"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/bad-idea-ai"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/bad-idea-ai/"}], "desc_html": ""}, {"id": "399-yfdai-finance", "name": "YfDAI.finance", "links": [{"type": "Website", "url": "https://yfdai.finance/"}, {"type": "Docs", "url": "https://docs.yfdai.finance/"}, {"type": "GitHub", "url": "https://github.com/yfdaifinance/yfdai.sol"}, {"type": "Whitepaper", "url": "https://paper.yfdai.finance/"}, {"type": "Roadmap", "url": "https://yfdaifinance.medium.com/yfdai-2022-roadmap-77c391b8315"}, {"type": "Security advisories", "url": "https://github.com/yfdaifinance/yfdai.sol/security"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xf4CD3d3Fda8d7Fd6C5a500203e38640A70Bf9577"}, {"type": "X", "url": "https://twitter.com/YfdaiF"}, {"type": "Telegram", "url": "https://t.me/yfdaifinance"}, {"type": "Medium", "url": "https://medium.com/@yfdaifinance/the-next-evolution-in-defi-yfdai-finance-d70e7af6aef2"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/yfdai-finance"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/yfdai-finance/"}], "desc_html": ""}, {"id": "533-gud-tech", "name": "Gud Tech", "links": [{"type": "Website", "url": "https://gud.tech/"}, {"type": "Docs", "url": "https://docs.zircuit.com"}, {"type": "Whitepaper", "url": "https://gud.tech/whitepaper"}, {"type": "Explorer", "url": "https://basescan.org/address/0xA608512BBC9934E4b1DDeCF0F5Fb38b6Ad93308D"}, {"type": "X", "url": "https://twitter.com/gudtech_ai"}, {"type": "Telegram", "url": "https://t.me/+Gblx6pENoqYxZDRl"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/gud-tech"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/gud-tech/"}], "desc_html": ""}, {"id": "727-roseon", "name": "Roseon", "links": [{"type": "Website", "url": "https://roseon.world"}, {"type": "Docs", "url": "https://roseon.gitbook.io/roseon-whitepaper/whitepaper/master"}, {"type": "GitHub", "url": "https://github.com/Rosefintech/Rosefintech-Security"}, {"type": "Releases / Changelog", "url": "https://github.com/Rosefintech/Rosefintech-Security/commits"}, {"type": "Whitepaper", "url": "https://roseon.gitbook.io/roseon-whitepaper"}, {"type": "Roadmap", "url": "https://roseon.gitbook.io/roseon-whitepaper/whitepaper/roadmap"}, {"type": "Security advisories", "url": "https://github.com/Rosefintech/Rosefintech-Security/security"}, {"type": "Explorer", "url": "https://arbiscan.io/token/0xdc8184ba488e949815d4aafb35b3c56ad03b4179"}, {"type": "X", "url": "https://twitter.com/RoseonExchange"}, {"type": "Discord", "url": "https://discord.com/invite/bzFWpBAfWv"}, {"type": "Telegram", "url": "https://t.me/Roseon"}, {"type": "Audit report(s)", "url": "https://roseon.gitbook.io/roseon-whitepaper/whitepaper/audit"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/roseon/"}], "desc_html": ""}, {"id": "612-virtu-2", "name": "Virtu", "links": [{"type": "Website", "url": "https://virtuai.ink/"}, {"type": "Explorer", "url": "https://basescan.org/token/0x41e0fe1317Bd6E8944B037cd59b22D428c1434c2"}, {"type": "X", "url": "https://twitter.com/_Virtu_ai"}, {"type": "Telegram", "url": "https://t.me/virtutoken"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/virtu"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/virtu-2/"}], "desc_html": ""}, {"id": "369-mbd-financials", "name": "MBD Financials", "links": [{"type": "Website", "url": "https://mbdfinancials.com"}, {"type": "App / Demo", "url": "https://hybridex.app"}, {"type": "Docs", "url": "https://docs.mbdfinancials.com/"}, {"type": "GitHub", "url": "https://github.com/MBD-Financials"}, {"type": "Releases / Changelog", "url": "https://twitter.com/MBDFinancials"}, {"type": "Whitepaper", "url": "https://mbdfinancials.com/whitepaper"}, {"type": "Roadmap", "url": "https://docs.mbdfinancials.com/"}, {"type": "Explorer", "url": "https://etherscan.io/token/0xaAf449Bf8A33a32575C31BA8CBb90612Dd95aCFa"}, {"type": "X", "url": "https://twitter.com/MBDFinancials"}, {"type": "Discord", "url": "https://discord.com/invite/6G4PfVzRY4"}, {"type": "Telegram", "url": "https://t.me/MBDFinancials"}, {"type": "Medium", "url": "https://medium.com/@MBD_Financials"}, {"type": "Audit report(s)", "url": "https://skynet.certik.com/projects/mbd-financials ; https://paladinsec.co/projects/mbd-financials/"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/mbd-financials"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/mbd-financials/"}], "desc_html": ""}, {"id": "419-pawtocol", "name": "Pawtocol", "links": [{"type": "Website", "url": "https://pawtocol.com/"}, {"type": "Docs", "url": "https://pawtocol.com/whitepaper/"}, {"type": "GitHub", "url": "https://github.com/pawtocol/Token"}, {"type": "Releases / Changelog", "url": "https://medium.com/@pawtocol"}, {"type": "Whitepaper", "url": "https://pawtocol.com/whitepaper/"}, {"type": "Roadmap", "url": "https://pawtocol.com/whitepaper/#roadmap"}, {"type": "Explorer", "url": "https://etherscan.io/token/0x70d2b7c19352bb76e4409858ff5746e500f2b67c"}, {"type": "X", "url": "https://twitter.com/pawtocol"}, {"type": "Telegram", "url": "https://t.me/pawtocol"}, {"type": "Medium", "url": "https://medium.com/@pawtocol"}, {"type": "Audit report(s)", "url": "https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Pawtocol%20UPI%20Token%20%5B26.11.2019%5D.pdf"}, {"type": "CoinGecko (profile, reference)", "url": "https://www.coingecko.com/en/coins/pawtocol"}, {"type": "CoinMarketCap (profile, reference)", "url": "https://coinmarketcap.com/currencies/pawtocol/"}], "desc_html": ""}], "evidence": [{"id": "102-infinit#e1", "card_id": "102-infinit", "card_name": "INFINIT", "url": "https://github.com/infinit-xyz/in-token-contract-audit/blob/main/PeckShield-Audit-Report-IN-Staking-v1.0.pdf", "claim": "Audit of staking contracts (linked audit artifact).", "tier": "Tier-2", "claim_field": "chain"}, {"id": "441-targon#e2", "card_id": "441-targon", "card_name": "Targon", "url": "https://taostats.io/subnets/4/chart", "claim": "Onchain context of the subnet (dashboard/statistics).", "tier": "Tier-2", "claim_field": "chain"}, {"id": "256-ispolink#e3", "card_id": "256-ispolink", "card_name": "Ispolink", "url": "https://ispo-files.s3.eu-central-1.amazonaws.com/static/Ispolink_Whitepaper_v1.pdf", "claim": "Product and AI module description (CV parsing/ML matchmaking/suggestions) + the claim that the token is a utility for payments/incentives.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "154-balance#e4", "card_id": "154-balance", "card_name": "Balance", "url": "https://etherscan.io/token/0x3Dc8e2d80b6215a1BCcAe4d38715C3520581E77c", "claim": "Onchain confirmation of the EPT token (contract, max total supply per the explorer).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "64-tokenbot-2#e5", "card_id": "64-tokenbot-2", "card_name": "tokenbot / Clanker", "url": "https://clanker.gitbook.io/clanker-documentation/references/audits", "claim": "Presence of audits per version (incl. the Macro PDF).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "413-plankton-in-pain#e6", "card_id": "413-plankton-in-pain", "card_name": "Plankton in Pain", "url": "https://coinmarketcap.com/currencies/plankton-in-pain/", "claim": "Ticker AAAHHM, supply, contract/network, short description.", "tier": "Tier-2", "claim_field": "chain"}, {"id": "264-dtec-token#e7", "card_id": "264-dtec-token", "card_name": "Dtec", "url": "https://dtec.space/documents/WhitepaperEN.pdf", "claim": "Description of AI modules (STT/NLP/TTS), DTEC's role in rewards/payments, tokenomics categories and vesting.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "784-viridis-network#e8", "card_id": "784-viridis-network", "card_name": "Viridis Network", "url": "https://github.com/hide001/ViridisNetwork", "claim": "Public repository (Tier-1 artifact; does not prove AI functionality).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "122-nfprompt#e9", "card_id": "122-nfprompt", "card_name": "NFPrompt", "url": "https://bscscan.com/token/0x551897f8203bd131b350601D3aC0679Ba0Fc0136", "claim": "Token address; cap (1B in the sources); owner-mint and blacklist logic; no data on renounce/timelock.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "469-sportstensor#e10", "card_id": "469-sportstensor", "card_name": "Sportstensor", "url": "https://taostats.io/subnets/41/chart", "claim": "Subnet 41 on Bittensor (explorer/metrics).", "tier": "Tier-2", "claim_field": "Category"}, {"id": "725-raze-network#e11", "card_id": "725-raze-network", "card_name": "Raze Network", "url": "https://raze.network/", "claim": "Official project website (Tier-1).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "342-workloop-ai#e12", "card_id": "342-workloop-ai", "card_name": "Workloop AI", "url": "https://www.workloopai.com/", "claim": "Product described as an AI-workflow automation platform, with examples of “AI agents/workflows”.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "117-zerebro#e13", "card_id": "117-zerebro", "card_name": "Zerebro", "url": "https://coinmarketcap.com/currencies/zerebro/", "claim": "Token profile aggregator (not proof).", "tier": "Tier-3", "claim_field": "token_type"}, {"id": "211-phantasma#e14", "card_id": "211-phantasma", "card_name": "Phantasma", "url": "https://phantasma.info/blockchain/", "claim": "Product positioning (gaming/NFT), wallets/Link, description of the SOUL/KCAL roles, basic FAQ (incl. PoS and the 2019 launch).", "tier": "Tier-1", "claim_field": "use_case"}, {"id": "277-only1#e15", "card_id": "277-only1", "card_name": "Only1 / Wink", "url": "https://trywink.gitbook.io/wink", "claim": "Product overview, description of LIKE utilities (buyback/staking/rewards).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "100-agoras-tokens#e16", "card_id": "100-agoras-tokens", "card_name": "Agoras (Tau)", "url": "https://etherscan.io/token/0x738865301a9b7dd80dc3666dd48cf034ec42bdda", "claim": "Onchain fact of the `AGRS` token: address, decimals, max total supply; code and owner functions.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "600-ruri-truth-terminals-crush#e17", "card_id": "600-ruri-truth-terminals-crush", "card_name": "Ruri", "url": "https://www.ruricatgirl.com/overview.html", "claim": "Tier-1 description of Ruri as an “AI friend”, interaction scenarios, and general statements about the AI stack.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "351-starrynift#e18", "card_id": "351-starrynift", "card_name": "StarryNift", "url": "https://bscscan.com/token/0x5c4625ac040486ce7a9054924b8cd3e4ba8480a6", "claim": "Onchain fact of the SNIFT token (BEP-20, contract).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "549-artificial-intelligence#e19", "card_id": "549-artificial-intelligence", "card_name": "Artificial Intelligence", "url": "https://bscscan.com/token/0x4c403b1879aa6a79ba9c599a393ccc5d9fd2e788", "claim": "Onchain: token contract on BSC.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "823-yahtzee-dao#e20", "card_id": "823-yahtzee-dao", "card_name": "Yahtzee DAO", "url": "https://explorer.solana.com/address/6hUC9DN73kdinkth3JdELGYnEbLEnEE4NvbzzoG3yPKK", "claim": "Onchain fact: SPL mint of the token on Solana.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "81-swarm-network-ai#e21", "card_id": "81-swarm-network-ai", "card_name": "Swarm Network", "url": "https://gitbook.swarmnetwork.ai/roadmap", "claim": "Roadmap (Agent License Launch, Agent Staking, ZK test-net, etc.) dated by 2025 quarters.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "617-drpepe-ai#e22", "card_id": "617-drpepe-ai", "card_name": "DrPepe.ai", "url": "https://docs.drpepe.ai/ai-longevity-agents/gaia-decentralized-ai", "claim": "Technical context: mention of Gaia and draft code (Tier-1).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "723-murall#e23", "card_id": "723-murall", "card_name": "MurAll", "url": "https://murall.art/whitepaper", "claim": "Project whitepaper (Tier-1).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "238-swarmnode-ai#e24", "card_id": "238-swarmnode-ai", "card_name": "SwarmNode.ai", "url": "https://explorer.solana.com/address/APbVLtq66bKBpUUdncHtVSab9TM1UrcqZ9wodXzmpump?cluster=mainnet", "claim": "Onchain SSOT: SPL mint of the SNAI token (Solana Explorer).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "664-syntor-ai#e25", "card_id": "664-syntor-ai", "card_name": "Syntor", "url": "https://www.syntor.ai/stake", "claim": "Staking: description of $TOR staking (Stake & Earn) as token utility.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "583-flying-avocado-cat#e26", "card_id": "583-flying-avocado-cat", "card_name": "Flying Avocado Cat", "url": "https://github.com/cyberscope-io/audits/blob/main/2-fac/audit.pdf", "claim": "Public audit report of the contract (audit; security context).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "752-neuroni-ai#e27", "card_id": "752-neuroni-ai", "card_name": "Neuroni AI", "url": "https://etherscan.io/token/0x922e2708462c7a3d014d8344f7c4d92b27ecf332", "claim": "Network and token contract address (onchain fact).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "821-volaris-games#e28", "card_id": "821-volaris-games", "card_name": "Volaris Games (VolsAI)", "url": "https://docs.volaris.games/wp/usdvols/utilities", "claim": "Tier-1 description of $VOLS utility: access to AI functions and platform usage/fees.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "289-aipad#e29", "card_id": "289-aipad", "card_name": "AIPad", "url": "https://aipad-1.gitbook.io/aipad/overview", "claim": "Official description of AIPad as an AI launchpad (positioning).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "790-burnifyai#e30", "card_id": "790-burnifyai", "card_name": "Burnify.AI", "url": "https://burnify-ai.gitbook.io/burnify.ai/how-to-use-burnify.ai", "claim": "Protocol integration guide (“one line of code”) and a link to sample code (BscScan).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "43-siren-bsc#e31", "card_id": "43-siren-bsc", "card_name": "Siren", "url": "https://www.sirenai.me", "claim": "Tier-1: claimed capabilities of the “HiSiren Agent” (summaries + token valuation/security analysis).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "34-iotex#e32", "card_id": "34-iotex", "card_name": "IoTeX", "url": "https://hackenproof.com/iotex/iotex", "claim": "Bug bounty program.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "900-warden#e33", "card_id": "900-warden", "card_name": "Warden", "url": "https://docs.wardenprotocol.org/ward/introduction", "claim": "Token parameters (ticker, supply/decimals) and claimed use cases.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "392-darwinslab#e34", "card_id": "392-darwinslab", "card_name": "Darwin’s Lab", "url": "https://darwinslab.ai/", "claim": "Project website: “powered by $Darwin token”, public web interface.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "230-jojoworld#e35", "card_id": "230-jojoworld", "card_name": "JoJoWorld", "url": "https://www.coingecko.com/en/coins/jojoworld", "claim": "Aggregator: reference profile and links (not Tier-1).", "tier": "Tier-2", "claim_field": "Category"}, {"id": "520-kitten-haimer#e36", "card_id": "520-kitten-haimer", "card_name": "Kitten Haimer", "url": "https://coinmarketcap.com/currencies/kitten-haimer/", "claim": "Reference profile (incl. marketing language; not proof of AI/utility).", "tier": "Tier-2", "claim_field": "ai_component"}, {"id": "599-flowerai#e37", "card_id": "599-flowerai", "card_name": "flowerAI", "url": "https://solscan.io/token/AVyjco9j8vv7ZPkhCpEoPJ3bLEuw7G1wrrNt8DrApump", "claim": "Onchain fact: the FLOWER SPL token on Solana.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "698-qubitica#e38", "card_id": "698-qubitica", "card_name": "Qubitica", "url": "https://www.qubitica.net", "claim": "The Website URL currently looks like an “Imprint/Company” page; possible domain/content conflict.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "665-orcai#e39", "card_id": "665-orcai", "card_name": "Orca Def‑AI", "url": "https://www.orcadefai.com/", "claim": "Description of the AI agent/tool suite; tokenomics and the claimed ORCAi utility (subscriptions/access); team list.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "48-arkham#e40", "card_id": "48-arkham", "card_name": "Arkham", "url": "https://www.arkhamintelligence.com/announcements", "claim": "Tier-1: public product releases/milestones (announcements).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "376-morpheus-labs-v2#e41", "card_id": "376-morpheus-labs-v2", "card_name": "Morpheus Labs v2", "url": "https://etherscan.io/token/0xc9eb61ffb66d5815d643bbb8195e17c49687ae1e", "claim": "Onchain fact of the `MIND` token contract.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "522-nomai#e42", "card_id": "522-nomai", "card_name": "nomAI", "url": "https://basescan.org/token/0x4d70f1058b73198f12a76c193aef5db5dd75babd", "claim": "Onchain fact: token contract on Base (ERC-20), transactions and metadata.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "327-yoracle-ai#e43", "card_id": "327-yoracle-ai", "card_name": "Ÿ (Yoracle)", "url": "https://docs.yoracle.ai/links", "claim": "Public access points listed (dashboard, Telegram mini-app/bots).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "354-arcona#e44", "card_id": "354-arcona", "card_name": "Arcona", "url": "https://medium.com/@arconaico", "claim": "Publications/updates (context/marketing).", "tier": "Tier-3", "claim_field": "ai_component"}, {"id": "51-paal-ai#e45", "card_id": "51-paal-ai", "card_name": "PAAL AI", "url": "https://www.paal.ai/", "claim": "Tier-1: product line (Paal Bot, Enterprise Agents, trading agent, links to app/agents/rewards) and positioning.", "tier": "Tier-1", "claim_field": "use_case"}, {"id": "379-aimedis-new#e46", "card_id": "379-aimedis-new", "card_name": "Aimedis", "url": "https://polygonscan.com/token/0x33b6d77c607ea499ab5db7e2201c5a516a78a5db", "claim": "Onchain fact of the AIMX token contract.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "349-the-winkyverse#e47", "card_id": "349-the-winkyverse", "card_name": "The Winkyverse", "url": "https://basescan.org/token/0xbF82115918A88E2120C0f73d99CCd8f95c301B59", "claim": "The WNK contract on Base and max total supply.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "277-only1#e48", "card_id": "277-only1", "card_name": "Only1 / Wink", "url": "https://trywink.gitbook.io/wink/benefits/pay-with-card", "claim": "Payment currency USDC; top-up via an on-ramp.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "763-kvants-ai#e49", "card_id": "763-kvants-ai", "card_name": "Kvants", "url": "https://www.coingecko.com/en/coins/kvants-ai", "claim": "Token profile (context; not proof of AI/onchain/utility).", "tier": "Tier-2", "claim_field": "token_type"}, {"id": "637-defi-agents-ai#e50", "card_id": "637-defi-agents-ai", "card_name": "DeFi Agents AI", "url": "https://aidefiagents.gitbook.io/whitepaper/help/social-media", "claim": "Tier-1 link to the Telegram bot (demo surface) and official channels.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "161-metacade#e51", "card_id": "161-metacade", "card_name": "Metacade", "url": "https://docs.metacade.co/", "claim": "Positioning “home for gaming on Base”; launched “late 2022”.", "tier": "Tier-1", "claim_field": "use_case"}, {"id": "471-luminous#e52", "card_id": "471-luminous", "card_name": "Luminous", "url": "https://coinmarketcap.com/currencies/luminous/", "claim": "Reference profile of the token/project (context).", "tier": "Tier-2", "claim_field": "token_type"}, {"id": "82-tars-protocol#e53", "card_id": "82-tars-protocol", "card_name": "TARS Protocol", "url": "https://docs.tars.pro/", "claim": "What TARS is (a Solana stack for permissionless agents; framework/app/aggregation/verification layers).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "583-flying-avocado-cat#e54", "card_id": "583-flying-avocado-cat", "card_name": "Flying Avocado Cat", "url": "https://etherscan.io/token/0x1a3a8cf347b2bf5890d3d6a1b981c4f4432c8661", "claim": "Onchain fact: the FAC ERC-20 token contract on Ethereum.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "352-tradetomato#e55", "card_id": "352-tradetomato", "card_name": "Tradetomato", "url": "https://docs.tradetomato.com/fundamentals/ai-forecaster", "claim": "The AI Forecaster (ML forecasting module) and its purpose are described.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "637-defi-agents-ai#e56", "card_id": "637-defi-agents-ai", "card_name": "DeFi Agents AI", "url": "https://aidefiagents.gitbook.io/whitepaper", "claim": "Official positioning of the product as an AI-powered trading companion.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "136-rss3#e57", "card_id": "136-rss3", "card_name": "RSS3", "url": "https://docs.rss3.io/guide/vsl/links/contract-addresses", "claim": "Tier-1: token and key contract addresses on Ethereum (L1) and VSL (L2).", "tier": "Tier-1", "claim_field": "type"}, {"id": "237-yesnoerror#e58", "card_id": "237-yesnoerror", "card_name": "YesNoError", "url": "https://solscan.io/token/7D1iYWfhw2cr9yBZBFE6nZaaSUvXHqG5FizFFEZwpump", "claim": "Onchain data explorer/aggregator (for navigation).", "tier": "Tier-2", "claim_field": "ai_component"}, {"id": "778-moros-net#e59", "card_id": "778-moros-net", "card_name": "MOROS NET", "url": "https://morosnet.com/roadmap", "claim": "Roadmap page (high-level).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "226-nodeops#e60", "card_id": "226-nodeops", "card_name": "NodeOps Network", "url": "https://nodeops.network/products#security-hub", "claim": "Security Hub as an “AI-powered code vulnerability service” (product claim).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "277-only1#e61", "card_id": "277-only1", "card_name": "Only1 / Wink", "url": "https://trywink.gitbook.io/wink/crypto/like-tokenomics/basic-information", "claim": "Token basics: Solana, total supply 500M, mint.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "05-filecoin#e62", "card_id": "05-filecoin", "card_name": "Filecoin", "url": "https://spec.filecoin.io/systems/filecoin_token/token_allocation/", "claim": "Max supply (FIL_BASE=2B) and allocation (miners/PL/Foundation/fundraising).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "102-infinit#e63", "card_id": "102-infinit", "card_name": "INFINIT", "url": "https://etherscan.io/token/0x61fac5f038515572d6f42d4bcb6b581642753d50", "claim": "Onchain fact of the `IN` token on Ethereum (proxy, supply at the time of the check).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "567-onchain-ai#e64", "card_id": "567-onchain-ai", "card_name": "Onchain AI", "url": "https://github.com/OnchainAItech", "claim": "GitHub account with no public repositories (no code/releases).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "18-livepeer#e65", "card_id": "18-livepeer", "card_name": "Livepeer", "url": "https://immunefi.com/bounty/livepeer/", "claim": "Presence of a bug bounty (Tier-1 link).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "605-ai9000#e66", "card_id": "605-ai9000", "card_name": "AI9000", "url": "https://www.delaunch.ai/launch", "claim": "Demo surface: you can start creating/launching an agent (AI_2).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "882-aiws#e67", "card_id": "882-aiws", "card_name": "AIWS", "url": "https://raw.githubusercontent.com/tedl-1990/AIWS/master/README.md", "claim": "Tier-1 description of “AIWS: The DeAgent Network” (repository); the link to this SPL mint is not confirmed.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "324-reddio#e68", "card_id": "324-reddio", "card_name": "Reddio", "url": "https://static.reddio.com/REDDIO%20WHITEPAPER.pdf", "claim": "Description of the L2 architecture (Parallel EVM, GPU network, SDK) and Ethereum integration.", "tier": "Tier-1", "claim_field": "type"}, {"id": "267-pingpong#e69", "card_id": "267-pingpong", "card_name": "PINGPONG", "url": "https://docs.pingpong.build/compute-resource-exchange/yield-enhanced-mining-backed-on-chain-forwards", "claim": "Onchain clearing/settlement logic for forwards (not just the token).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "734-marketmove#e70", "card_id": "734-marketmove", "card_name": "MarketMove", "url": "https://coinmarketcap.com/currencies/marketmove/", "claim": "Token profile on an aggregator (context; not proof).", "tier": "Tier-3", "claim_field": "token_type"}, {"id": "480-data-universe#e71", "card_id": "480-data-universe", "card_name": "Data Universe (SN13)", "url": "https://github.com/macrocosm-os/data-universe/blob/main/README.md", "claim": "Tier-1 description of the mechanics: miners/validators, miner index, incentive mechanism, the Gravity/Nebula/MCP products.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "48-arkham#e72", "card_id": "48-arkham", "card_name": "Arkham", "url": "https://assets-global.website-files.com/62879326fd745f7489b43224/64abc4471879916bc4e2aeb0_Arkham_Whitepaper_FINAL.pdf", "claim": "Tier-1: Ultra (AI-powered matching), platform architecture, Intel Exchange (bounties/auctions), DATA program, fees/lock.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "631-nora#e73", "card_id": "631-nora", "card_name": "Nora", "url": "https://docs.speaktonora.com/interacting-with-nora", "claim": "How to interact with the AI agent (X) and links to the iOS/Android apps (demo surface).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "873-levelsprotocol#e74", "card_id": "873-levelsprotocol", "card_name": "Levels Protocol", "url": "https://coinmarketcap.com/currencies/levelsprotocol/", "claim": "Reference token profile (context).", "tier": "Tier-2", "claim_field": "token_type"}, {"id": "528-cloudbric#e75", "card_id": "528-cloudbric", "card_name": "Cloudbric", "url": "https://www.cloudbric.io", "claim": "Tier-1 source: basic project description.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "657-keira#e76", "card_id": "657-keira", "card_name": "Keira", "url": "https://basescan.org/token/0x710eec215b3bb653d42fc6e70e0531ea13f51a7a", "claim": "Onchain artifact: token contract on Base.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "15-origintrail#e77", "card_id": "15-origintrail", "card_name": "OriginTrail", "url": "https://etherscan.io/token/0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f", "claim": "Onchain fact of the TRAC ERC-20 and the contract address.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "42-kgen#e78", "card_id": "42-kgen", "card_name": "KGeN (Kratos Gamer Network)", "url": "https://bscscan.com/token/0xf3d5b4c34ed623478cc5141861776e6cf7ae3a1e", "claim": "Onchain facts of the KGEN token: contract, max total supply, verified source (roles/pause/blacklist).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "144-trusta-ai#e79", "card_id": "144-trusta-ai", "card_name": "Trusta.AI", "url": "https://trusta-labs.gitbook.io/trustaai/tokenomics", "claim": "Supply/allocation and token utility (payments/staking/governance).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "473-ocean-protocol#e80", "card_id": "473-ocean-protocol", "card_name": "Ocean Protocol", "url": "https://blog.openzeppelin.com/ocean-vesting-wallet-audit", "claim": "Public audit post (security/audit context).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "127-forta#e81", "card_id": "127-forta", "card_name": "Forta", "url": "https://docs.forta.network/en/latest/2022-7-11%20Forta%20Litepaper.pdf", "claim": "Network architecture (nodes + detection bots), runtime security purpose; ML mentioned as a bot detection technique.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "751-cryptoai#e82", "card_id": "751-cryptoai", "card_name": "CryptoAI", "url": "https://coinmarketcap.com/currencies/cryptoai/", "claim": "Reference token profile (context).", "tier": "Tier-2", "claim_field": "token_type"}, {"id": "68-phala-network#e83", "card_id": "68-phala-network", "card_name": "Phala Network", "url": "https://docs.phala.network/dstack/security-audit", "claim": "dstack security audit by zkSecurity + a link to the PDF report.", "tier": "Tier-1", "claim_field": "use_case"}, {"id": "96-saga#e84", "card_id": "96-saga", "card_name": "Saga", "url": "https://www.saga.xyz/saga-protocol", "claim": "High-level protocol description (chainlets/EVM/gasless model), no AI component.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "132-neuralai#e85", "card_id": "132-neuralai", "card_name": "NeuralAI", "url": "https://audits.hacken.io/neuralai/", "claim": "Public mention of the audit/platform (Ethereum) on the Hacken audits page.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "176-grok-erc#e86", "card_id": "176-grok-erc", "card_name": "Grok (ERC‑20)", "url": "https://grokoneth.meme/whitepaper", "claim": "Token positioning and the affiliation disclaimer.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "63-zentry#e87", "card_id": "63-zentry", "card_name": "Zentry", "url": "https://github.com/zentryHQ/zentry-token/releases", "claim": "Releases/Changelog: no releases (status).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "770-aione#e88", "card_id": "770-aione", "card_name": "AiONE", "url": "https://coinmarketcap.com/currencies/aione/", "claim": "Token profile (context).", "tier": "Tier-2", "claim_field": "token_type"}, {"id": "37-vana#e89", "card_id": "37-vana", "card_name": "Vana", "url": "https://docs.vana.org/docs/system-architecture", "claim": "Vana is a standalone EVM L1; does not store raw data; secure compute layer (TEE); dual token (VANA + VRC-20); 20%/80% burn ratio for data access.", "tier": "Tier-1", "claim_field": "type"}, {"id": "770-aione#e90", "card_id": "770-aione", "card_name": "AiONE", "url": "https://www.coingecko.com/en/coins/aione/", "claim": "Token profile (context).", "tier": "Tier-2", "claim_field": "token_type"}, {"id": "212-atlas-navi#e91", "card_id": "212-atlas-navi", "card_name": "Atlas Navi", "url": "https://coinmarketcap.com/currencies/atlas-navi/", "claim": "Reference aggregator, not a Tier-1 source on AI/architecture.", "tier": "Tier-3", "claim_field": "ai_component"}, {"id": "127-forta#e92", "card_id": "127-forta", "card_name": "Forta", "url": "https://docs.forta.network/en/latest/delegated-staking-introduction/", "claim": "Tier-1 description of delegated staking, reward epochs, slashing risks; staking contract on Polygon.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "223-silencio#e93", "card_id": "223-silencio", "card_name": "Silencio", "url": "https://storefront.silencio.network/", "claim": "Presence of a B2B data product storefront (Audio/ML/LLM/Speech datasets) and dataset examples.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "235-super-champs#e94", "card_id": "235-super-champs", "card_name": "Super Champs", "url": "https://coinmarketcap.com/currencies/super-champs/", "claim": "Aggregator: reference profile and links (not Tier-1).", "tier": "Tier-2", "claim_field": "Category"}, {"id": "115-assemble-protocol#e95", "card_id": "115-assemble-protocol", "card_name": "Assemble AI (NS3) / ASSEMBLE", "url": "https://docs.ns3.ai/roadmap", "claim": "Roadmap and confirmation of reward mechanics/model upgrades/anti-fraud and the “point-to-$ASM swap”.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "200-daobase#e96", "card_id": "200-daobase", "card_name": "DAOBase", "url": "https://docs.daobase.ai/daobase/smart-contract/security-audit", "claim": "Presence of a Security Audit section.", "tier": "Tier-1", "claim_field": "use_case"}, {"id": "88-flock-io#e97", "card_id": "88-flock-io", "card_name": "FLock.io", "url": "https://www.flock.io/blog/mainnet-launch--token-generation-event-on-base", "claim": "Mainnet launch + TGE on Base (2025-01-03).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "67-olaxbt#e98", "card_id": "67-olaxbt", "card_name": "OlaXBT", "url": "https://olaxbt-docs.gitbook.io/olaxbt-doc", "claim": "Project overview (AI trading layer, AIO NEXUS, MCP marketplace).", "tier": "Tier-1", "claim_field": "use_case"}, {"id": "831-simian-ai#e99", "card_id": "831-simian-ai", "card_name": "Simian AI", "url": "https://coinmarketcap.com/currencies/simian-ai/", "claim": "Profile/aggregator (reference; not Tier-1 proof of AI).", "tier": "Tier-2", "claim_field": "ai_component"}, {"id": "192-switchboard-protocol#e100", "card_id": "192-switchboard-protocol", "card_name": "Switchboard Protocol", "url": "https://solscan.io/token/SW1TCHLmRGTfW5xZknqQdpdarB8PD95sJYWpNp9TbFx", "claim": "Onchain identifier (mint) of the SWTCH token on Solana.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "117-zerebro#e101", "card_id": "117-zerebro", "card_name": "Zerebro", "url": "https://zerebro.org/terms", "claim": "Description of Zerebro as an autonomous AI system; mention of `$ZEREBRO` on Solana; risk disclaimers.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "129-oortech#e102", "card_id": "129-oortech", "card_name": "OORT", "url": "https://www.oortfoundation.org/governance", "claim": "Governance: `OORT` voting/delegation and a link to the proposal platform.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "206-kadena#e103", "card_id": "206-kadena", "card_name": "Kadena", "url": "https://cdn.sanity.io/files/agrhq0bu/production/1e4f5f6b99d1cb0701432df6e23e9bbbf46ea363.pdf", "claim": "Chainweb PoW multi-chain architecture and SPV transfers.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "238-swarmnode-ai#e104", "card_id": "238-swarmnode-ai", "card_name": "SwarmNode.ai", "url": "https://solscan.io/token/APbVLtq66bKBpUUdncHtVSab9TM1UrcqZ9wodXzmpump", "claim": "Onchain data explorer/aggregator (for navigation).", "tier": "Tier-2", "claim_field": "ai_component"}, {"id": "833-simsai#e105", "card_id": "833-simsai", "card_name": "SimsAI", "url": "https://www.simsai.io/", "claim": "Tier-1 description: a platform/framework for AI agents and an “AI social network” (positioning and purpose).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "370-quain#e106", "card_id": "370-quain", "card_name": "Quain", "url": "https://twitter.com/quaindotcom", "claim": "Project social media/marketing.", "tier": "Tier-3", "claim_field": "chain"}, {"id": "722-uberstate-inc#e107", "card_id": "722-uberstate-inc", "card_name": "Uberstate Inc", "url": "https://t.me/uberstaterit", "claim": "Project channel/chat (claims require Tier-1 confirmation).", "tier": "Tier-3", "claim_field": "Category"}, {"id": "174-byte#e108", "card_id": "174-byte", "card_name": "Byte", "url": "https://coinmarketcap.com/currencies/byte/", "claim": "Reference links (not proof of the technology).", "tier": "Tier-2", "claim_field": "ai_component"}, {"id": "61-openledger#e109", "card_id": "61-openledger", "card_name": "OpenLedger", "url": "https://docs.openledgerfoundation.com/network-information", "claim": "Openledger Mainnet network parameters (RPC/Chain ID/Explorer/Bridge) and OPEN token addresses.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "346-xmon#e110", "card_id": "346-xmon", "card_name": "0xmons", "url": "https://blog.0xmons.xyz/79081566310", "claim": "The onchain NFT data encoding mechanism is described (via calldata + a registry).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "42-kgen#e111", "card_id": "42-kgen", "card_name": "KGeN (Kratos Gamer Network)", "url": "https://kgenfoundation.gitbook.io/docs.kgenfoundation.com/tokenomics/usdkgen", "claim": "Tier-1: $KGEN described as the ecosystem's governance + utility token (KGeN Foundation docs).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "258-zypher-network#e112", "card_id": "258-zypher-network", "card_name": "Zypher Network", "url": "https://scalebit.xyz/reports/20250813-Zypher-Network-Token-Final-Audit-Report.pdf", "claim": "Presence of an audit report (token) at the link in the card.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "681-datum#e113", "card_id": "681-datum", "card_name": "Datum", "url": "https://app.datum.org/", "claim": "Tier-1: app/demo surface (the Datum app).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "821-volaris-games#e114", "card_id": "821-volaris-games", "card_name": "Volaris Games (VolsAI)", "url": "https://volaris.games/", "claim": "Tier-1: claimed onchain adoption metrics via ERC-1155 NFTs (auto mint/burn) and high-level usage metrics.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "15-origintrail#e115", "card_id": "15-origintrail", "card_name": "OriginTrail", "url": "https://origintrail.io/documents/Verifiable_Internet_for_Artificial_Intelligence_whitepaper_v3_pre_publication.pdf", "claim": "dRAG and the “Verifiable Internet for AI”; DKG and Knowledge Assets; NFT ownership and onchain proofs (Merkle digests); TRAC utility (publishing fees, staking, delegation, slashing).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "135-akedo#e116", "card_id": "135-akedo", "card_name": "Akedo", "url": "https://learn.akedo.fun/", "claim": "Tier-1 product page with “TRY NOW” and a description of specialized AI agents.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "26-baby-doge-coin#e117", "card_id": "26-baby-doge-coin", "card_name": "Baby Doge Coin", "url": "https://docs.babydogeswap.com/babydoge-docs-1/developers/smart-contracts", "claim": "Official list of deployed contracts (token/DEX/locker/burn portal, etc.) + GitHub repositories.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "265-dexcheck#e118", "card_id": "265-dexcheck", "card_name": "DexCheck AI", "url": "https://docs.dexcheck.ai/", "claim": "Tier-1 description of the product and the AI/analytics modules.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "675-datai-network#e119", "card_id": "675-datai-network", "card_name": "Datai Network", "url": "https://datai.network/docs/contracts/token-functionality", "claim": "Tier-1: DATAI utility (payments, staking, disputes, rewards; governance — potentially in the future).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "195-trias-token#e120", "card_id": "195-trias-token", "card_name": "Trias", "url": "https://etherscan.io/token/0x3A856d4effa670C54585a5D523e96513e148e95d", "claim": "Onchain parameters of the TRIAS token (address, decimals, max supply).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "193-deepnode#e121", "card_id": "193-deepnode", "card_name": "DeepNode", "url": "https://deepnode.gitbook.io/docs/platform", "claim": "Platform architecture (execution/validation/reputation/governance).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "73-holoworld-ai#e122", "card_id": "73-holoworld-ai", "card_name": "Holoworld AI", "url": "https://docs.holoworld.com/holoworld/ava-studio/getting-started", "claim": "Step-by-step guide “Create Your First Video” in Ava Studio — a demo/guide for AI_2.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "502-genius-token-nft-collections#e123", "card_id": "502-genius-token-nft-collections", "card_name": "GNUS.AI", "url": "https://docs.gnus.ai/gnus.ai-gitbook/technical-information/super-genius-blockchain-technical-details", "claim": "Technical description of the components: contract/escrow-like layer, IPFS pub/sub, a PoW component.", "tier": "Tier-1", "claim_field": "chain"}, {"id": "74-delysium#e124", "card_id": "74-delysium", "card_name": "Delysium", "url": "https://delysium.gitbook.io/whitepaper/technical-overview/tokenomics", "claim": "$AGI tokenomics: capped supply 3B; utility (fees/registration/services).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "134-natix-network#e125", "card_id": "134-natix-network", "card_name": "NATIX Network", "url": "https://docs.natix.network/whitepaper", "claim": "Tier-1: overall design of the NATIX Network (crowdsourced camera network), the role of AI and blockchain, DDMap and participant economics.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "367-neur-sh#e126", "card_id": "367-neur-sh", "card_name": "Neur", "url": "https://neur.sh/", "claim": "The `neur.sh` domain shows Sedo Domain Parking (a parked page), so the project's Website/Docs require Tier-1 clarification.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "112-hey-anon#e127", "card_id": "112-hey-anon", "card_name": "HeyAnon", "url": "https://docs.heyanon.ai/heyanon.ai/general-information/team-telegram-contacts", "claim": "Tier-1 team contacts (Founder/Co-founder/BD).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "442-ai16z#e128", "card_id": "442-ai16z", "card_name": "ElizaOS", "url": "https://docs.elizaos.ai/tokenomics", "claim": "Token contract addresses (SPL/EVM) and total supply.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "399-yfdai-finance#e129", "card_id": "399-yfdai-finance", "card_name": "YfDAI.finance", "url": "https://yfdaifinance.medium.com/", "claim": "Project publications/updates.", "tier": "Tier-2", "claim_field": "ai_component"}, {"id": "418-project-plutus-ai#e130", "card_id": "418-project-plutus-ai", "card_name": "Project Plutus", "url": "https://dexscreener.com/solana/dmmg42zlxezmj6n4feavdvBNsGfzzmTax6XuEBGfW7gA", "claim": "DEX pair/context (reference).", "tier": "Tier-2", "claim_field": "Category"}, {"id": "131-humans-ai#e131", "card_id": "131-humans-ai", "card_name": "Humans.ai", "url": "https://docs.humans.ai/developer/smart-contracts", "claim": "Humans.ai EVM compatibility and the EVM tooling/JSON-RPC context.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "777-deepcave#e132", "card_id": "777-deepcave", "card_name": "DeepCave", "url": "https://deepcave.io/whitepaper/", "claim": "Tier-1 whitepaper: the AI part, the role of the blockchain and the token (utility/governance/staking) (as claimed).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "134-natix-network#e133", "card_id": "134-natix-network", "card_name": "NATIX Network", "url": "https://docs.natix.network/whitepaper/natix-economy/natix-economy-break-down/xnodes", "claim": "Tier-1: xNodes as validator nodes + deep staking requirements and rewards.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "814-sentra#e134", "card_id": "814-sentra", "card_name": "Sentra", "url": "https://www.trysentra.ai/", "claim": "Official website (navigation).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "07-artificial-superintelligence-alliance#e135", "card_id": "07-artificial-superintelligence-alliance", "card_name": "Artificial Superintelligence Alliance", "url": "https://docs.superintelligence.io/artificial-superintelligence-alliance/leadership-and-governance", "claim": "Leadership and governance context (the governing council and participants).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "19-beldex#e136", "card_id": "19-beldex", "card_name": "Beldex", "url": "https://docs.beldex.io/", "claim": "Official project/ecosystem docs.", "tier": "Tier-1", "claim_field": "Category"}, {"id": "55-destra-network#e137", "card_id": "55-destra-network", "card_name": "Destra Network", "url": "https://www.coingecko.com/en/coins/destra-network", "claim": "Context: aggregator (not proof).", "tier": "Tier-2", "claim_field": "Category"}, {"id": "598-naval-ai#e138", "card_id": "598-naval-ai", "card_name": "Naval AI", "url": "https://solscan.io/token/7wM4MnbsPsG95A3WhZgbrPWvMtydKmJjqKr2ZVJVpump", "claim": "Onchain fact: SPL token on Solana (address).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "132-neuralai#e139", "card_id": "132-neuralai", "card_name": "NeuralAI", "url": "https://goneural.ai/", "claim": "Token parameters on the website (launch date, total supply) and the purchase contract on ETH (tied to the address).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "542-encrypgen#e140", "card_id": "542-encrypgen", "card_name": "EncrypGen", "url": "https://www.coingecko.com/en/coins/encrypgen", "claim": "Reference token profile (not proof of utility).", "tier": "Tier-2", "claim_field": "token_type"}, {"id": "160-zkml#e141", "card_id": "160-zkml", "card_name": "zKML", "url": "https://zkml-1.gitbook.io/zkml/overview/what-we-do", "claim": "Description of the ecosystem and the claimed products (Zebra/ZkSearch/ZWAP/Zebra AI).", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "850-elon-ai-agent#e142", "card_id": "850-elon-ai-agent", "card_name": "Elon AI Agent", "url": "https://coinmarketcap.com/currencies/elon-ai-agent/", "claim": "Reference profile: ticker (ELONAI), supply (self-reported), links to the website/socials.", "tier": "Tier-2", "claim_field": "ai_component"}, {"id": "872-arcana-ai#e143", "card_id": "872-arcana-ai", "card_name": "Arcana AI", "url": "https://solscan.io/token/4sGgD7ZSiZ5wmvyMCJjDbptaq2UKKUW487tWCFrhpump", "claim": "Onchain fact: the token's mint address on Solana.", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "903-immunefi#e144", "card_id": "903-immunefi", "card_name": "Immunefi", "url": "https://www.immunefi.foundation/", "claim": "Description of the Security OS and the IMU token (allocation 10B; “security flywheel”).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "05-filecoin#e145", "card_id": "05-filecoin", "card_name": "Filecoin", "url": "https://docs.filecoin.io/basics/interplanetary-consensus", "claim": "AI applicability (intent): IPC + Filecoin storage for distributed computation/AI models.", "tier": "Tier-1", "claim_field": "ai_component"}, {"id": "420-cryptify-ai-ethereum#e146", "card_id": "420-cryptify-ai-ethereum", "card_name": "Cryptify AI", "url": "https://docs.cryptify.ai/tokenomics/token-overview-and-contract", "claim": "The $CRAI token contract (address/network/parameters).", "tier": "Tier-1", "claim_field": "chain"}, {"id": "84-alethea-artificial-liquid-intelligence-token#e147", "card_id": "84-alethea-artificial-liquid-intelligence-token", "card_name": "Alethea AI Protocol (AI Protocol)", "url": "https://etherscan.io/tx/0xdc90c052cdc5859a41ce83645ae6d5c4668336f84b8af2aed5132bf5f59f829d", "claim": "The ALI contract creation date and the 10B mint at deployment (2021-10-12).", "tier": "Tier-1", "claim_field": "token_type"}, {"id": "805-three-protocol-token#e148", "card_id": "805-three-protocol-token", "card_name": "Three Protocol", "url": "https://jobs3.io", "claim": "Public web surface of Jobs3 (claimed as an ecosystem platform).", "tier": "Tier-1", "claim_field": "Category"}, {"id": "277-only1#e149", "card_id": "277-only1", "card_name": "Only1 / Wink", "url": "https://trywink.gitbook.io/wink/product/marketplace", "claim": "Marketplace for reselling Passes.", "tier": "Tier-1", "claim_field": "use_case"}, {"id": "458-iota-macrocosmos-ai#e150", "card_id": "458-iota-macrocosmos-ai", "card_name": "IOTA (Macrocosmos AI)", "url": "https://docs.macrocosmos.ai/subnets/subnet-9-iota", "claim": "Overview of SN9 IOTA (purpose, roles, links to the primer and dashboard).", "tier": "Tier-1", "claim_field": "Category"}]};
+
+const VOCAB = {
+  Category: ["Infra","AI/Other","AI/Agents","DeFi","Meme","AI/Compute","Consumer","AI/Data","Gaming","AI/Inference","AI/Analytics","DePIN","Metaverse","Social","NFT","DAO","Privacy","Stablecoin","Bridge","Oracle"],
+  token_type: ["utility","governance","staking","payment","reward","security","none"],
+  ai_component: ["inference","training","agents","data labeling","analytics","compute orchestration","model marketplace","autonomous trading","content generation","other"],
+  use_case: ["DeFi portfolio management","decentralized compute","data marketplace","content creation","security auditing","identity verification","prediction","trading bots","gaming AI","other"]
+};
+/* Value explanations — condensed from the project glossary (docs/explainers-page/en,
+   "In short" blocks) and the corpus value registry (docs/repeating_fields.md).
+   Do not invent new ones. */
+const GLOSS = {
+  Category: {
+    "AI/Agents":"Projects that build or run AI agents — software that autonomously perceives, decides, and acts.",
+    "AI/Analytics":"AI models analyze data and produce insights, scores, or rankings. A trained model performs the analysis — not a human analyst and not a simple aggregation script.",
+    "AI/Compute":"Projects that supply, orchestrate, or run a marketplace of computational resources (GPUs) for AI tasks.",
+    "AI/Data":"Projects that collect, curate, label, or distribute data for AI systems.",
+    "AI/Inference":"Projects that serve, execute, or verify AI model outputs in production.",
+    "AI/Other":"The project works with AI, but its direction does not match any of the standard AI subcategories.",
+    "Bridge":"A bridge is a mechanism for moving value and information between isolated blockchains.",
+    "Consumer":"Apps for everyday users: the focus is the user experience, not developer tooling or protocol infrastructure.",
+    "DAO":"Governance through on-chain mechanisms: proposals, votes, and execution happen via smart contracts.",
+    "DeFi":"The financial domain: replacing traditional financial intermediaries with smart contracts. The label marks the domain, not the presence of AI.",
+    "DePIN":"Physical infrastructure networks built from distributed, independently owned hardware, coordinated by token incentives.",
+    "Gaming":"Games with blockchain mechanics; interactive entertainment with goals and mechanics (GameFi).",
+    "Infra":"The layer beneath applications — protocols, networks, and tools other projects build on; it does not serve end users directly.",
+    "Meme":"A category built on virality and community: the value is cultural identity and narrative, not a specific technical utility.",
+    "Metaverse":"Persistent virtual worlds: spatial persistence and social interaction (adjacent to Gaming, but the terms are not interchangeable).",
+    "NFT":"Unique on-chain tokens proving ownership of a specific item (an image, a game asset, an access credential, etc.).",
+    "Oracle":"An oracle is a data feed between the outside world and smart contracts: fetching off-chain data, verifying it, and delivering it on-chain.",
+    "Privacy":"Computing on data without revealing the data itself: ZK, TEE, and other cryptographic/hardware techniques.",
+    "Social":"Social applications (SocialFi): tokenized social interactions, creator economies, decentralized reputation.",
+    "Stablecoin":"Tokens designed to maintain a stable value relative to an underlying asset (usually the US dollar)."
+  },
+  token_type: {
+    "utility":"The token grants access to a product/service or is used inside the ecosystem: payment, staking, burning as part of the operating mechanics.",
+    "governance":"The token gives voting rights over protocol decisions: parameters, treasury, upgrades.",
+    "staking":"The token is locked to participate in the network (security, quality control, access); stakers earn rewards and may be slashed.",
+    "payment":"The token is used as a medium of exchange/payment inside the ecosystem (e.g., buyers pay sellers in the project's token).",
+    "reward":"The token is distributed as a reward to participants who perform work (compute, data labeling, contributions).",
+    "security":"A network-security role: the token is capital at risk (validator stake, the network's security budget).",
+    "none":"The project has no native token of its own (it may use external ones: ETH, stablecoins)."
+  },
+  ai_component: {
+    "inference":"Running a trained model in production: the model receives input data and returns a result (predictions, classifications, generation).",
+    "training":"The project builds or improves AI models: a training/fine-tuning pipeline that updates model weights on data.",
+    "agents":"An agent framework: the system perceives data, makes decisions, and takes actions (memory, tools, goals).",
+    "data labeling":"Data collection and labeling: annotation for supervised learning, dataset preparation (incl. human-in-the-loop).",
+    "analytics":"A trained model analyzes data and produces scores, ratings, classifications, or signals — not just a dashboard with charts.",
+    "compute orchestration":"Supplying or managing computational power for AI tasks: distributing workloads across nodes/GPUs.",
+    "model marketplace":"A marketplace platform for AI models (corpus value example: \u201cAI agent + model marketplace\u201d).",
+    "autonomous trading":"AI/agents autonomously execute trades, manage portfolios, and optimize yield on-chain.",
+    "content generation":"A model generates content: text, images, media (in the corpus: \u201ctext/content generation\u201d, \u201ccontent generation from prompts\u201d, \u201cvisual content generation\u201d).",
+    "other":"A real AI component exists, but it does not fit any of the listed types."
+  },
+  use_case: {
+    "DeFi portfolio management":"Autonomous DeFi portfolio management: trades, liquidity positions, yield optimization, rebalancing.",
+    "decentralized compute":"Decentralized compute: matching GPU supply with AI workload demand through blockchain coordination.",
+    "data marketplace":"A data marketplace: production, quality control, and distribution of datasets for AI, settled in tokens.",
+    "content creation":"Content creation for the user: generating text, images, media.",
+    "security auditing":"Reviewing code/smart contracts for vulnerabilities and risks; threat monitoring.",
+    "identity verification":"Proving attributes of a subject — ownership, reputation, credentials — in a verifiable way.",
+    "prediction":"The product produces predictions/forecasts; in the corpus this includes prediction markets.",
+    "trading bots":"Trading bots/terminals: applying models to market data for signals and trades.",
+    "gaming AI":"AI in games: agents/NPCs that learn or adapt, not merely scripted behavior.",
+    "other":"A use case that does not fit any of the listed values."
+  }
+};
+const FIELDS = [
+  {key:"Category", multi:true, max:3,
+   q:"Which segments does the project belong to? Pick 1 to 3 values.",
+   groups:[
+     ["AI segments",["AI/Agents","AI/Analytics","AI/Compute","AI/Data","AI/Inference","AI/Other"]],
+     ["Other segments",["Bridge","Consumer","DAO","DeFi","DePIN","Gaming","Infra","Meme","Metaverse","NFT","Oracle","Privacy","Social","Stablecoin"]]
+   ]},
+  {key:"token_type", multi:false,
+   q:"Primary token model. If the project has no token at all — pick \u201cnone\u201d."},
+  {key:"ai_component", multi:false,
+   q:"Which AI component does the project actually implement or explicitly claim?"},
+  {key:"use_case", multi:false,
+   q:"Primary use case of the product."}
+];
+const ND = "__nd__", NIL = "__nil__";
+const LS_KEY = "decaihub_irr_tool_v1";
+const TOOL_VERSION = "v1.1";
+
+/* ---------- state ---------- */
+let S = load();
+function load(){
+  try{ const s = JSON.parse(localStorage.getItem(LS_KEY)); if(s && s.t1) return s; }catch(e){}
+  return {t1:{}, t2:{}, cur1:0, cur2:0};
+}
+let saveTimer=null;
+function save(flash=true){
+  localStorage.setItem(LS_KEY, JSON.stringify(S));
+  if(flash){
+    const el=document.getElementById("saveState");
+    el.textContent="Saved "+new Date().toLocaleTimeString();
+    el.classList.add("show");
+    clearTimeout(saveTimer); saveTimer=setTimeout(()=>el.classList.remove("show"),1200);
+  }
+  refreshCounters();
+}
+
+/* ---------- per-item timer ---------- */
+let tick = {task:null, id:null, t:null};
+setInterval(()=>{
+  if(!tick.task || !document.hasFocus()) return;
+  const box = tick.task==="t1" ? ent1(tick.id) : ent2(tick.id);
+  box.seconds = (box.seconds||0)+1;
+},1000);
+window.addEventListener("beforeunload",()=>save(false));
+
+function ent1(id){ if(!S.t1[id]) S.t1[id]={fields:{},seconds:0}; return S.t1[id]; }
+function ent2(id){ if(!S.t2[id]) S.t2[id]={seconds:0}; return S.t2[id]; }
+function f1(id,key){ const e=ent1(id); if(!e.fields[key]) e.fields[key]={canon:[],nd:false,nil:false,sugg:"",comment:""}; return e.fields[key]; }
+
+/* ---------- completeness ---------- */
+function fieldDone(fv){ return fv && (fv.nd || (fv.nil && fv.sugg.trim()) || fv.canon.length>0); }
+function card1Done(id){ const e=S.t1[id]; return e && FIELDS.every(f=>fieldDone(e.fields[f.key])); }
+function ev2Done(id){
+  const e=S.t2[id]; if(!e) return false;
+  return !!(e.dead || e.support);
+}
+
+/* ---------- tabs ---------- */
+document.querySelectorAll("nav.tabs button").forEach(b=>{
+  b.onclick=()=>{
+    document.querySelectorAll("nav.tabs button").forEach(x=>x.classList.remove("active"));
+    document.querySelectorAll(".panel").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    document.getElementById("panel-"+b.dataset.tab).classList.add("active");
+    tick.task = b.dataset.tab==="t1" ? "t1" : b.dataset.tab==="t2" ? "t2" : null;
+    if(b.dataset.tab==="t1") render1();
+    if(b.dataset.tab==="t2") render2();
+    if(b.dataset.tab==="exp") renderExp();
+  };
+});
+function refreshCounters(){
+  const d1 = DATA.cards.filter(c=>card1Done(c.id)).length;
+  const d2 = DATA.evidence.filter(e=>ev2Done(e.id)).length;
+  document.getElementById("cnt1").textContent = d1+"/"+DATA.cards.length;
+  document.getElementById("cnt2").textContent = d2+"/"+DATA.evidence.length;
+}
+
+/* ---------- TASK 1 ---------- */
+function render1(){
+  const i = Math.min(Math.max(S.cur1,0), DATA.cards.length-1); S.cur1=i;
+  const c = DATA.cards[i];
+  tick.id = c.id;
+  const e = ent1(c.id); if(!e.started_at) e.started_at=new Date().toISOString();
+
+  document.getElementById("t1pos").textContent = "Card "+(i+1)+" of "+DATA.cards.length;
+  const done = DATA.cards.filter(x=>card1Done(x.id)).length;
+  document.getElementById("t1bar").style.width = (done/DATA.cards.length*100)+"%";
+  document.getElementById("t1done").textContent = "completed: "+done+" of "+DATA.cards.length;
+
+  const jump = document.getElementById("t1jump"); jump.innerHTML="";
+  DATA.cards.forEach((x,k)=>{
+    const b=document.createElement("button");
+    b.textContent=k+1; b.title=x.name;
+    if(card1Done(x.id)) b.classList.add("done");
+    if(k===i) b.classList.add("cur");
+    b.onclick=()=>{S.cur1=k;save(false);render1();};
+    jump.appendChild(b);
+  });
+
+  const host = document.getElementById("t1card");
+  host.innerHTML = "";
+  const top = document.createElement("div");
+  top.innerHTML = '<h2 class="proj"></h2><div class="pid"></div>';
+  top.querySelector("h2").textContent = c.name;
+  top.querySelector(".pid").textContent = "ID: "+c.id;
+  host.appendChild(top);
+
+  // v0.7: two columns — project info on the left (sticky), coding fields on the right
+  const grid = document.createElement("div"); grid.className="t1grid";
+  const info = document.createElement("div"); info.className="t1info";
+  info.innerHTML =
+    '<div class="desc-h">Card description <span class="limit">(in Russian — unpublished project content; field values and curator scores removed)</span></div>'+
+    '<div class="desc"></div>'+
+    '<div class="limit" style="margin-top:10px">Sources (open in a new tab) — if the description is not enough:</div><div class="links"></div>';
+  if(c.desc_html){
+    info.querySelector(".desc").innerHTML = c.desc_html;
+  }else{
+    info.querySelector(".desc-h").innerHTML =
+      '<span class="limit">Public build: card narratives are redacted (unpublished content; the coder worked with an identical build that included the narrative).</span>';
+    info.querySelector(".desc").style.display = "none";
+  }
+  const lk = info.querySelector(".links");
+  c.links.forEach(l=>{
+    const a=document.createElement("a"); a.href=l.url; a.target="_blank"; a.rel="noopener";
+    a.innerHTML='<span class="t"></span> ';
+    a.querySelector(".t").textContent=l.type;
+    a.appendChild(document.createTextNode(shortUrl(l.url)));
+    lk.appendChild(a);
+  });
+  const fieldsCol = document.createElement("div"); fieldsCol.className="t1fields";
+  grid.appendChild(info); grid.appendChild(fieldsCol);
+  host.appendChild(grid);
+
+  FIELDS.forEach(fd=>{
+    const fv = f1(c.id, fd.key);
+    const blk = document.createElement("div"); blk.className="fieldblock";
+    blk.innerHTML = '<h3></h3><p class="q"></p>'+
+      '<div class="opts'+(fd.multi?'':'')+'"></div><hr class="svc-sep"><div class="opts svc"></div>'+
+      '<input class="sugg" placeholder="Your own value (required when \u201cno suitable value\u201d is selected)">'+
+      '<span class="cmt-toggle"></span>'+
+      '<div class="cmt"><textarea rows="1" placeholder="doubt, quote, second candidate — optional"></textarea></div>'+
+      (fd.multi?'<div class="limit" style="margin-top:4px"></div>':'');
+    blk.querySelector("h3").textContent = fd.key + (fd.multi ? " (1–3 values)" : "");
+    blk.querySelector(".q").textContent = fd.q;
+
+    const cmtTa = blk.querySelector(".cmt textarea");
+    const cmtBox = blk.querySelector(".cmt");
+    const cmtTg = blk.querySelector(".cmt-toggle");
+    const syncCmt = open => {
+      cmtBox.classList.toggle("show", open);
+      cmtTg.textContent = open ? "\u2212 comment" : "+ comment";
+    };
+    syncCmt(!!fv.comment);
+    cmtTg.onclick = () => {
+      const willOpen = !cmtBox.classList.contains("show");
+      syncCmt(willOpen);
+      if(willOpen) cmtTa.focus();
+    };
+    cmtTa.value = fv.comment; cmtTa.oninput=()=>{fv.comment=cmtTa.value; save(false);};
+
+    const opts = blk.querySelector(".opts");
+    const svc  = blk.querySelector(".opts.svc");
+    const sugg = blk.querySelector("input.sugg");
+    sugg.value = fv.sugg; sugg.classList.toggle("show", fv.nil);
+    sugg.oninput=()=>{fv.sugg=sugg.value; save(false);};
+
+    const type = fd.multi ? "checkbox" : "radio";
+    const gname = "g_"+c.id+"_"+fd.key;
+    const groups = fd.groups || [[null, VOCAB[fd.key]]];
+    groups.forEach(([gtitle, vals])=>{
+      if(gtitle){
+        const gh=document.createElement("div"); gh.className="grp"; gh.textContent=gtitle;
+        opts.appendChild(gh);
+      }
+      vals.forEach(v=>{
+        const lab=document.createElement("label"); lab.className="opt";
+        const inp=document.createElement("input"); inp.type=type; inp.name=gname; inp.value=v;
+        inp.checked = fv.canon.includes(v);
+        lab.appendChild(inp); lab.appendChild(document.createTextNode(v));
+        if(v==="none" && fd.key==="token_type"){
+          const s=document.createElement("span"); s.className="limit"; s.textContent="  (no token — that is an answer)";
+          lab.appendChild(s);
+        }
+        const tip = GLOSS[fd.key] && GLOSS[fd.key][v];
+        if(tip){
+          const h=document.createElement("span"); h.className="hint"; h.textContent="?";
+          h.tabIndex=0; h.setAttribute("role","button");
+          h.title="What does this mean? (click)";
+          const toggle=e=>{
+            e.preventDefault(); e.stopPropagation();
+            const open = lab.nextElementSibling && lab.nextElementSibling.classList.contains("tipbox");
+            document.querySelectorAll(".tipbox").forEach(x=>x.remove());
+            if(!open){
+              const box=document.createElement("div"); box.className="tipbox";
+              const b=document.createElement("b"); b.textContent=v+": ";
+              box.appendChild(b); box.appendChild(document.createTextNode(tip));
+              lab.after(box);
+            }
+          };
+          h.addEventListener("click", toggle);
+          h.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" ") toggle(e); });
+          lab.appendChild(h);
+        }
+        inp.onchange=()=>{
+          if(fd.multi){
+            if(inp.checked){ if(fv.canon.length>=fd.max){inp.checked=false;return;} fv.canon.push(v); }
+            else fv.canon = fv.canon.filter(x=>x!==v);
+          }else fv.canon=[v];
+          fv.nd=false; fv.nil=false; sugg.classList.remove("show");
+          syncSvc(); updLimit(); save();
+        };
+        opts.appendChild(lab);
+      });
+    });
+    const mkSvc=(code,text)=>{
+      const lab=document.createElement("label"); lab.className="opt service";
+      const inp=document.createElement("input"); inp.type=type; inp.name=gname; inp.value=code;
+      inp.checked = code===ND ? fv.nd : fv.nil;
+      lab.appendChild(inp); lab.appendChild(document.createTextNode(text));
+      inp.onchange=()=>{
+        if(inp.checked){
+          fv.nd = code===ND; fv.nil = code===NIL;
+          fv.canon=[];
+          opts.querySelectorAll("input").forEach(x=>x.checked=false);
+          svc.querySelectorAll("input").forEach(x=>{ if(x!==inp) x.checked=false; });
+        }else{ if(code===ND) fv.nd=false; else fv.nil=false; }
+        sugg.classList.toggle("show", fv.nil);
+        updLimit(); save();
+      };
+      svc.appendChild(lab);
+    };
+    mkSvc(ND,"Cannot be determined (sources contain no information)");
+    mkSvc(NIL,"No suitable value in the list");
+    function syncSvc(){ svc.querySelectorAll("input").forEach(x=>x.checked=false); }
+    function updLimit(){
+      if(!fd.multi) return;
+      const el = blk.querySelector(".limit:last-child");
+      el.textContent = "selected: "+fv.canon.length+" of "+fd.max;
+      el.classList.toggle("max", fv.canon.length>=fd.max);
+    }
+    updLimit();
+    fieldsCol.appendChild(blk);
+  });
+
+  document.getElementById("t1prev").disabled = i===0;
+  document.getElementById("t1next").textContent = i===DATA.cards.length-1 ? "Save (last card)" : "Save and continue →";
+}
+document.getElementById("t1prev").onclick=()=>{S.cur1--;save(false);render1();window.scrollTo(0,0);};
+document.getElementById("t1next").onclick=()=>{
+  const c=DATA.cards[S.cur1]; const e=ent1(c.id);
+  e.finished_at=new Date().toISOString();
+  if(S.cur1<DATA.cards.length-1) S.cur1++;
+  save(); render1(); window.scrollTo(0,0);
+};
+
+/* ---------- TASK 2 ---------- */
+function render2(){
+  const i = Math.min(Math.max(S.cur2,0), DATA.evidence.length-1); S.cur2=i;
+  const ev = DATA.evidence[i];
+  tick.id = ev.id;
+  const e = ent2(ev.id); if(!e.started_at) e.started_at=new Date().toISOString();
+
+  document.getElementById("t2pos").textContent = "Evidence "+(i+1)+" of "+DATA.evidence.length;
+  const done = DATA.evidence.filter(x=>ev2Done(x.id)).length;
+  document.getElementById("t2bar").style.width = (done/DATA.evidence.length*100)+"%";
+  document.getElementById("t2done").textContent = "completed: "+done+" of "+DATA.evidence.length;
+
+  const jump = document.getElementById("t2jump"); jump.innerHTML="";
+  DATA.evidence.forEach((x,k)=>{
+    const b=document.createElement("button");
+    b.textContent=k+1; b.title=x.card_name+" — "+x.url;
+    if(ev2Done(x.id)) b.classList.add("done");
+    if(k===i) b.classList.add("cur");
+    b.onclick=()=>{S.cur2=k;save(false);render2();};
+    jump.appendChild(b);
+  });
+
+  const host=document.getElementById("t2card");
+  host.innerHTML =
+    '<h2 class="proj" style="font-size:18px"></h2><div class="pid"></div>'+
+    '<div class="urlbox"><b>Artifact:</b> <a target="_blank" rel="noopener"></a></div>'+
+    '<div class="claimbox"><div class="lbl">Curator\u2019s claim (what, per the curator, this link proves)</div><p class="claim"></p>'+
+    '<div style="margin-top:6px" class="lbl">Mapped to field</div><span class="badge cf"></span></div>'+
+    '<div class="fieldblock"><h3>1. Availability</h3><label class="opt service"><input type="checkbox" id="q0"> URL unreachable (the page does not open) — the next question is skipped</label></div>'+
+    '<div id="qrest">'+
+    '<div class="fieldblock"><h3>2. Claim support</h3><p class="q">Does the page show what the curator\u2019s claim describes?</p><div class="opts single" id="q2"></div></div>'+
+    '</div>'+
+    '<div class="fieldblock"><h3>Comment</h3><textarea rows="2" id="q4" placeholder="optional"></textarea></div>';
+
+  host.querySelector("h2").textContent = ev.card_name;
+  host.querySelector(".pid").textContent = "ID: "+ev.id+" · project "+ev.card_id;
+  const a=host.querySelector(".urlbox a"); a.href=ev.url; a.textContent=ev.url;
+  host.querySelector(".claim").textContent = ev.claim;
+  host.querySelector(".badge.cf").textContent = ev.claim_field;
+
+  const q0=host.querySelector("#q0"); q0.checked=!!e.dead;
+  const rest=host.querySelector("#qrest");
+  const setDead=()=>{ rest.style.opacity = e.dead? .35:1; rest.style.pointerEvents = e.dead?"none":"auto"; };
+  q0.onchange=()=>{ e.dead=q0.checked; setDead(); save(); render2(); };
+  setDead();
+
+  const radios=(hostEl,name,items,cur,cb)=>{
+    items.forEach(([val,text])=>{
+      const lab=document.createElement("label"); lab.className="opt";
+      const inp=document.createElement("input"); inp.type="radio"; inp.name=name; inp.value=val;
+      inp.checked = cur===val;
+      lab.appendChild(inp); lab.appendChild(document.createTextNode(text));
+      inp.onchange=()=>{cb(val); save(); render2();};
+      hostEl.appendChild(lab);
+    });
+  };
+  radios(host.querySelector("#q2"),"q2_"+ev.id,
+    [["supports","Fully supports"],
+     ["partial","Partially supports"],
+     ["no","Does not support"]],
+    e.support, v=>e.support=v);
+
+  const q4=host.querySelector("#q4"); q4.value=e.comment||"";
+  q4.oninput=()=>{e.comment=q4.value; save(false);};
+
+  document.getElementById("t2prev").disabled = i===0;
+  document.getElementById("t2next").textContent = i===DATA.evidence.length-1 ? "Save (last entry)" : "Save and continue →";
+}
+document.getElementById("t2prev").onclick=()=>{S.cur2--;save(false);render2();window.scrollTo(0,0);};
+document.getElementById("t2next").onclick=()=>{
+  const ev=DATA.evidence[S.cur2]; ent2(ev.id).finished_at=new Date().toISOString();
+  if(S.cur2<DATA.evidence.length-1) S.cur2++;
+  save(); render2(); window.scrollTo(0,0);
+};
+
+/* ---------- EXPORT ---------- */
+function renderExp(){
+  const d1=DATA.cards.filter(c=>card1Done(c.id)).length;
+  const d2=DATA.evidence.filter(e=>ev2Done(e.id)).length;
+  document.getElementById("expWarn").innerHTML="";
+  const t=document.getElementById("expSum");
+  t.innerHTML="<tr><th>Task</th><th>Completed</th><th>Status</th></tr>"+
+    "<tr><td>1 · Passport fields</td><td>"+d1+" / "+DATA.cards.length+"</td><td>"+
+    (d1===DATA.cards.length?'<span class="okk">done</span>':'<span class="miss">incomplete</span>')+"</td></tr>"+
+    "<tr><td>2 · Evidence</td><td>"+d2+" / "+DATA.evidence.length+"</td><td>"+
+    (d2===DATA.evidence.length?'<span class="okk">done</span>':'<span class="miss">incomplete</span>')+"</td></tr>";
+}
+function dl(name, text, mime){
+  const b=new Blob(["\ufeff"+text],{type:mime+";charset=utf-8"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(b); a.download=name; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+}
+const csvq=v=>'"'+String(v==null?"":v).replace(/"/g,'""')+'"';
+document.getElementById("dlJson").onclick=()=>{
+  // export follows an explicit schema: stale fields from older versions in localStorage (raw, tier, etc.) do not leak
+  const t1={};
+  DATA.cards.forEach(c=>{
+    const e=S.t1[c.id]; if(!e) return;
+    const fields={};
+    FIELDS.forEach(fd=>{
+      const fv=(e.fields||{})[fd.key]; if(!fv) return;
+      fields[fd.key]={canon:fv.canon||[], nd:!!fv.nd, nil:!!fv.nil,
+                      sugg:fv.sugg||"", comment:fv.comment||""};
+    });
+    t1[c.id]={fields, seconds:e.seconds||0,
+              started_at:e.started_at||null, finished_at:e.finished_at||null};
+  });
+  const t2={};
+  DATA.evidence.forEach(ev=>{
+    const e=S.t2[ev.id]; if(!e) return;
+    t2[ev.id]={dead:!!e.dead, support:e.support||null, comment:e.comment||"",
+               seconds:e.seconds||0,
+               started_at:e.started_at||null, finished_at:e.finished_at||null};
+  });
+  const out={tool_version:TOOL_VERSION, exported_at:new Date().toISOString(),
+             task1:t1, task2:t2};
+  dl("irr_results.json", JSON.stringify(out,null,1), "application/json");
+};
+document.getElementById("dlCsv1").onclick=()=>{
+  const rows=[["card_id","card_name","field","canonical","not_determinable","not_in_list","suggested_value","comment","seconds_on_card"].map(csvq).join(",")];
+  DATA.cards.forEach(c=>{
+    const e=S.t1[c.id]; if(!e) return;
+    FIELDS.forEach(fd=>{
+      const fv=e.fields[fd.key]; if(!fv) return;
+      rows.push([c.id,c.name,fd.key,fv.canon.join(" | "),fv.nd?1:0,fv.nil?1:0,fv.sugg,fv.comment,e.seconds||0].map(csvq).join(","));
+    });
+  });
+  dl("irr_task1_passport.csv", rows.join("\r\n"), "text/csv");
+};
+document.getElementById("dlCsv2").onclick=()=>{
+  const rows=[["evidence_id","card_id","url","claim_field_shown","url_dead","support","comment","seconds"].map(csvq).join(",")];
+  DATA.evidence.forEach(ev=>{
+    const e=S.t2[ev.id]; if(!e) return;
+    rows.push([ev.id,ev.card_id,ev.url,ev.claim_field,e.dead?1:0,e.support||"",e.comment||"",e.seconds||0].map(csvq).join(","));
+  });
+  dl("irr_task2_evidence.csv", rows.join("\r\n"), "text/csv");
+};
+document.getElementById("resetAll").onclick=()=>{
+  if(prompt('This will erase ALL answers. Type DELETE to confirm:')==="DELETE"){
+    localStorage.removeItem(LS_KEY); location.reload();
+  }
+};
+
+function shortUrl(u){ try{const x=new URL(u);return x.hostname.replace(/^www\./,"");}catch(e){return u;} }
+
+/* ---------- start: Task 1 active; instructions open until there are answers ---------- */
+const prog1 = DATA.cards.some(c=>{const e=S.t1[c.id];
+  return e && Object.values(e.fields||{}).some(fv=>(fv.canon&&fv.canon.length)||fv.nd||fv.nil);});
+const prog2 = DATA.evidence.some(ev=>{const e=S.t2[ev.id];
+  return e && (e.dead||e.support);});
+document.getElementById("instr1").open = !prog1;
+document.getElementById("instr2").open = !prog2;
+tick.task = "t1";
+refreshCounters();
+render1();
+</script>
+</body>
+</html>
