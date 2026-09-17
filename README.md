@@ -7,7 +7,7 @@ Replication packages and supplementary materials for the DecAIHub research progr
 | Directory | Paper |
 |-----------|-------|
 | [adversarial-verification](adversarial-verification) | Manipulation-Resistant Verification in Trust-Critical Digital Registries: Adversarial Framework with Protocol Validation and Boundary Diagnostics |
-| [project-card-schema](project-card-schema) | A Project-Card Schema and Completeness Diagnostics for AI–Blockchain Registries |
+| [project-card-schema](project-card-schema) | Descriptor: AI–Blockchain Project-Card Dataset (ABPC) |
 | [taxonomy-vocabulary-governance](taxonomy-vocabulary-governance/) | Sparse and dense sentence-encoder evaluation for vocabulary governance in emerging-domain taxonomies |
 
 ## About
