@@ -6,6 +6,8 @@ Replication code for:
 
 Dataset: Zenodo, concept DOI **10.5281/zenodo.18900949** (v1.1.0 = 10.5281/zenodo.22800707; v1.0.0 = 10.5281/zenodo.18900950), CC BY 4.0.
 
+Mirrors: [Hugging Face](https://huggingface.co/datasets/DecAIHub/abpc) (Parquet tables, dataset viewer) and [Kaggle](https://www.kaggle.com/datasets/decaihub/ai-blockchain-project-card-dataset-abpc) (CSV tables); the Zenodo deposit remains the canonical source.
+
 This package accompanies dataset v1.1.0. The package released with v1.0.0 is preserved in the repository history: [commit ed69f9f](https://github.com/DecAIHub/papers/tree/ed69f9f000669a7a701d86ec0f1dfe9cac2b6a4e/project-card-schema).
 
 ## Layout
