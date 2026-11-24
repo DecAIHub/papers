@@ -2,7 +2,7 @@
 
 Replication code for:
 
-> Kadochnikov, N. N. (2026). *Descriptor: AI–Blockchain Project-Card Dataset (ABPC).* IEEE Data Descriptions, 1–13. https://doi.org/10.1109/IEEEDATA.2026.3740408.
+> Kadochnikov, N. N. (2026). *Descriptor: AI–Blockchain Project-Card Dataset (ABPC).* IEEE Data Descriptions, 3, 752–764. https://doi.org/10.1109/IEEEDATA.2026.3740408.
 
 Dataset: Zenodo, concept DOI **10.5281/zenodo.18900949** (v1.1.0 = 10.5281/zenodo.22800707; v1.0.0 = 10.5281/zenodo.18900950), CC BY 4.0.
 
